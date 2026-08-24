@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "VanToVault Open Housing Data: Foothold Index and Down Payment Assistance Survey"
+message: "If you use these datasets, please cite them using the metadata below."
+type: dataset
+authors:
+  - name: "VanToVault"
+    alias: "Stephan D."
+    email: vantovault@gmail.com
+    website: "https://vantovault.com"
+repository-code: "https://github.com/vantovault-stack/open-housing-data"
+url: "https://vantovault.com/open-data/"
+abstract: >-
+  Two open datasets on buying a two-to-four unit home as an owner-occupant across 83 US metro areas.
+  The Foothold Index screens 23,424 two-to-four unit listings against seven absolute tests to find
+  where a first-time buyer with limited savings can own for no more than the cost of renting. The
+  Down Payment Assistance Survey answers, metro by metro, whether an owner-occupant can use down
+  payment assistance on a two-to-four unit home, distinguishing programs that were found, programs
+  confirmed absent, and cases where eligibility could not be confirmed.
+keywords:
+  - housing affordability
+  - house hacking
+  - owner-occupant
+  - down payment assistance
+  - first-time homebuyer
+  - multifamily
+  - open data
+license: CC-BY-4.0
+date-released: "2026-08-06"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22019647
+    description: "Foothold Index: rent versus own screen for two to four unit homes across 83 US metros, 2026"
+  - type: doi
+    value: 10.5281/zenodo.22019631
+    description: "Down payment assistance for two to four unit owner occupied purchase, 83 US metros, 2026"
