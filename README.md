@@ -12,7 +12,7 @@ Maintained by Stephan D. · <vantovault@gmail.com> · https://vantovault.com/ope
 
 ### 1. Foothold Index — where owning beats renting
 
-[`vantovault-foothold-metros.csv`](vantovault-foothold-metros.csv) · [`vantovault-foothold-metros.json`](vantovault-foothold-metros.json)
+[`vantovault-foothold-metros.csv`](data/vantovault-foothold-metros.csv) · [`vantovault-foothold-metros.json`](data/vantovault-foothold-metros.json)
 
 A screen of **23,424 two-to-four unit listings across 83 US metro areas**, asking a narrower question
 than most affordability rankings: not *where are houses cheap*, but *where can a first-time buyer
@@ -40,7 +40,7 @@ Fourteen metros are flagged `thin`. They are shown rather than hidden, with thei
 
 ### 2. Down Payment Assistance Survey — can you use DPA on a 2-4 unit home?
 
-[`vantovault-dpa-83-metros.csv`](vantovault-dpa-83-metros.csv) · [`vantovault-dpa-83-metros.json`](vantovault-dpa-83-metros.json)
+[`vantovault-dpa-83-metros.csv`](data/vantovault-dpa-83-metros.csv) · [`vantovault-dpa-83-metros.json`](data/vantovault-dpa-83-metros.json)
 
 The same 83 metros, screened for one question that first-time buyers ask constantly and almost no
 published source answers: **can an owner-occupant use down payment assistance to buy a two-to-four
