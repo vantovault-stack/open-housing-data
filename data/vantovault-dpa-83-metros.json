@@ -1,44 +1,26 @@
 {
  "meta": {
   "dataset": "VanToVault Down Payment Assistance Survey - can you use DPA on a 2-4 unit home?",
-  "description": "83 US metro areas screened for a single question: can an owner-occupant use down payment assistance to buy a two-to-four unit property and live in one unit? Most program websites speak only of a single-family home and leave the rest to interpretation, so where the answer was unclear the administering agency was contacted directly and several confirmed their answer in writing.",
-  "data_as_of": "2026-07",
-  "license": "CC BY 4.0 - use with attribution to Van to Vault (vantovault.com)",
-  "methodology": "https://vantovault.com/library/down-payment-assistance-duplex/",
-  "record_count": 83,
-  "status_counts": {
-   "program_found": 69,
-   "none_found": 10,
-   "unconfirmed": 4
-  },
-  "status_values": {
-   "program_found": "A down payment assistance program usable on a 2-4 unit owner-occupied purchase was identified. max_assistance_usd is that program's advertised maximum.",
-   "none_found": "The metro's state and local DPA product line was checked and no 2-4 unit-eligible program was found, or the relevant program explicitly excludes 2-4 unit property.",
-   "unconfirmed": "A DPA program exists but its 2-4 unit eligibility is not stated on the program's own materials and could not be confirmed. Treat as unknown, not as a no."
-  },
-  "notes": "max_assistance_usd is the maximum the named program advertises, not an amount any individual buyer will qualify for; income, price and location caps all apply. It is blank for any row that is not program_found. Always check the source_url and speak to the agency before relying on a figure. program_or_finding carries the program name for program_found rows and the research finding otherwise.",
-  "fields": [
-   "metro",
-   "status",
-   "max_assistance_usd",
-   "program_or_finding",
-   "source_url",
-   "as_of"
-  ]
+  "generated_from": "VanToVault-Foothold-v7.xlsx / Inputs / Best usable DPA (2-4 unit)",
+  "counts": {
+   "program_found": 72,
+   "none_found": 9,
+   "unconfirmed": 2
+  }
  },
  "metros": [
   {
    "metro": "Akron",
    "status": "program_found",
-   "max_assistance_usd": 10500,
-   "program_or_finding": "OHFA Down Payment Assistance (Your Choice!) - Conventional Program",
-   "source_url": "https://ohiohome.org/partners/documents/Conventional-Guidelines-25.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2.5% or 5% of the home's purchase price. OHFA (Ohio) 'Your Choice!' states: 'Down Payment Assistance allows homebuyers to choose either 2.5% or 5% of the home's purchase price.' Forgiven after seven years. No dollar cap stated. NOTE: percentage of PURCHASE PRICE, not loan amount.",
+   "source_url": "https://ohiohome.org/partners/documents/DPA.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Albany",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
    "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
    "as_of": "2026-07"
@@ -54,7 +36,7 @@
   {
    "metro": "Allentown",
    "status": "program_found",
-   "max_assistance_usd": 6000,
+   "max_assistance_usd": "6000",
    "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
    "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
    "as_of": "2026-07"
@@ -63,14 +45,14 @@
    "metro": "Atlanta",
    "status": "none_found",
    "max_assistance_usd": "",
-   "program_or_finding": "Georgia Dream Homeownership Program (checked, excludes 2-4 unit)",
+   "program_or_finding": "Georgia Dream Homeownership Program. The program's published eligibility matrix excludes 2-4 unit properties. NOT confirmed with the agency: two attempts to reach DCA in August 2026 were undeliverable (Daniela.Vargas@dca.ga.gov returned 550 Access denied, an Outlook allowlist; housing@dca.georgia.go",
    "source_url": "https://dca.georgia.gov/document/resources/georgia-dream-standard-matrix/download",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Austin",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "TDHCA My First Texas Home (statewide)",
    "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf?v=1738018341",
    "as_of": "2026-07"
@@ -78,7 +60,7 @@
   {
    "metro": "Bakersfield",
    "status": "program_found",
-   "max_assistance_usd": 19000,
+   "max_assistance_usd": "19000",
    "program_or_finding": "GSFA Platinum (statewide joint powers authority)",
    "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
    "as_of": "2026-07"
@@ -86,7 +68,7 @@
   {
    "metro": "Baltimore",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "Maryland Mortgage Program (MMP/CDA) DPA - Flex product line",
    "source_url": "https://mmp.maryland.gov/Lenders/Documents/CDAPROGRAMCODEGUIDE.pdf",
    "as_of": "2026-07"
@@ -95,22 +77,22 @@
    "metro": "Baton Rouge",
    "status": "none_found",
    "max_assistance_usd": "",
-   "program_or_finding": "Louisiana Housing Corporation MRB Home/Assisted (checked, excludes 2-4 unit)",
+   "program_or_finding": "Louisiana Housing Corporation. Confirmed 2026-08-13 by email from Daniel Duggan, Homeownership Business Development and Marketing Supervisor (\"We do not allow down payment assistance on two to four unit properties\"), and Cody Henderson, Single Family Manager (\"LHC does not allow multi-unit dwellings",
    "source_url": "https://www.lhc.la.gov/hubfs/Document%20Libraries/Homeownership/MRB/HOMEMRB%20Guidelines.pdf",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Birmingham",
-   "status": "unconfirmed",
+   "status": "none_found",
    "max_assistance_usd": "",
-   "program_or_finding": "AHFA Step Up (checked; unit eligibility could not be confirmed)",
+   "program_or_finding": "AHFA Step Up. Single-family only. Confirmed 2026-08-13 by email from Madison Adams, Operations Support Specialist, Alabama Housing Finance Authority: \"No, it can only be a Single-Family residence.\" Supersedes the earlier note that unit eligibility could not be confirmed.",
    "source_url": "https://www.ahfa.com/programs/homeownership/available-programs/step-up",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Boston",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "MassHousing Down Payment Assistance",
    "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
    "as_of": "2026-07"
@@ -118,7 +100,7 @@
   {
    "metro": "Bridgeport",
    "status": "program_found",
-   "max_assistance_usd": 25000,
+   "max_assistance_usd": "25000",
    "program_or_finding": "CHFA Time to Own (statewide)",
    "source_url": "https://www.chfa.org/homebuyers-homeowners/homebuyers/time-to-own-down-payment-assistance-program-loan/",
    "as_of": "2026-07"
@@ -126,7 +108,7 @@
   {
    "metro": "Buffalo",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
    "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
    "as_of": "2026-07"
@@ -134,7 +116,7 @@
   {
    "metro": "Cape Coral-Fort Myers",
    "status": "program_found",
-   "max_assistance_usd": 35000,
+   "max_assistance_usd": "35000",
    "program_or_finding": "Florida Hometown Heroes (statewide)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-Bond-Guide-03-31-26.pdf",
    "as_of": "2026-07"
@@ -142,23 +124,23 @@
   {
    "metro": "Charleston",
    "status": "program_found",
-   "max_assistance_usd": 12600,
-   "program_or_finding": "Palmetto Home Advantage, 4% of first mortgage. TWO-unit eligible (3% borrower contribution required); 3-4 unit NOT eligible. $ estimated on $315,000 median price",
-   "source_url": "https://schousing.sc.gov/sites/schousing/files/Documents/Homebuyers/Palmetto%20Home%20Advantage/PA-020%20Palmetto%20Home%20Advantage%20Program%20Guide%20(06.01.2026)%20.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "3% or 4% of the total first mortgage loan amount. Palmetto Home Advantage Program Guide (2026-02-02): 'Down Payment Assistance is available with a 0%, 3% or 4% of the total first mortgage loan amount (including UPMIP, Funding or Guarantee Fee)'. Forgivable second, 10-year, 0%; the guide says 'This i",
+   "source_url": "https://schousing.sc.gov/sites/schousing/files/Documents/Homebuyers/Palmetto%20Home%20Advantage/PA-020%20Palmetto%20Home%20Advantage%20Program%20Guide%20(02.02.2026).pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Charlotte",
    "status": "program_found",
-   "max_assistance_usd": 11400,
-   "program_or_finding": "NC Home Advantage Mortgage (statewide, FHA loans)",
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%.",
    "source_url": "https://www.nchfa.com/sites/default/files/2026-06/NCHomeAdvantageMortgageProgramGuide.pdf",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Chicago",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "IHDAccess Repayable (Illinois Housing Development Authority)",
    "source_url": "https://downpaymentscout.com/states/illinois/",
    "as_of": "2026-07"
@@ -166,15 +148,15 @@
   {
    "metro": "Cincinnati",
    "status": "program_found",
-   "max_assistance_usd": 14250,
-   "program_or_finding": "OHFA Down Payment Assistance (Your Choice!) - Conventional Program",
-   "source_url": "https://ohiohome.org/partners/documents/Conventional-Guidelines-25.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2.5% or 5% of the home's purchase price. OHFA (Ohio) 'Your Choice!' states: 'Down Payment Assistance allows homebuyers to choose either 2.5% or 5% of the home's purchase price.' Forgiven after seven years. No dollar cap stated. NOTE: percentage of PURCHASE PRICE, not loan amount.",
+   "source_url": "https://ohiohome.org/partners/documents/DPA.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Cleveland",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "OHFA Down Payment Assistance (Your Choice!) - Conventional Program",
    "source_url": "https://ohiohome.org/partners/documents/Conventional-Guidelines-25.pdf",
    "as_of": "2026-07"
@@ -182,7 +164,7 @@
   {
    "metro": "Columbus",
    "status": "program_found",
-   "max_assistance_usd": 14000,
+   "max_assistance_usd": "14000",
    "program_or_finding": "OHFA Down Payment Assistance (Your Choice!) - Conventional Program",
    "source_url": "https://ohiohome.org/partners/documents/Conventional-Guidelines-25.pdf",
    "as_of": "2026-07"
@@ -190,7 +172,7 @@
   {
    "metro": "Dallas",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "TDHCA My First Texas Home (statewide)",
    "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf?v=1738018341",
    "as_of": "2026-07"
@@ -198,23 +180,23 @@
   {
    "metro": "Dayton",
    "status": "program_found",
-   "max_assistance_usd": 10500,
-   "program_or_finding": "OHFA Down Payment Assistance (Your Choice!) - Conventional Program",
-   "source_url": "https://ohiohome.org/partners/documents/Conventional-Guidelines-25.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2.5% or 5% of the home's purchase price. OHFA (Ohio) 'Your Choice!' states: 'Down Payment Assistance allows homebuyers to choose either 2.5% or 5% of the home's purchase price.' Forgiven after seven years. No dollar cap stated. NOTE: percentage of PURCHASE PRICE, not loan amount.",
+   "source_url": "https://ohiohome.org/partners/documents/DPA.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Denver",
    "status": "program_found",
-   "max_assistance_usd": 31481,
-   "program_or_finding": "metroDPA (Denver-metro city/county consortium DPA, administered via CHFA/Colorado Housing Enterprises)",
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5% of the first mortgage note amount. metroDPA: assistance 'equal to a percentage of the note amount', varying by loan product up to 5%; 30-year deferred second at 0%, explicitly not a grant. A fuller tier table exists only on a lender marketing site and was NOT used.",
    "source_url": "https://www.metro-dpa.com/",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Detroit",
    "status": "program_found",
-   "max_assistance_usd": 25000,
+   "max_assistance_usd": "25000",
    "program_or_finding": "City of Detroit Down Payment Assistance Program",
    "source_url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-06/Detroit%20DPA%20Applcation.pdf",
    "as_of": "2026-07"
@@ -222,7 +204,7 @@
   {
    "metro": "El Paso",
    "status": "program_found",
-   "max_assistance_usd": 5000,
+   "max_assistance_usd": "5000",
    "program_or_finding": "City of El Paso First-Time Homebuyer Program",
    "source_url": "https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/FIRST-TIME-HOMEBUYER-ENGLISH-new.pdf",
    "as_of": "2026-07"
@@ -238,15 +220,15 @@
   {
    "metro": "Fresno",
    "status": "program_found",
-   "max_assistance_usd": 20600,
-   "program_or_finding": "GSFA Platinum (statewide joint powers authority)",
-   "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Grand Rapids",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "MSHDA MI 10K DPA Loan (statewide)",
    "source_url": "https://www.michigan.gov/mshda/pathway-to-housing/mi-10k-dpa-loan",
    "as_of": "2026-07"
@@ -254,15 +236,15 @@
   {
    "metro": "Greensboro",
    "status": "program_found",
-   "max_assistance_usd": 7800,
-   "program_or_finding": "NC Home Advantage Mortgage (statewide, FHA loans)",
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%.",
    "source_url": "https://www.nchfa.com/sites/default/files/2026-06/NCHomeAdvantageMortgageProgramGuide.pdf",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Harrisburg",
    "status": "program_found",
-   "max_assistance_usd": 6000,
+   "max_assistance_usd": "6000",
    "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
    "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
    "as_of": "2026-07"
@@ -270,7 +252,7 @@
   {
    "metro": "Hartford",
    "status": "program_found",
-   "max_assistance_usd": 25000,
+   "max_assistance_usd": "25000",
    "program_or_finding": "CHFA Time To Own (Down Payment Assistance)",
    "source_url": "https://www.chfa.org/assets/1/6/Pages_from_Operations_Manual_sections_2_combined_Rev_4.2026_FINAL.pdf",
    "as_of": "2026-07"
@@ -278,7 +260,7 @@
   {
    "metro": "Houston",
    "status": "program_found",
-   "max_assistance_usd": 16000,
+   "max_assistance_usd": "16000",
    "program_or_finding": "TSAHC Homeownership DPA (Home Sweet Texas / Homes for Texas Heroes)",
    "source_url": "https://kb.tsahc.org/39170/kb/article/102870/what-type-of-home-can-i-buy-with-tsahcs-homeownership-programs",
    "as_of": "2026-07"
@@ -294,7 +276,7 @@
   {
    "metro": "Jacksonville",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
    "as_of": "2026-07"
@@ -302,55 +284,55 @@
   {
    "metro": "Kansas City",
    "status": "program_found",
-   "max_assistance_usd": 9669,
-   "program_or_finding": "MHDC First Place Loan Program (DPA option)",
-   "source_url": "https://mhdc.com/media/dbzhjamp/first-place-operations-manual.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "4% of the total mortgage amount. MHDC First Place Cash Assistance Loan: 'a 100% forgivable second loan equal to 4% of the total mortgage amount to help with down payment and closing costs'. Fully forgiven at year 10. No dollar cap found in MHDC's own documents.",
+   "source_url": "https://mhdc.com/media/k5epnlpt/first-place-manual-march-2026.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Knoxville",
    "status": "unconfirmed",
    "max_assistance_usd": "",
-   "program_or_finding": "THDA Great Choice Plus, 5% of price capped at $15,000 - 2-4 unit eligibility NOT stated on program page. Per project convention 2026-07-31: assistance not confirmed to reach 2-4 unit properties is not counted as usable, so value = 0. Footnote: the headline program exists and may yet apply; localities also run their own programmes and only the major ones were surveyed.",
+   "program_or_finding": "THDA Great Choice Plus, 5% of price capped at $15,000 - 2-4 unit eligibility NOT stated on program page.",
    "source_url": "https://thda.org/homebuyers/down-payment-assistance/",
    "as_of": "2026-07"
   },
   {
    "metro": "Lakeland",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
    "as_of": "2026-07"
   },
   {
    "metro": "Las Vegas",
-   "status": "none_found",
+   "status": "program_found",
    "max_assistance_usd": "",
-   "program_or_finding": "checked Nevada's full Home Is Possible product line; no 2-4 unit-eligible program found",
-   "source_url": "https://downpaymentscout.com/down-payment-assistance-las-vegas/",
-   "as_of": "2026-07"
+   "program_or_finding": "Nevada Home Is Possible HIP-DPA. Assistance is 3% or 5% of the LOAN AMOUNT, not a fixed dollar sum, so no dollar figure is published for this metro - the live page shows '5% of the loan'. The 5% tier carries a slightly higher interest rate than the 3% tier. Property type confirmed twice: NHD's own d",
+   "source_url": "https://www.homeispossiblenv.org/todays-rates",
+   "as_of": "2026-08"
   },
   {
    "metro": "Los Angeles",
    "status": "program_found",
-   "max_assistance_usd": 44000,
-   "program_or_finding": "GSFA Platinum (statewide joint powers authority)",
-   "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Louisville",
    "status": "unconfirmed",
    "max_assistance_usd": "",
-   "program_or_finding": "KHC Down Payment Assistance, up to $12,500 - 2-4 unit eligibility NOT stated on program page. Per project convention 2026-07-31: assistance not confirmed to reach 2-4 unit properties is not counted as usable, so value = 0. Footnote: the headline program exists and may yet apply; localities also run their own programmes and only the major ones were surveyed.",
+   "program_or_finding": "KHC Down Payment Assistance, up to $12,500 - 2-4 unit eligibility NOT stated on program page.",
    "source_url": "https://www.kyhousing.org/page/down-payment-assistance",
    "as_of": "2026-07"
   },
   {
    "metro": "McAllen",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "TSAHC Homeownership DPA (statewide, covers Rio Grande Valley)",
    "source_url": "https://kb.tsahc.org/39170/kb/article/102870/what-type-of-home-can-i-buy-with-tsahcs-homeownership-programs",
    "as_of": "2026-07"
@@ -358,7 +340,7 @@
   {
    "metro": "Memphis",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "THDA Great Choice Home Loan / Down Payment Assistance",
    "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
    "as_of": "2026-07"
@@ -366,7 +348,7 @@
   {
    "metro": "Miami",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
    "as_of": "2026-07"
@@ -374,7 +356,7 @@
   {
    "metro": "Milwaukee",
    "status": "program_found",
-   "max_assistance_usd": 14000,
+   "max_assistance_usd": "14000",
    "program_or_finding": "WHEDA Easy Close Advantage",
    "source_url": "https://www.wheda.com/globalassets/documents/mortgage-lending/easy-close-dpa/easy-close-dpa-eligibility-matrix.pdf",
    "as_of": "2026-07"
@@ -382,7 +364,7 @@
   {
    "metro": "Minneapolis",
    "status": "program_found",
-   "max_assistance_usd": 20000,
+   "max_assistance_usd": "20000",
    "program_or_finding": "Minneapolis Homes: ACCESS Down Payment Assistance (City of Minneapolis)",
    "source_url": "https://nwhomepartners.org/minneapolis-homes-access-down-payment-assistance/",
    "as_of": "2026-07"
@@ -390,7 +372,7 @@
   {
    "metro": "Nashville",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "THDA Great Choice Home Loan / Down Payment Assistance",
    "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
    "as_of": "2026-07"
@@ -398,15 +380,15 @@
   {
    "metro": "New Orleans",
    "status": "program_found",
-   "max_assistance_usd": 13500,
-   "program_or_finding": "Finance New Orleans (Finance Authority of New Orleans) Down Payment Assistance",
-   "source_url": "https://financenola.org/down-payment-assistance-backup/",
-   "as_of": "2026-07"
+   "max_assistance_usd": "25000",
+   "program_or_finding": "Finance New Orleans (FANO) Green Mortgage Program. 'Up to $25,000 may be applied as either downpayment assistance, prepaids, closing cost assistance, or a combination of both.' 0% second; at or below 80% AMI it is a five-year deferred forgivable second and 'one hundred percent of the second mortgage",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FNO-Green-Mortgage-Program-Guide-03-20-26.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "New York",
    "status": "program_found",
-   "max_assistance_usd": 100000,
+   "max_assistance_usd": "100000",
    "program_or_finding": "NYC HPD HomeFirst Down Payment Assistance Program",
    "source_url": "https://www.nyc.gov/site/hpd/services-and-information/homefirst-down-payment-assistance-program.page",
    "as_of": "2026-07"
@@ -414,7 +396,7 @@
   {
    "metro": "North Port-Sarasota",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
    "as_of": "2026-07"
@@ -422,23 +404,23 @@
   {
    "metro": "Oklahoma City",
    "status": "program_found",
-   "max_assistance_usd": 8400,
-   "program_or_finding": "OHFA DREAM (government loan) Down Payment Assistance",
+   "max_assistance_usd": "",
+   "program_or_finding": "3.5% of the total loan amount. Oklahoma OHFA DREAM (ohfa.org, NOT Ohio's myohiohome.org): '3.50% Down Payment Assistance' ... 'DPA calculated on Total Loan Amount (Note Amount)'. Same figure for the government and the Freddie Mac conventional products. Guides revised September 2025.",
    "source_url": "https://www.ohfa.org/wp-content/uploads/2025/LDREAMGOVT-Guide-2025-9152025-IFF-INCREASE.pdf",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Omaha",
    "status": "program_found",
-   "max_assistance_usd": 14125,
-   "program_or_finding": "NIFA Build Home (Nebraska Investment Finance Authority)",
-   "source_url": "https://downpaymentscout.com/states/nebraska/",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5% of the home's purchase price. NIFA Homebuyer Assistance (HBA): 'The maximum amount for the second mortgage loan is 5% of the home's purchase price.' Repayable second, 10-year term, 1% interest. NOTE: percentage of PURCHASE PRICE. Also note NIFA 'Build Home' is a rate-lock product, NOT the D",
+   "source_url": "https://www.nifa.org/homebuyers-renters/homebuyer-assistance",
+   "as_of": "2026-08"
   },
   {
    "metro": "Orlando",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
    "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
    "as_of": "2026-07"
@@ -446,15 +428,15 @@
   {
    "metro": "Oxnard",
    "status": "program_found",
-   "max_assistance_usd": 38500,
-   "program_or_finding": "GSFA Platinum (statewide joint powers authority)",
-   "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Philadelphia",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "Philly First Home",
    "source_url": "https://www.phila.gov/programs/philly-first-home-program/",
    "as_of": "2026-07"
@@ -470,7 +452,7 @@
   {
    "metro": "Pittsburgh",
    "status": "program_found",
-   "max_assistance_usd": 7500,
+   "max_assistance_usd": "7500",
    "program_or_finding": "URA (Urban Redevelopment Authority of Pittsburgh) Down Payment and Closing Cost Assistance",
    "source_url": "https://www.ura.org/pages/down-payment-and-closing-cost-assistance-program",
    "as_of": "2026-07"
@@ -478,7 +460,7 @@
   {
    "metro": "Portland",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "FHLBank Des Moines Home$tart (member-bank grant, covers Oregon)",
    "source_url": "https://www.fhlbdm.com/webres/File/products-services/CID_DP-Program-Overview.pdf",
    "as_of": "2026-07"
@@ -486,7 +468,7 @@
   {
    "metro": "Portland ME",
    "status": "program_found",
-   "max_assistance_usd": 5000,
+   "max_assistance_usd": "5000",
    "program_or_finding": "MaineHousing First Home Loan Program (down payment/closing cost assistance)",
    "source_url": "https://downpaymentscout.com/states/maine/",
    "as_of": "2026-07"
@@ -494,39 +476,39 @@
   {
    "metro": "Providence",
    "status": "program_found",
-   "max_assistance_usd": 15000,
+   "max_assistance_usd": "15000",
    "program_or_finding": "RIHousing $15K DPA",
    "source_url": "https://www.rihousing.com/homebuyers/15k-dpa/",
    "as_of": "2026-07"
   },
   {
    "metro": "Raleigh",
-   "status": "none_found",
+   "status": "program_found",
    "max_assistance_usd": "",
-   "program_or_finding": "None confirmed for 2-4 unit",
-   "source_url": "https://www.nchfa.com/home-buyers/home-buyer-mortgage-products/nc-1st-home-advantage-down-payment",
-   "as_of": "2026-07"
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. ELIGIBILITY CORRECTED 2026-08-13: Raleigh was previously recorded as 'None found' o",
+   "source_url": "https://www.nchfa.com/sites/default/files/2026-06/NCHomeAdvantageMortgageProgramGuide.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Richmond",
    "status": "program_found",
-   "max_assistance_usd": 40000,
-   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA)",
-   "source_url": "https://www.dhcd.virginia.gov/dpa",
+   "max_assistance_usd": "40000",
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA). 2-4 unit eligible if buyer occupies one unit; up to $40,000 (10-15% of price plus up to $2,500 closing costs).",
+   "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
    "as_of": "2026-08"
   },
   {
    "metro": "Riverside-San Bernardino",
    "status": "program_found",
-   "max_assistance_usd": 27500,
-   "program_or_finding": "GSFA Platinum (statewide joint powers authority)",
-   "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Rochester",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL), paired with Achieving the Dream / Low Interest Rate mortgage",
    "source_url": "https://hcr.ny.gov/achieving-dream-program-0",
    "as_of": "2026-07"
@@ -534,15 +516,15 @@
   {
    "metro": "Sacramento",
    "status": "program_found",
-   "max_assistance_usd": 41637,
-   "program_or_finding": "GSFA Platinum (statewide JPA, conventional term sheet)",
-   "source_url": "https://gsfahome.org/lender/guide/platinum/GSFA_Platinum_CONVENTIONAL_TermSheet_USBank.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Salt Lake City",
    "status": "program_found",
-   "max_assistance_usd": 25000,
+   "max_assistance_usd": "25000",
    "program_or_finding": "Utah Housing Corporation DPA (FHA/VA Mortgage down payment assistance option)",
    "source_url": "https://downpaymentscout.com/states/utah/",
    "as_of": "2026-07"
@@ -550,39 +532,39 @@
   {
    "metro": "San Antonio",
    "status": "program_found",
-   "max_assistance_usd": 27888,
-   "program_or_finding": "TDHCA My First Texas Home (5% DPA second lien)",
-   "source_url": "https://welcomehome.tdhca.texas.gov/uploads/Lender-Guide.pdf?v=1671823022",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home: 'Available assistance ranging from 2% - 5% of the total mortgage loan funding'. Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second.",
+   "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "San Diego",
    "status": "program_found",
-   "max_assistance_usd": 41637,
-   "program_or_finding": "GSFA Platinum (statewide JPA, conventional term sheet)",
-   "source_url": "https://gsfahome.org/lender/guide/platinum/GSFA_Platinum_CONVENTIONAL_TermSheet_USBank.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "San Francisco",
    "status": "program_found",
-   "max_assistance_usd": 41637,
-   "program_or_finding": "GSFA Platinum (statewide JPA, conventional term sheet)",
-   "source_url": "https://gsfahome.org/lender/guide/platinum/GSFA_Platinum_CONVENTIONAL_TermSheet_USBank.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "San Jose",
    "status": "program_found",
-   "max_assistance_usd": 41637,
-   "program_or_finding": "GSFA Platinum (statewide JPA, conventional term sheet)",
-   "source_url": "https://gsfahome.org/lender/guide/platinum/GSFA_Platinum_CONVENTIONAL_TermSheet_USBank.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Pre",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
   },
   {
    "metro": "Scranton",
    "status": "program_found",
-   "max_assistance_usd": 6000,
+   "max_assistance_usd": "6000",
    "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
    "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
    "as_of": "2026-07"
@@ -590,23 +572,23 @@
   {
    "metro": "Seattle",
    "status": "program_found",
-   "max_assistance_usd": 45993,
-   "program_or_finding": "WSHFC Home Advantage DPA (second mortgage)",
-   "source_url": "https://www.becu.org/loans-and-mortgages/home-loans/home-advantage-loan-program",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "3%, 4% or 5% of the first mortgage loan amount. WSHFC Home Advantage DPA: 'Offers 3%, 4%, or 5% of the first-mortgage loan amount in downpayment assistance'. 0% interest, payment-deferred, repayable on sale/refi/payoff. No dollar cap stated. NOT the Needs-Based product (that is the flat $10,000 reco",
+   "source_url": "https://heretohome.org/downpayment-assistance/",
+   "as_of": "2026-08"
   },
   {
    "metro": "Spokane",
-   "status": "unconfirmed",
-   "max_assistance_usd": "",
-   "program_or_finding": "WSHFC Home Advantage Needs-Based, up to $10,000 - 2-4 unit eligibility NOT stated on program page. Per project convention 2026-07-31: assistance not confirmed to reach 2-4 unit properties is not counted as usable, so value = 0. Footnote: the headline program exists and may yet apply; localities also run their own programmes and only the major ones were surveyed.",
+   "status": "program_found",
+   "max_assistance_usd": "10000",
+   "program_or_finding": "WSHFC Home Advantage Needs-Based down payment assistance, up to $10,000. Two-unit eligible, confirmed 2026-08-13 by email from Christian Hayes, Senior Program Compliance Administrator, Washington State Housing Finance Commission: \"The Home Advantage program allows for a 1 or 2 unit duplex property. ",
    "source_url": "https://heretohome.org/downpayment-assistance/",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "St. Louis",
    "status": "program_found",
-   "max_assistance_usd": 10000,
+   "max_assistance_usd": "10000",
    "program_or_finding": "MHDC First Place Loan Program (DPA option)",
    "source_url": "https://mhdc.com/media/dbzhjamp/first-place-operations-manual.pdf",
    "as_of": "2026-07"
@@ -614,7 +596,7 @@
   {
    "metro": "Syracuse",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL) Plus",
    "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
    "as_of": "2026-07"
@@ -622,7 +604,7 @@
   {
    "metro": "Tampa",
    "status": "program_found",
-   "max_assistance_usd": 25000,
+   "max_assistance_usd": "25000",
    "program_or_finding": "Home Sweet Home Hillsborough Program (Florida Housing HFA partner DPA)",
    "source_url": "https://www.homesweethomeprogram.com/",
    "as_of": "2026-07"
@@ -630,10 +612,10 @@
   {
    "metro": "Toledo",
    "status": "program_found",
-   "max_assistance_usd": 6505,
-   "program_or_finding": "OHFA Down Payment Assistance ('Your Choice!', 2.5%-5%)",
-   "source_url": "https://myohiohome.org/documents/HomebuyerGuide.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2.5% or 5% of the home's purchase price. OHFA (Ohio) 'Your Choice!' states: 'Down Payment Assistance allows homebuyers to choose either 2.5% or 5% of the home's purchase price.' Forgiven after seven years. No dollar cap stated. NOTE: percentage of PURCHASE PRICE, not loan amount.",
+   "source_url": "https://ohiohome.org/partners/documents/DPA.pdf",
+   "as_of": "2026-08"
   },
   {
    "metro": "Tucson",
@@ -646,7 +628,7 @@
   {
    "metro": "Tulsa",
    "status": "program_found",
-   "max_assistance_usd": 5000,
+   "max_assistance_usd": "5000",
    "program_or_finding": "Housing Partners of Tulsa, Inc. Homeownership Program (local nonprofit, city of Tulsa)",
    "source_url": "https://www.fha.com/first-time-home-buyers-program/homeownership-program",
    "as_of": "2026-07"
@@ -654,15 +636,15 @@
   {
    "metro": "Virginia Beach-Norfolk",
    "status": "program_found",
-   "max_assistance_usd": 40000,
-   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA)",
-   "source_url": "https://www.dhcd.virginia.gov/dpa",
+   "max_assistance_usd": "40000",
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA). 2-4 unit eligible if buyer occupies one unit; up to $40,000 (10-15% of price plus up to $2,500 closing costs).",
+   "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/va-dpa-pilot-program-guidelines2025.pdf",
    "as_of": "2026-08"
   },
   {
    "metro": "Washington DC",
    "status": "program_found",
-   "max_assistance_usd": 20000,
+   "max_assistance_usd": "20000",
    "program_or_finding": "DC Open Doors DPAL (DC Housing Finance Agency)",
    "source_url": "https://downpaymentscout.com/down-payment-assistance-washington-dc/",
    "as_of": "2026-07"
@@ -671,14 +653,14 @@
    "metro": "Wichita",
    "status": "none_found",
    "max_assistance_usd": "",
-   "program_or_finding": "KHRC First Time Homebuyer Program EXPLICITLY EXCLUDES the city limits of Wichita. No statewide DPA reaches this metro",
+   "program_or_finding": "KHRC First Time Homebuyer Program. Eligible property types confirmed 2026-08-13 by email from Marilyn Stanley, Kansas Housing Corporation: single-family on five acres or less; condominium, townhome, or one half of a duplex; manufactured home on a permanent foundation; modular home; new construction ",
    "source_url": "https://kshousingcorp.org/wp-content/uploads/2026/03/FTHB-Fact-Sheet-3-19-26.pdf",
-   "as_of": "2026-07"
+   "as_of": "2026-08"
   },
   {
    "metro": "Worcester",
    "status": "program_found",
-   "max_assistance_usd": 30000,
+   "max_assistance_usd": "30000",
    "program_or_finding": "MassHousing Down Payment Assistance",
    "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
    "as_of": "2026-07"
@@ -686,10 +668,10 @@
   {
    "metro": "Youngstown",
    "status": "program_found",
-   "max_assistance_usd": 3568,
-   "program_or_finding": "OHFA Down Payment Assistance ('Your Choice!', 2.5%-5%)",
-   "source_url": "https://myohiohome.org/documents/HomebuyerGuide.pdf",
-   "as_of": "2026-07"
+   "max_assistance_usd": "",
+   "program_or_finding": "2.5% or 5% of the home's purchase price. OHFA (Ohio) 'Your Choice!' states: 'Down Payment Assistance allows homebuyers to choose either 2.5% or 5% of the home's purchase price.' Forgiven after seven years. No dollar cap stated. NOTE: percentage of PURCHASE PRICE, not loan amount.",
+   "source_url": "https://ohiohome.org/partners/documents/DPA.pdf",
+   "as_of": "2026-08"
   }
  ]
 }
