@@ -21,7 +21,9 @@
    "entry_pillar",
    "cashflow_pillar",
    "durability_pillar"
-  ]
+  ],
+  "fha_limit_source": "HUD CY2026 forward limits, per metro and unit count. Each listing is tested against the limit for its unit count. basis: national floor = the metro sits at the HUD CY2026 national floor; MSA above-floor = HUD assigns the MSA a higher limit.",
+  "file_updated": "2026-08-26"
  },
  "metros": [
   {
@@ -37,7 +39,11 @@
    "foothold_score": 64.9,
    "entry_pillar": 65.5,
    "cashflow_pillar": 84.1,
-   "durability_pillar": 50.1
+   "durability_pillar": 50.1,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Syracuse",
@@ -52,7 +58,11 @@
    "foothold_score": 63.9,
    "entry_pillar": 54.5,
    "cashflow_pillar": 88.6,
-   "durability_pillar": 52.4
+   "durability_pillar": 52.4,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Albany",
@@ -67,7 +77,11 @@
    "foothold_score": 60.3,
    "entry_pillar": 36.4,
    "cashflow_pillar": 79.5,
-   "durability_pillar": 63.9
+   "durability_pillar": 63.9,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Cleveland",
@@ -82,7 +96,11 @@
    "foothold_score": 53.7,
    "entry_pillar": 52.7,
    "cashflow_pillar": 59.1,
-   "durability_pillar": 50.3
+   "durability_pillar": 50.3,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Youngstown",
@@ -97,7 +115,11 @@
    "foothold_score": 48.3,
    "entry_pillar": 56.4,
    "cashflow_pillar": 43.2,
-   "durability_pillar": 46.1
+   "durability_pillar": 46.1,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Pittsburgh",
@@ -112,7 +134,11 @@
    "foothold_score": 46.6,
    "entry_pillar": 34.5,
    "cashflow_pillar": 47.7,
-   "durability_pillar": 54.8
+   "durability_pillar": 54.8,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Buffalo",
@@ -127,7 +153,11 @@
    "foothold_score": 43.8,
    "entry_pillar": 41.8,
    "cashflow_pillar": 40.9,
-   "durability_pillar": 47.4
+   "durability_pillar": 47.4,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Toledo",
@@ -142,7 +172,11 @@
    "foothold_score": 39.3,
    "entry_pillar": 72.7,
    "cashflow_pillar": 2.3,
-   "durability_pillar": 42.0
+   "durability_pillar": 42.0,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Chicago",
@@ -157,7 +191,11 @@
    "foothold_score": 37.3,
    "entry_pillar": 7.3,
    "cashflow_pillar": 43.2,
-   "durability_pillar": 55.5
+   "durability_pillar": 55.5,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Grand Rapids",
@@ -172,7 +210,11 @@
    "foothold_score": 34.2,
    "entry_pillar": 21.8,
    "cashflow_pillar": 29.5,
-   "durability_pillar": 47.0
+   "durability_pillar": 47.0,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Memphis",
@@ -187,7 +229,11 @@
    "foothold_score": 33.9,
    "entry_pillar": 54.5,
    "cashflow_pillar": 15.9,
-   "durability_pillar": 32.0
+   "durability_pillar": 32.0,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Akron",
@@ -202,7 +248,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Albuquerque",
@@ -217,7 +267,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Allentown",
@@ -232,7 +286,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Atlanta",
@@ -247,7 +305,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 920150,
+   "fha_limit_3unit_usd": 1112250,
+   "fha_limit_4unit_usd": 1382250,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Austin",
@@ -262,7 +324,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 731700,
+   "fha_limit_3unit_usd": 884450,
+   "fha_limit_4unit_usd": 1099150,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Bakersfield",
@@ -277,7 +343,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Baltimore",
@@ -292,7 +362,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 956950,
+   "fha_limit_3unit_usd": 1156700,
+   "fha_limit_4unit_usd": 1437500,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Baton Rouge",
@@ -307,7 +381,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Birmingham",
@@ -322,7 +400,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Boston",
@@ -337,7 +419,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1232250,
+   "fha_limit_3unit_usd": 1489500,
+   "fha_limit_4unit_usd": 1851100,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Bridgeport",
@@ -352,7 +438,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1251400,
+   "fha_limit_3unit_usd": 1512650,
+   "fha_limit_4unit_usd": 1879850,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Cape Coral-Fort Myers",
@@ -367,7 +457,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Charleston",
@@ -382,7 +476,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 883300,
+   "fha_limit_3unit_usd": 1067750,
+   "fha_limit_4unit_usd": 1326950,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Charlotte",
@@ -397,7 +495,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Cincinnati",
@@ -412,7 +514,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Columbus",
@@ -427,7 +533,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 756700,
+   "fha_limit_3unit_usd": 914700,
+   "fha_limit_4unit_usd": 1136750,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Dallas",
@@ -442,7 +552,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 721400,
+   "fha_limit_3unit_usd": 872000,
+   "fha_limit_4unit_usd": 1083650,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Dayton",
@@ -457,7 +571,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Denver",
@@ -472,7 +590,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1104150,
+   "fha_limit_3unit_usd": 1334700,
+   "fha_limit_4unit_usd": 1658700,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Detroit",
@@ -487,7 +609,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "El Paso",
@@ -502,7 +628,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Fort Wayne",
@@ -517,7 +647,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Fresno",
@@ -532,7 +666,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Greensboro",
@@ -547,7 +685,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Harrisburg",
@@ -562,7 +704,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Hartford",
@@ -577,7 +723,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Houston",
@@ -592,7 +742,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Indianapolis",
@@ -607,7 +761,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Jacksonville",
@@ -622,7 +780,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 743450,
+   "fha_limit_3unit_usd": 898700,
+   "fha_limit_4unit_usd": 1116850,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Kansas City",
@@ -637,7 +799,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Knoxville",
@@ -652,7 +818,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Lakeland",
@@ -667,7 +837,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Las Vegas",
@@ -682,7 +856,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Los Angeles",
@@ -697,7 +875,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1599375,
+   "fha_limit_3unit_usd": 1933200,
+   "fha_limit_4unit_usd": 2402625,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Louisville",
@@ -712,7 +894,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "McAllen",
@@ -727,7 +913,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Miami",
@@ -742,7 +932,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 853900,
+   "fha_limit_3unit_usd": 1032150,
+   "fha_limit_4unit_usd": 1282700,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Milwaukee",
@@ -757,7 +951,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Minneapolis",
@@ -772,7 +970,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 706650,
+   "fha_limit_3unit_usd": 854200,
+   "fha_limit_4unit_usd": 1061550,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Nashville",
@@ -787,7 +989,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1317650,
+   "fha_limit_3unit_usd": 1592700,
+   "fha_limit_4unit_usd": 1979350,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "New Orleans",
@@ -802,7 +1008,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "New York",
@@ -817,7 +1027,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1599375,
+   "fha_limit_3unit_usd": 1933200,
+   "fha_limit_4unit_usd": 2402625,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "North Port-Sarasota",
@@ -832,7 +1046,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 700750,
+   "fha_limit_3unit_usd": 847050,
+   "fha_limit_4unit_usd": 1052700,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Oklahoma City",
@@ -847,7 +1065,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Omaha",
@@ -862,7 +1084,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Orlando",
@@ -877,7 +1103,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Oxnard",
@@ -892,7 +1122,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1325000,
+   "fha_limit_3unit_usd": 1601600,
+   "fha_limit_4unit_usd": 1990450,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Philadelphia",
@@ -907,7 +1141,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 806750,
+   "fha_limit_3unit_usd": 975200,
+   "fha_limit_4unit_usd": 1211950,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Phoenix",
@@ -922,7 +1160,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 714000,
+   "fha_limit_3unit_usd": 863100,
+   "fha_limit_4unit_usd": 1072600,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Portland",
@@ -937,7 +1179,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 898050,
+   "fha_limit_3unit_usd": 1085550,
+   "fha_limit_4unit_usd": 1349050,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Portland ME",
@@ -952,7 +1198,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 787650,
+   "fha_limit_3unit_usd": 952050,
+   "fha_limit_4unit_usd": 1183200,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Providence",
@@ -967,7 +1217,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1008450,
+   "fha_limit_3unit_usd": 1219000,
+   "fha_limit_4unit_usd": 1514950,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Raleigh",
@@ -982,7 +1236,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Richmond",
@@ -997,7 +1255,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 905400,
+   "fha_limit_3unit_usd": 1094450,
+   "fha_limit_4unit_usd": 1360100,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Riverside-San Bernardino",
@@ -1012,7 +1274,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 883300,
+   "fha_limit_3unit_usd": 1067750,
+   "fha_limit_4unit_usd": 1326950,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Sacramento",
@@ -1027,7 +1293,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 979000,
+   "fha_limit_3unit_usd": 1183400,
+   "fha_limit_4unit_usd": 1470700,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Salt Lake City",
@@ -1042,7 +1312,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 815600,
+   "fha_limit_3unit_usd": 985900,
+   "fha_limit_4unit_usd": 1225200,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "San Antonio",
@@ -1057,7 +1331,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 714000,
+   "fha_limit_3unit_usd": 863100,
+   "fha_limit_4unit_usd": 1072600,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "San Diego",
@@ -1072,7 +1350,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1413350,
+   "fha_limit_3unit_usd": 1708400,
+   "fha_limit_4unit_usd": 2123100,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "San Francisco",
@@ -1087,7 +1369,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1599375,
+   "fha_limit_3unit_usd": 1933200,
+   "fha_limit_4unit_usd": 2402625,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "San Jose",
@@ -1102,7 +1388,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1599375,
+   "fha_limit_3unit_usd": 1933200,
+   "fha_limit_4unit_usd": 2402625,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Scranton",
@@ -1117,7 +1407,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Seattle",
@@ -1132,7 +1426,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1361800,
+   "fha_limit_3unit_usd": 1646100,
+   "fha_limit_4unit_usd": 2045700,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Spokane",
@@ -1147,7 +1445,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "St. Louis",
@@ -1162,7 +1464,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Tampa",
@@ -1177,7 +1483,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Tucson",
@@ -1192,7 +1502,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Tulsa",
@@ -1207,7 +1521,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Virginia Beach-Norfolk",
@@ -1222,7 +1540,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 970200,
+   "fha_limit_3unit_usd": 1172750,
+   "fha_limit_4unit_usd": 1457450,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Washington DC",
@@ -1237,7 +1559,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 1599375,
+   "fha_limit_3unit_usd": 1933200,
+   "fha_limit_4unit_usd": 2402625,
+   "fha_limit_basis": "MSA above-floor"
   },
   {
    "metro": "Wichita",
@@ -1252,7 +1578,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 693050,
+   "fha_limit_3unit_usd": 837700,
+   "fha_limit_4unit_usd": 1041125,
+   "fha_limit_basis": "national floor"
   },
   {
    "metro": "Worcester",
@@ -1267,7 +1597,11 @@
    "foothold_score": null,
    "entry_pillar": null,
    "cashflow_pillar": null,
-   "durability_pillar": null
+   "durability_pillar": null,
+   "fha_limit_2unit_usd": 697800,
+   "fha_limit_3unit_usd": 843500,
+   "fha_limit_4unit_usd": 1048300,
+   "fha_limit_basis": "MSA above-floor"
   }
  ]
 }
