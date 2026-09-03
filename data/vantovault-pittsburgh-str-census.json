@@ -1,0 +1,50 @@
+{
+ "dataset": "Pittsburgh Short-Term Rental Census: Lawrenceville and Bloomfield",
+ "publisher": "VanToVault.com",
+ "license": "CC BY 4.0",
+ "as_of": "2026-08-31",
+ "methodology_url": "https://vantovault.com/library/pittsburgh-short-term-rental-census/",
+ "files": {
+  "airbnb_census": "vantovault-pittsburgh-str-census-airbnb.csv",
+  "midterm_furnishedfinder": "vantovault-pittsburgh-midterm-furnishedfinder.csv"
+ },
+ "scope": "Official City of Pittsburgh neighborhoods: Lower Lawrenceville, Central Lawrenceville, Upper Lawrenceville, Bloomfield (WPRDC Neighborhoods layer, CC-BY)",
+ "counts": {
+  "airbnb_live_in_scope_2026_08_31": 273,
+  "airbnb_by_neighborhood": {
+   "Lower Lawrenceville": 58,
+   "Central Lawrenceville": 74,
+   "Upper Lawrenceville": 44,
+   "Bloomfield": 97
+  },
+  "airbnb_delisted_rows_kept": 2,
+  "furnishedfinder_units_in_scope": 42,
+  "furnishedfinder_properties_in_scope": 40
+ },
+ "rate_windows": [
+  {
+   "window": "2026-09-15 to 2026-09-17 (Tue-Thu)",
+   "median_2night_total_usd": 421,
+   "n_bookable": 160
+  },
+  {
+   "window": "2026-09-25 to 2026-09-27 (Fri-Sun)",
+   "median_2night_total_usd": 1000,
+   "n_bookable": 37
+  },
+  {
+   "window": "2026-12-11 to 2026-12-13 (Fri-Sun)",
+   "median_2night_total_usd": 430,
+   "n_bookable": 85
+  }
+ ],
+ "important_notes": [
+  "Counts are floors: search pagination under-delivers versus displayed counts (435 unique collected against a displayed 446 on the widened box).",
+  "The two platform counts may overlap and must never be added together; neither platform exposes addresses.",
+  "Rate figures are observed 2-night, 2-guest stay totals on stated dates, including per-stay fees; they are not nightly rates and are never averaged across windows.",
+  "Coordinates are platform-displaced by roughly 150 m; 63 of 273 live rows carry a material boundary-uncertainty flag.",
+  "star_rating is blank when a listing has no reviews; blank means not observed, never zero.",
+  "Nothing in this dataset is modeled or estimated.",
+  "Eight Airbnb rows are hotel-style rooms, not dwelling units; counts framed as housing exclude them."
+ ]
+}
