@@ -1,0 +1,43 @@
+listing_id,property_id,unit_index,listing_url,neighborhood,property_type,unit_class,minimum_stay_days,rent_monthly_asking_usd,sleeps,bedrooms,bathrooms,lat,lng,dist_to_boundary_m,boundary_uncertain_material,nearest_other_neighborhood,observed_date
+513495_1,513495,1,https://www.furnishedfinder.com/property/513495_1,Central Lawrenceville,Apartment,entire_unit,30,2350,4,2,1,40.4705534,-79.95999,281,no,Lower Lawrenceville,2026-08-31
+1033202_1,1033202,1,https://www.furnishedfinder.com/property/1033202_1,Upper Lawrenceville,Apartment,entire_unit,60,1400,2,1,1,40.4793095,-79.9531536,197,no,Central Lawrenceville,2026-08-31
+1022336_1,1022336,1,https://www.furnishedfinder.com/property/1022336_1,Bloomfield,Apartment,entire_unit,30,1600,2,1,1,40.4610775,-79.9393286,243,no,Friendship,2026-08-31
+834413_1,834413,1,https://www.furnishedfinder.com/property/834413_1,Central Lawrenceville,House,entire_unit,30,2500,4,2,1,40.4664338,-79.956948,116,yes,Bloomfield,2026-08-31
+993803_1,993803,1,https://www.furnishedfinder.com/property/993803_1,Upper Lawrenceville,House,entire_unit,180,3800,6,3,1.5,40.4837567,-79.9449561,16,yes,Upper Lawrenceville,2026-08-31
+422702_1,422702,1,https://www.furnishedfinder.com/property/422702_1,Lower Lawrenceville,House,entire_unit,30,2100,2,1,1.5,40.4633684,-79.9628169,359,no,Polish Hill,2026-08-31
+957242_1,957242,1,https://www.furnishedfinder.com/property/957242_1,Upper Lawrenceville,Apartment,entire_unit,30,3000,4,1,1,40.478488,-79.954635,69,no,Central Lawrenceville,2026-08-31
+879955_1,879955,1,https://www.furnishedfinder.com/property/879955_1,Bloomfield,House,entire_unit,30,2000,3,2,1.5,40.4607725,-79.9485069,455,no,North Oakland,2026-08-31
+759041_1,759041,1,https://www.furnishedfinder.com/property/759041_1,Lower Lawrenceville,House,entire_unit,30,3250,4,2,2,40.46195,-79.96697,139,yes,Strip District,2026-08-31
+1029048_1,1029048,1,https://www.furnishedfinder.com/property/1029048_1,Bloomfield,Apartment,entire_unit,30,1700,2,2,1,40.46251,-79.936463,25,yes,Bloomfield,2026-08-31
+751490_1,751490,1,https://www.furnishedfinder.com/property/751490_1,Lower Lawrenceville,Apartment,entire_unit,90,2799,4,2,2,40.4635685,-79.9668465,267,no,Strip District,2026-08-31
+803859_1,803859,1,https://www.furnishedfinder.com/property/803859_1,Bloomfield,Room - House,room,30,950,1,1,1,40.465776408656865,-79.95199378675535,44,yes,Central Lawrenceville,2026-08-31
+1015444_1,1015444,1,https://www.furnishedfinder.com/property/1015444_1,Lower Lawrenceville,Apartment,entire_unit,30,2100,2,1,1,40.4649158,-79.9586684,64,yes,Bloomfield,2026-08-31
+552025_1,552025,1,https://www.furnishedfinder.com/property/552025_1,Bloomfield,Apartment,entire_unit,30,2100,2,1,1,40.4587647,-79.9482655,314,no,North Oakland,2026-08-31
+867037_1,867037,1,https://www.furnishedfinder.com/property/867037_1,Central Lawrenceville,House,entire_unit,30,3400,5,3,2,40.47247,-79.9602592,413,no,Lower Lawrenceville,2026-08-31
+846357_1,846357,1,https://www.furnishedfinder.com/property/846357_1,Bloomfield,House,entire_unit,30,3000,8,4,1,40.461694,-79.9515065,216,no,Lower Lawrenceville,2026-08-31
+1030847_1,1030847,1,https://www.furnishedfinder.com/property/1030847_1,Central Lawrenceville,House,entire_unit,30,3000,3,2,1.5,40.46637,-79.9546257,66,yes,Bloomfield,2026-08-31
+780852_1,780852,1,https://www.furnishedfinder.com/property/780852_1,Bloomfield,Apartment,entire_unit,30,2200,1,1,1,40.4651659,-79.9504469,94,yes,Central Lawrenceville,2026-08-31
+932843_1,932843,1,https://www.furnishedfinder.com/property/932843_1,Bloomfield,Apartment,entire_unit,30,2500,5,3,1,40.4581844,-79.943994,292,no,Shadyside,2026-08-31
+1005748_1,1005748,1,https://www.furnishedfinder.com/property/1005748_1,Central Lawrenceville,House,entire_unit,180,5800,6,3,2.5,40.4715369,-79.9581322,471,no,Lower Lawrenceville,2026-08-31
+869104_1,869104,1,https://www.furnishedfinder.com/property/869104_1,Bloomfield,Apartment,entire_unit,30,2450,2,1,1,40.459926,-79.953213,161,no,North Oakland,2026-08-31
+987525_1,987525,1,https://www.furnishedfinder.com/property/987525_1,Bloomfield,Room - House,room,180,1100,1,1,1,40.465553,-79.9529593,53,yes,Central Lawrenceville,2026-08-31
+442256_1,442256,1,https://www.furnishedfinder.com/property/442256_1,Bloomfield,Apartment,entire_unit,30,2650,4,2,1,40.4629204,-79.9445837,250,no,Garfield,2026-08-31
+442252_1,442252,1,https://www.furnishedfinder.com/property/442252_1,Bloomfield,House,entire_unit,30,3950,8,3,2,40.4598477,-79.9532087,156,no,North Oakland,2026-08-31
+923320_1,923320,1,https://www.furnishedfinder.com/property/923320_1,Upper Lawrenceville,House,entire_unit,30,3000,2,2,1,40.4790467,-79.9514638,167,no,Central Lawrenceville,2026-08-31
+912338_2,912338,2,https://www.furnishedfinder.com/property/912338_2,Bloomfield,Apartment,entire_unit,30,2100,6,2,2,40.4630198,-79.9503689,278,no,Lower Lawrenceville,2026-08-31
+841937_1,841937,1,https://www.furnishedfinder.com/property/841937_1,Bloomfield,Apartment,entire_unit,90,1200,1,1,1,40.4655459,-79.9478354,14,yes,Central Lawrenceville,2026-08-31
+762432_2,762432,2,https://www.furnishedfinder.com/property/762432_2,Bloomfield,House,entire_unit,30,1800,2,1,1,40.4646764,-79.9484704,118,yes,Central Lawrenceville,2026-08-31
+599180_1,599180,1,https://www.furnishedfinder.com/property/599180_1,Bloomfield,House,entire_unit,30,2000,3,2,1,40.4640391,-79.9575014,12,yes,Lower Lawrenceville,2026-08-31
+517760_1,517760,1,https://www.furnishedfinder.com/property/517760_1,Central Lawrenceville,House,entire_unit,30,3500,4,2,2.5,40.4740838,-79.959692,445,no,Lower Lawrenceville,2026-08-31
+614654_1,614654,1,https://www.furnishedfinder.com/property/614654_1,Central Lawrenceville,House,entire_unit,30,4000,7,3,2,40.4657148,-79.9567926,35,yes,Bloomfield,2026-08-31
+347341_1,347341,1,https://www.furnishedfinder.com/property/347341_1,Bloomfield,Room - House,room,30,1250,1,1,1,40.4602627,-79.9478254,447,no,North Oakland,2026-08-31
+805523_1,805523,1,https://www.furnishedfinder.com/property/805523_1,Central Lawrenceville,House,entire_unit,30,2200,2,2,1.5,40.4696095,-79.9594777,242,no,Lower Lawrenceville,2026-08-31
+893678_1,893678,1,https://www.furnishedfinder.com/property/893678_1,Bloomfield,Apartment,entire_unit,90,1950,2,1,1,40.458351,-79.945642,361,no,Shadyside,2026-08-31
+973781_1,973781,1,https://www.furnishedfinder.com/property/973781_1,Central Lawrenceville,Room - House,room,30,995,1,1,1,40.467214,-79.9541743,149,yes,Bloomfield,2026-08-31
+762432_1,762432,1,https://www.furnishedfinder.com/property/762432_1,Bloomfield,House,entire_unit,30,2300,4,2,1,40.4646764,-79.9484704,118,yes,Central Lawrenceville,2026-08-31
+918384_1,918384,1,https://www.furnishedfinder.com/property/918384_1,Lower Lawrenceville,Condo,entire_unit,30,2500,4,1,1,40.462493,-79.960556,222,no,Polish Hill,2026-08-31
+848952_1,848952,1,https://www.furnishedfinder.com/property/848952_1,Central Lawrenceville,House,entire_unit,30,3000,4,2,1,40.4675558,-79.9567483,233,no,Bloomfield,2026-08-31
+912338_1,912338,1,https://www.furnishedfinder.com/property/912338_1,Bloomfield,Apartment,entire_unit,30,1650,2,1,1,40.4630198,-79.9503689,278,no,Lower Lawrenceville,2026-08-31
+547656_1,547656,1,https://www.furnishedfinder.com/property/547656_1,Central Lawrenceville,House,entire_unit,30,1750,2,1,2,40.4774494,-79.9583531,226,no,Upper Lawrenceville,2026-08-31
+756748_1,756748,1,https://www.furnishedfinder.com/property/756748_1,Upper Lawrenceville,Cottage,entire_unit,30,2750,2,1,1,40.4777855,-79.950299,14,no,Central Lawrenceville,2026-08-31
+922960_1,922960,1,https://www.furnishedfinder.com/property/922960_1,Upper Lawrenceville,House,entire_unit,30,2300,4,2,1.5,40.4800496,-79.9521388,266,no,Central Lawrenceville,2026-08-31
