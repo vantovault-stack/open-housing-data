@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "VanToVault Open Housing Data: Foothold Index and Down Payment Assistance Survey"
+title: "VanToVault Open Housing Data: Foothold Index, Down Payment Assistance Survey, and Pittsburgh Short-Term Rental Census"
 message: "If you use these datasets, please cite them using the metadata below."
 type: dataset
 authors:
@@ -10,12 +10,14 @@ authors:
 repository-code: "https://github.com/vantovault-stack/open-housing-data"
 url: "https://vantovault.com/open-data/"
 abstract: >-
-  Two open datasets on buying a two-to-four unit home as an owner-occupant across 83 US metro areas.
+  Open datasets on buying a two-to-four unit home as an owner-occupant across 83 US metro areas.
   The Foothold Index screens 23,424 two-to-four unit listings against seven absolute tests to find
   where a first-time buyer with limited savings can own for no more than the cost of renting. The
   Down Payment Assistance Survey answers, metro by metro, whether an owner-occupant can use down
   payment assistance on a two-to-four unit home, distinguishing programs that were found, programs
-  confirmed absent, and cases where eligibility could not be confirmed.
+  confirmed absent, and cases where eligibility could not be confirmed. The Pittsburgh Short-Term
+  Rental Census is a hand-checked, listing-level count of short-term and mid-term rentals in
+  Lawrenceville and Bloomfield as of August 2026, with boundary-uncertainty flags and three rate windows.
 keywords:
   - housing affordability
   - house hacking
@@ -23,13 +25,18 @@ keywords:
   - down payment assistance
   - first-time homebuyer
   - multifamily
+  - short-term rentals
+  - Pittsburgh
   - open data
 license: CC-BY-4.0
-date-released: "2026-08-06"
+date-released: "2026-08-31"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22019647
     description: "Foothold Index: rent versus own screen for two to four unit homes across 83 US metros, 2026"
   - type: doi
-    value: 10.5281/zenodo.22019631
-    description: "Down payment assistance for two to four unit owner occupied purchase, 83 US metros, 2026"
+    value: 10.5281/zenodo.22019630
+    description: "Down payment assistance for two to four unit owner occupied purchase, 83 US metros, 2026 (concept DOI, resolves to latest version)"
+  - type: doi
+    value: 10.5281/zenodo.22258181
+    description: "Pittsburgh Short-Term Rental Census: Lawrenceville and Bloomfield (August 2026) (concept DOI, resolves to latest version)"
