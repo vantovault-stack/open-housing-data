@@ -112,7 +112,7 @@ crime multiplier lets cheaper listings through in rougher neighborhoods, which p
 down for the wrong reason. Nothing is hidden: every threshold is printed above.
 
 The rate is the binding constraint, not prices alone. At 6.66%, 11 of 83 metros clear the test. Run
-the same 23,424 listings at the 3.125% rate available a few years ago and 27 clear it. The buildings
+the same 23,424 listings at the roughly 3% rates available in 2021 and 27 clear it. The buildings
 did not change.
 
 ---
