@@ -4,10 +4,16 @@
   "generated_from": "VanToVault-Foothold-v7.xlsx / Inputs / Best usable DPA (2-4 unit)",
   "counts": {
    "program_found": 72,
-   "none_found": 9,
-   "unconfirmed": 2
+   "none_found": 7,
+   "unconfirmed": 4
   },
-  "schema_note": "max_assistance_usd is an integer number of dollars, or null where the program is percentage-based or no dollar maximum is published; see program_or_finding for the stated terms."
+  "schema_note": "max_assistance_usd is an integer number of dollars, or null where the program is percentage-based or no dollar maximum is published; see program_or_finding for the stated terms.",
+  "corrections": [
+   {
+    "date": "2026-09-08",
+    "change": "Phoenix and Tucson moved from none_found to unconfirmed (Arizona IDA Home Plus does not state 2-4 unit eligibility; lenders advertise duplexes). Albuquerque none_found re-sourced to the MFA FirstHome fact sheet. Counts 72/9/2 -> 72/7/4. Data edition unchanged; logged on vantovault.com/corrections/."
+   }
+  ]
  },
  "metros": [
   {
@@ -30,9 +36,9 @@
    "metro": "Albuquerque",
    "status": "none_found",
    "max_assistance_usd": null,
-   "program_or_finding": "checked New Mexico MFA's full DPA product line; no 2-4 unit-eligible program found",
-   "source_url": "https://downpaymentscout.com/states/new-mexico/",
-   "as_of": "2026-07"
+   "program_or_finding": "Housing New Mexico (MFA) FirstHome/FirstDown: the FirstHome fact sheet (rev. 10/22/25) states the program 'can only be used to finance single-family residences. Properties cannot be used for income generation', and FirstDown carries the same property requirements. No 2-4 unit-eligible statewide program found. Re-sourced 2026-09-08 to the program's own fact sheet (previously a third-party aggregator).",
+   "source_url": "https://housingnm.org/uploads/documents/FirstHome_%28NON_FILLABLE%29_10.22.25.pdf",
+   "as_of": "2026-09"
   },
   {
    "metro": "Allentown",
@@ -444,11 +450,11 @@
   },
   {
    "metro": "Phoenix",
-   "status": "none_found",
+   "status": "unconfirmed",
    "max_assistance_usd": null,
-   "program_or_finding": "checked Arizona's state and Phoenix-area DPA product line; no 2-4 unit-eligible program found",
-   "source_url": "https://downpaymentscout.com/down-payment-assistance-phoenix/",
-   "as_of": "2026-07"
+   "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
+   "source_url": "https://homeplusaz.com/frequently-asked-questions/",
+   "as_of": "2026-09"
   },
   {
    "metro": "Pittsburgh",
@@ -620,11 +626,11 @@
   },
   {
    "metro": "Tucson",
-   "status": "none_found",
+   "status": "unconfirmed",
    "max_assistance_usd": null,
-   "program_or_finding": "checked Arizona's state and Tucson/Pima County DPA product line; no 2-4 unit-eligible program found",
-   "source_url": "https://downpaymentscout.com/states/arizona/",
-   "as_of": "2026-07"
+   "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
+   "source_url": "https://homeplusaz.com/frequently-asked-questions/",
+   "as_of": "2026-09"
   },
   {
    "metro": "Tulsa",
