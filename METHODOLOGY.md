@@ -24,12 +24,41 @@ quarter of every metro no matter how bad that quarter is.
 | Test | A listing fails when | Why the test exists |
 |---|---|---|
 | **Price floor** | Priced below $60,000 | At that price a 2-4 unit building is a shell, or effectively a land sale |
-| **FHA ceiling** | Priced above the metro's FHA limit for a 3.5% deposit | A building a first-time buyer cannot finance is not a first-time buyer deal |
+| **FHA ceiling** | Priced above the metro's FHA limit **for that listing's unit count** | A building a first-time buyer cannot finance is not a first-time buyer deal |
 | **Condition floor** | Under $40 per square foot | The price is telling you the building has been written off; gut rehab runs $60-$100+ per sq ft |
-| **Yield ceiling** | Gross yield above 25% | Almost always a repair bill wearing a rent number. The one threshold the data confirms outright |
+| **Yield ceiling** | Gross yield above 25% | Usually a repair bill wearing a rent number. Treated here as a warning sign rather than proof of a problem |
 | **Neighborhood crime** | Violent crime above 1.45× the median American city | Anchored on FBI city-level figures, so a bad ZIP cannot pass by being average for its own metro |
 | **Abandonment** | More than 8% of homes empty for no ordinary reason | Quality is flat below that level and turns sharply above it |
 | **Value trend** | Home values fell more than 15% over five years | A market still falling is not a foothold |
+
+### How missing data is treated
+
+**Missing data always passes. A listing is never killed by a number the model does not have.**
+A test that cannot run is skipped for that listing, and the listing survives on the tests that did
+run. This is deliberate — a listing that fails a test because information is absent is not the same
+thing as a listing with evidence against it — but it means a survivor is a listing that failed no
+test, not a listing that passed all seven. The largest instance is the condition floor: in Chicago,
+Pittsburgh, Grand Rapids and several other metros the listing feed carried no square footage at all,
+so that test never ran there.
+
+### How the FHA ceiling is assigned
+
+Each listing is tested against the HUD CY2026 FHA limit for **its metro and its unit count**, using
+the separate 2-unit, 3-unit and 4-unit limits rather than a single figure. HUD assigns metro
+counties the limit for their MSA, so a metro-level lookup and a county-level lookup give the same
+number inside an MSA. Of the 83 metros, **49 sit at the HUD national floor and 34 are above it**.
+
+### What the rent comparison is measured against
+
+The renting side of every comparison is the metro one-bedroom asking rent, the average of Zumper
+and Apartment List (May to July 2026; RentCafe stands in for Zumper in Cleveland and Scranton),
+scaled per ZIP by HUD Small Area Fair Market Rents FY2026 relative to the metro FMR, so a building
+in a cheaper ZIP is measured against a cheaper rent. **Kept per month**
+counts the rent you no longer pay on your own unit plus the rent tenants pay, less the full payment
+and a maintenance reserve. **Keep ratio** divides each listing's kept-per-month by the **one-bedroom**
+rent for its ZIP, and the metro figure is the median of those listing-level ratios (not the ratio of
+medians), which is what makes the figure comparable across cities. The comparison is like-for-like
+on the rent series, not on bedroom count, square footage, condition or neighbourhood.
 
 ## 2. The metro-level bar
 
@@ -52,8 +81,8 @@ example New Orleans and New York fail because the payment is too large for local
 - **Kept per month** — what stays in your pocket against renting, for the median surviving deal: the
   rent you no longer pay, plus what tenants pay, less the full payment and a maintenance reserve. It
   can be negative.
-- **Keep ratio** — kept-per-month as a share of one month's rent. Zero means owning costs the same
-  as renting.
+- **Keep ratio** — kept-per-month as a share of one month's one-bedroom rent, computed per listing;
+  the metro value is the median of those ratios. Zero means owning costs the same as renting.
 - **Thin** — fewer than 20 surviving listings. Shown, not hidden, with the count beside it.
 
 ## 4. Scoring
@@ -83,8 +112,11 @@ about the surviving set. Deposit months and DPA coverage are computed on the ent
 | Input | Source |
 |---|---|
 | Listings | Realtor.com |
-| Rents | HUD Small Area Fair Market Rents FY2026 |
-| Vacancy, income | US Census American Community Survey 2023 |
+| Rents | One-bedroom: average of Zumper and Apartment List metro asking rents (May to July 2026), scaled per ZIP by HUD Small Area Fair Market Rents FY2026. Two-bedroom: HUD SAFMR FY2026 median across surviving ZIPs, Zumper as a second reading |
+| Income | US Census American Community Survey 2024 one-year (B19013) |
+| Vacancy | Rental vacancy: Census Housing Vacancy Survey state rate. Other-vacant (abandonment) share: American Community Survey 2023 |
+| Unemployment | BLS metro rate where published, state rate otherwise |
+| Population | Census Vintage 2025 metro-area estimate |
 | Crime | FBI Table 8 and CrimeGrade |
 | Home value trend | Zillow Home Value Index |
 | FHA limits | HUD CY2026 |
@@ -104,6 +136,12 @@ Stated plainly, because a screen that hides its limits is not worth checking:
   went well.
 - **Five metros carry only one rent series** rather than two, so their most important input has no
   second source checking it: Bakersfield, Rochester, Scranton, Syracuse and Youngstown.
+- **Rental vacancy is a state figure for every metro**, and unemployment is the state figure where
+  BLS publishes no metro rate. Both describe the market's backdrop; neither is a screening test, so a
+  state-for-metro substitution changes context lines, not which listings pass.
+- **Property tax is an estimate.** The input is a published median effective rate for the area, not a
+  bill pulled for each address, and a new buyer reassessed at the sale price can pay more than the
+  median. It is one line of the payment, and the payment is compared against rent with a 10% cushion.
 
 ## 7. The settings are choices
 
