@@ -1,0 +1,244 @@
+{
+ "profile": "data-package",
+ "name": "vantovault-2-4-unit-housing-stock-83-metros",
+ "id": "https://doi.org/10.5281/zenodo.23003739",
+ "title": "VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024)",
+ "description": "Housing units in 2-, 3- and 4-unit buildings, their share of all housing units, and how many are owner-occupied, for 83 US metros (CBSAs) and their principal cities, from Census ACS 5-year 2020-2024 tables B25024 and B25032.",
+ "version": "1.0.0",
+ "created": "2026-09-27T00:00:00Z",
+ "homepage": "https://vantovault.com/open-data/",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "title": "Creative Commons Attribution 4.0 International",
+   "path": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Van to Vault",
+   "organization": "VanToVault",
+   "path": "https://vantovault.com",
+   "role": "author"
+  },
+  {
+   "title": "VanToVault",
+   "path": "https://vantovault.com",
+   "role": "publisher"
+  }
+ ],
+ "sources": [
+  {
+   "title": "U.S. Census Bureau, American Community Survey 5-year 2020-2024, tables B25024 and B25032",
+   "path": "https://data.census.gov/"
+  }
+ ],
+ "keywords": [
+  "housing stock",
+  "duplex",
+  "triplex",
+  "fourplex",
+  "small multifamily",
+  "2-4 unit",
+  "American Community Survey",
+  "B25024",
+  "B25032",
+  "owner-occupancy",
+  "metropolitan statistical area",
+  "United States"
+ ],
+ "citation": "Van to Vault (2026). VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024) (Version 1.0.0) [Data set]. VanToVault. https://doi.org/10.5281/zenodo.23003739",
+ "resources": [
+  {
+   "name": "housing-stock-csv",
+   "path": "data/vantovault-2-4-unit-housing-stock-83-metros-acs-2020-2024.csv",
+   "profile": "tabular-data-resource",
+   "title": "83 metros, one row each",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "metro",
+      "type": "string",
+      "description": "Short metro label used across VanToVault datasets (Foothold, DPA survey)."
+     },
+     {
+      "name": "state",
+      "type": "string",
+      "description": "Two-letter state of the principal city."
+     },
+     {
+      "name": "cbsa",
+      "type": "string",
+      "description": "5-digit Core Based Statistical Area code (July 2023 OMB delineations). Join key."
+     },
+     {
+      "name": "cbsa_name",
+      "type": "string",
+      "description": "CBSA name as returned by the Census Bureau."
+     },
+     {
+      "name": "acs_vintage",
+      "type": "string",
+      "description": "Always \"ACS 5-year 2020-2024 (ACSDT5Y2024)\"."
+     },
+     {
+      "name": "total_units",
+      "type": "integer",
+      "description": "B25024_001: all housing units, occupied and vacant."
+     },
+     {
+      "name": "units_2",
+      "type": "integer",
+      "description": "B25024_004: units in 2-unit structures."
+     },
+     {
+      "name": "units_3_4",
+      "type": "integer",
+      "description": "B25024_005: units in 3- or 4-unit structures."
+     },
+     {
+      "name": "units_2_4",
+      "type": "integer",
+      "description": "units_2 + units_3_4."
+     },
+     {
+      "name": "share_2_4_pct",
+      "type": "number",
+      "description": "units_2_4 / total_units x 100, rounded once to 1 decimal."
+     },
+     {
+      "name": "owner_occ_total",
+      "type": "integer",
+      "description": "B25032_002: owner-occupied housing units, all structure types."
+     },
+     {
+      "name": "owner_occ_2",
+      "type": "integer",
+      "description": "B25032_005: owner-occupied units in 2-unit structures."
+     },
+     {
+      "name": "owner_occ_3_4",
+      "type": "integer",
+      "description": "B25032_006: owner-occupied units in 3- or 4-unit structures."
+     },
+     {
+      "name": "owner_occ_2_4",
+      "type": "integer",
+      "description": "owner_occ_2 + owner_occ_3_4."
+     },
+     {
+      "name": "owner_occ_share_pct",
+      "type": "number",
+      "description": "owner_occ_2_4 / owner_occ_total x 100, rounded once to 1 decimal: the share of all owner-occupied homes that are in a 2-4 unit building."
+     },
+     {
+      "name": "occupied_2_4",
+      "type": "integer",
+      "description": "owner_occ_2_4 + renter-occupied units in 2-4 unit structures (B25032_016 + B25032_017)."
+     },
+     {
+      "name": "owner_occupancy_rate_2_4_pct",
+      "type": "number",
+      "description": "owner_occ_2_4 / occupied_2_4 x 100, rounded once to 1 decimal: the share of occupied 2-4 unit housing that is owner-occupied."
+     },
+     {
+      "name": "rank_by_share",
+      "type": "integer",
+      "description": "1 = highest units_2_4 / total_units of the 83 (ranked on the unrounded ratio)."
+     },
+     {
+      "name": "rank_by_count",
+      "type": "integer",
+      "description": "1 = largest units_2_4 of the 83."
+     },
+     {
+      "name": "source_url",
+      "type": "string",
+      "description": "data.census.gov API URL the B25024 values came from; replace B25024 with B25032 for the tenure values."
+     },
+     {
+      "name": "city_name",
+      "type": "string",
+      "description": "Principal city (Census place), the first-named city of the CBSA. Blank for Bridgeport (not retrieved)."
+     },
+     {
+      "name": "city_place_fips",
+      "type": "string",
+      "description": "7-digit state + place FIPS code of the principal city."
+     },
+     {
+      "name": "city_total_units",
+      "type": "integer",
+      "description": "B25024_001 for the principal city."
+     },
+     {
+      "name": "city_units_2",
+      "type": "integer",
+      "description": "B25024_004 for the principal city."
+     },
+     {
+      "name": "city_units_3_4",
+      "type": "integer",
+      "description": "B25024_005 for the principal city."
+     },
+     {
+      "name": "city_units_2_4",
+      "type": "integer",
+      "description": "city_units_2 + city_units_3_4."
+     },
+     {
+      "name": "city_share_2_4_pct",
+      "type": "number",
+      "description": "city_units_2_4 / city_total_units x 100, rounded once to 1 decimal."
+     }
+    ],
+    "primaryKey": [
+     "cbsa"
+    ],
+    "missingValues": [
+     ""
+    ]
+   }
+  },
+  {
+   "name": "housing-stock-json",
+   "path": "data/vantovault-2-4-unit-housing-stock-83-metros-acs-2020-2024.json",
+   "profile": "data-resource",
+   "title": "Same records with metadata (JSON)",
+   "format": "json",
+   "mediatype": "application/json",
+   "encoding": "utf-8"
+  },
+  {
+   "name": "data-dictionary",
+   "path": "data-dictionary.csv",
+   "profile": "tabular-data-resource",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "column",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "unit",
+      "type": "string"
+     },
+     {
+      "name": "description",
+      "type": "string"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,981 @@
+{
+ "profile": "data-package",
+ "name": "vantovault-duplex-buyers-atlas",
+ "id": "https://doi.org/10.5281/zenodo.23003737",
+ "title": "VanToVault Duplex Buyers Atlas: Owner-Occupant 2-4 Unit Purchase Loans by Metro, 2018-2025",
+ "description": "Mortgages used to buy a 2-, 3- or 4-unit home that the borrower said would be their principal residence, counted from the public HMDA loan-level data (action_taken=1, total_units=2-4, occupancy_type=1, loan_purpose=1, lien_status=1). National series 2018-2025 and a metro (MSA/MD) panel with unit count, loan type, income, loan amount, rate, combined LTV and borrower demographic counts. Cells of 1-9 loans are blank; metro-years under 50 loans are three-year totals.",
+ "version": "1.0.1",
+ "created": "2026-09-27T00:00:00Z",
+ "homepage": "https://vantovault.com/library/duplex-buyers-atlas/",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "title": "Creative Commons Attribution 4.0 International",
+   "path": "https://creativecommons.org/licenses/by/4.0/"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Van to Vault",
+   "organization": "VanToVault",
+   "path": "https://vantovault.com",
+   "role": "author"
+  },
+  {
+   "title": "VanToVault",
+   "path": "https://vantovault.com",
+   "role": "publisher"
+  }
+ ],
+ "sources": [
+  {
+   "title": "FFIEC / CFPB, Home Mortgage Disclosure Act (HMDA) public loan-level data, 2018-2025, via the HMDA Data Browser API",
+   "path": "https://ffiec.cfpb.gov/v2/data-browser-api/view/nationwide/csv"
+  },
+  {
+   "title": "HMDA Data Browser",
+   "path": "https://ffiec.cfpb.gov/data-browser/"
+  }
+ ],
+ "keywords": [
+  "HMDA",
+  "mortgage",
+  "housing",
+  "duplex",
+  "triplex",
+  "fourplex",
+  "small multifamily",
+  "2-4 unit",
+  "owner-occupant",
+  "house hacking",
+  "FHA",
+  "VA",
+  "homeownership",
+  "metropolitan statistical area",
+  "United States"
+ ],
+ "citation": "Van to Vault (2026). VanToVault Duplex Buyers Atlas: Owner-Occupant 2-4 Unit Purchase Loans by Metro, 2018-2025 (Version 1.0.1) [Data set]. VanToVault. https://doi.org/10.5281/zenodo.23003737",
+ "suppression": {
+  "cell_threshold": 10,
+  "cell_rule": "Count cells with 1-9 loans are blank. Zeros are retained.",
+  "metro_threshold": 50,
+  "metro_rule": "Metro-years under 50 qualifying loans are reported as 3-year totals; medians are null on those rows because medians are not additive.",
+  "rows_dropped": 0
+ },
+ "limitations": [
+  "Cash purchases never appear in HMDA.",
+  "Lenders below HMDA reporting thresholds do not report.",
+  "Occupancy is borrower-stated at application and is not verified.",
+  "Loan amounts are HMDA public bin midpoints, so medians are approximate.",
+  "Interest rate and income are missing for some loans; denominators are provided.",
+  "This data cannot show approval odds or pricing fairness."
+ ],
+ "resources": [
+  {
+   "name": "atlas-national-2018-2025",
+   "path": "data/atlas-national-2018-2025.csv",
+   "profile": "tabular-data-resource",
+   "title": "National series, 2018-2025",
+   "description": "One row per year.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": ",",
+    "header": true
+   },
+   "schema": {
+    "fields": [
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Calendar year of origination."
+     },
+     {
+      "name": "total_loans",
+      "type": "integer",
+      "description": "Qualifying owner-occupant 2-4 unit purchase loans."
+     },
+     {
+      "name": "loans_2unit",
+      "type": "integer",
+      "description": "Loans on 2-unit properties."
+     },
+     {
+      "name": "loans_3unit",
+      "type": "integer",
+      "description": "Loans on 3-unit properties."
+     },
+     {
+      "name": "loans_4unit",
+      "type": "integer",
+      "description": "Loans on 4-unit properties."
+     },
+     {
+      "name": "conventional_pct",
+      "type": "number",
+      "description": "Conventional share of total_loans, percent, 1 decimal.",
+      "unit": "percent"
+     },
+     {
+      "name": "fha_pct",
+      "type": "number",
+      "description": "FHA share of total_loans, percent, 1 decimal.",
+      "unit": "percent"
+     },
+     {
+      "name": "va_pct",
+      "type": "number",
+      "description": "VA share of total_loans, percent, 1 decimal.",
+      "unit": "percent"
+     },
+     {
+      "name": "median_borrower_income",
+      "type": "integer",
+      "description": "Median applicant income, US dollars, all qualifying loans nationwide with income reported.",
+      "unit": "USD"
+     },
+     {
+      "name": "median_loan_amount",
+      "type": "integer",
+      "description": "Median loan amount, US dollars, computed from HMDA public-file loan amounts (disclosed as the midpoint of $10,000 bands), so approximate. Blank on three_year_total rows.",
+      "unit": "USD"
+     }
+    ],
+    "primaryKey": [
+     "year"
+    ],
+    "missingValues": [
+     ""
+    ]
+   }
+  },
+  {
+   "name": "atlas-metro-2018-2025",
+   "path": "data/atlas-metro-2018-2025.csv",
+   "profile": "tabular-data-resource",
+   "title": "Metro panel, 2018-2025",
+   "description": "One row per CBSA per year, all measures. Suppression flags included; no rows dropped.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": ",",
+    "header": true
+   },
+   "schema": {
+    "fields": [
+     {
+      "name": "cbsa_code",
+      "type": "string",
+      "description": "CBSA or Metropolitan Division code. Authoritative join key; metro_name is not unique."
+     },
+     {
+      "name": "metro_name",
+      "type": "string",
+      "description": "HMDA MSA/MD name as published, UTF-8, uppercase. 14 names are shared by multiple codes."
+     },
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Calendar year of origination."
+     },
+     {
+      "name": "is_metro",
+      "type": "boolean",
+      "description": "FALSE for the non-metro buckets (codes 99999 and 0), TRUE otherwise.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "basis",
+      "type": "string",
+      "description": "single_year, or three_year_total when the metro had fewer than 50 loans that year."
+     },
+     {
+      "name": "years_in_basis",
+      "type": "string",
+      "description": "Comma-separated years summed into this row."
+     },
+     {
+      "name": "suppressed_core",
+      "type": "boolean",
+      "description": "TRUE if a headline count (total, unit, or loan-type) was hidden by the under-10 rule.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "suppressed_detail",
+      "type": "boolean",
+      "description": "TRUE if only a demographic, age or LTV detail cell was hidden. TRUE on most rows.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "suppressed_cells",
+      "type": "integer",
+      "description": "Number of cells hidden on this row."
+     },
+     {
+      "name": "total_loans",
+      "type": "integer",
+      "description": "Qualifying owner-occupant 2-4 unit purchase loans."
+     },
+     {
+      "name": "loans_2unit",
+      "type": "integer",
+      "description": "Loans on 2-unit properties."
+     },
+     {
+      "name": "loans_3unit",
+      "type": "integer",
+      "description": "Loans on 3-unit properties."
+     },
+     {
+      "name": "loans_4unit",
+      "type": "integer",
+      "description": "Loans on 4-unit properties."
+     },
+     {
+      "name": "conventional_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=1."
+     },
+     {
+      "name": "fha_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=2."
+     },
+     {
+      "name": "va_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=3."
+     },
+     {
+      "name": "usda_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=4 (RHS/FSA); rare on 2-4 units."
+     },
+     {
+      "name": "conventional_pct",
+      "type": "number",
+      "description": "Conventional share of total_loans, percent, 1 decimal. Computed before cell suppression, so it can be present where the count is blank.",
+      "unit": "percent"
+     },
+     {
+      "name": "fha_pct",
+      "type": "number",
+      "description": "FHA share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "va_pct",
+      "type": "number",
+      "description": "VA share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "usda_pct",
+      "type": "number",
+      "description": "USDA (RHS/FSA) share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "median_borrower_income",
+      "type": "integer",
+      "description": "Median applicant income relied on in the credit decision, US dollars (HMDA reports thousands; multiplied by 1,000). Loans with no income reported are excluded; base in loans_with_income_reported. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "income_p25",
+      "type": "integer",
+      "description": "25th percentile applicant income, US dollars. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "income_p75",
+      "type": "integer",
+      "description": "75th percentile applicant income, US dollars. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "median_loan_amount",
+      "type": "integer",
+      "description": "Median loan amount, US dollars, computed from HMDA public-file loan amounts (disclosed as the midpoint of $10,000 bands), so approximate. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "median_interest_rate",
+      "type": "number",
+      "description": "Median note rate, percent, among loans with a reported rate (base in loans_with_rate_reported). Partially exempt lenders do not report rates. Blank on three_year_total rows.",
+      "unit": "percent"
+     },
+     {
+      "name": "loans_with_income_reported",
+      "type": "integer",
+      "description": "Denominator behind the income medians."
+     },
+     {
+      "name": "loans_with_rate_reported",
+      "type": "integer",
+      "description": "Denominator behind median_interest_rate."
+     },
+     {
+      "name": "investor_loans",
+      "type": "integer",
+      "description": "Same filters with occupancy_type=3. Comparison only; not part of total_loans."
+     },
+     {
+      "name": "business_purpose_loans",
+      "type": "integer",
+      "description": "Loans flagged business or commercial purpose."
+     },
+     {
+      "name": "ltv_le80",
+      "type": "integer",
+      "description": "Loans with combined LTV 80% or less."
+     },
+     {
+      "name": "ltv_80_90",
+      "type": "integer",
+      "description": "Loans with combined LTV over 80 up to 90%."
+     },
+     {
+      "name": "ltv_90_95",
+      "type": "integer",
+      "description": "Loans with combined LTV over 90 up to 95%."
+     },
+     {
+      "name": "ltv_95_97",
+      "type": "integer",
+      "description": "Loans with combined LTV over 95 up to 97%."
+     },
+     {
+      "name": "ltv_gt97",
+      "type": "integer",
+      "description": "Loans with combined LTV over 97%."
+     },
+     {
+      "name": "ltv_na",
+      "type": "integer",
+      "description": "Loans with combined LTV not reported."
+     },
+     {
+      "name": "ltv_conv_le80",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV 80% or less."
+     },
+     {
+      "name": "ltv_conv_80_90",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 80 up to 90%."
+     },
+     {
+      "name": "ltv_conv_90_95",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 90 up to 95%."
+     },
+     {
+      "name": "ltv_conv_95_97",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 95 up to 97%."
+     },
+     {
+      "name": "ltv_conv_gt97",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 97%."
+     },
+     {
+      "name": "ltv_conv_na",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV not reported."
+     },
+     {
+      "name": "race_white",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: white."
+     },
+     {
+      "name": "race_black_or_african_american",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: black or african american."
+     },
+     {
+      "name": "race_asian",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: asian."
+     },
+     {
+      "name": "race_american_indian_or_alaska_native",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: american indian or alaska native."
+     },
+     {
+      "name": "race_native_hawaiian_or_other_pacific_islander",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: native hawaiian or other pacific islander."
+     },
+     {
+      "name": "race_two_or_more_minority_races",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: two or more minority races."
+     },
+     {
+      "name": "race_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: joint."
+     },
+     {
+      "name": "race_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: not available."
+     },
+     {
+      "name": "race_free_form_text_only",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: free form text only."
+     },
+     {
+      "name": "eth_hispanic_or_latino",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: hispanic or latino."
+     },
+     {
+      "name": "eth_not_hispanic_or_latino",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: not hispanic or latino."
+     },
+     {
+      "name": "eth_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: joint."
+     },
+     {
+      "name": "eth_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: not available."
+     },
+     {
+      "name": "eth_free_form_text_only",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: free form text only."
+     },
+     {
+      "name": "sex_male",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: male."
+     },
+     {
+      "name": "sex_female",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: female."
+     },
+     {
+      "name": "sex_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: joint."
+     },
+     {
+      "name": "sex_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: not available."
+     },
+     {
+      "name": "age_under25",
+      "type": "integer",
+      "description": "Loans by applicant age group: under25."
+     },
+     {
+      "name": "age_25_34",
+      "type": "integer",
+      "description": "Loans by applicant age group: 25-34."
+     },
+     {
+      "name": "age_35_44",
+      "type": "integer",
+      "description": "Loans by applicant age group: 35-44."
+     },
+     {
+      "name": "age_45_54",
+      "type": "integer",
+      "description": "Loans by applicant age group: 45-54."
+     },
+     {
+      "name": "age_55_64",
+      "type": "integer",
+      "description": "Loans by applicant age group: 55-64."
+     },
+     {
+      "name": "age_65_74",
+      "type": "integer",
+      "description": "Loans by applicant age group: 65-74."
+     },
+     {
+      "name": "age_over74",
+      "type": "integer",
+      "description": "Loans by applicant age group: over74."
+     },
+     {
+      "name": "age_not_applicable",
+      "type": "integer",
+      "description": "Loans by applicant age group: not-applicable (HMDA code 8888)."
+     }
+    ],
+    "primaryKey": [
+     "cbsa_code",
+     "year"
+    ],
+    "missingValues": [
+     ""
+    ]
+   }
+  },
+  {
+   "name": "atlas-metro-2025",
+   "path": "data/atlas-metro-2025.csv",
+   "profile": "tabular-data-resource",
+   "title": "Metro cross-section, 2025",
+   "description": "The 2025 slice of the metro panel. Same schema.",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "dialect": {
+    "delimiter": ",",
+    "header": true
+   },
+   "schema": {
+    "fields": [
+     {
+      "name": "cbsa_code",
+      "type": "string",
+      "description": "CBSA or Metropolitan Division code. Authoritative join key; metro_name is not unique."
+     },
+     {
+      "name": "metro_name",
+      "type": "string",
+      "description": "HMDA MSA/MD name as published, UTF-8, uppercase. 14 names are shared by multiple codes."
+     },
+     {
+      "name": "year",
+      "type": "integer",
+      "description": "Calendar year of origination."
+     },
+     {
+      "name": "is_metro",
+      "type": "boolean",
+      "description": "FALSE for the non-metro buckets (codes 99999 and 0), TRUE otherwise.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "basis",
+      "type": "string",
+      "description": "single_year, or three_year_total when the metro had fewer than 50 loans that year."
+     },
+     {
+      "name": "years_in_basis",
+      "type": "string",
+      "description": "Comma-separated years summed into this row."
+     },
+     {
+      "name": "suppressed_core",
+      "type": "boolean",
+      "description": "TRUE if a headline count (total, unit, or loan-type) was hidden by the under-10 rule.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "suppressed_detail",
+      "type": "boolean",
+      "description": "TRUE if only a demographic, age or LTV detail cell was hidden. TRUE on most rows.",
+      "trueValues": [
+       "TRUE"
+      ],
+      "falseValues": [
+       "FALSE"
+      ]
+     },
+     {
+      "name": "suppressed_cells",
+      "type": "integer",
+      "description": "Number of cells hidden on this row."
+     },
+     {
+      "name": "total_loans",
+      "type": "integer",
+      "description": "Qualifying owner-occupant 2-4 unit purchase loans."
+     },
+     {
+      "name": "loans_2unit",
+      "type": "integer",
+      "description": "Loans on 2-unit properties."
+     },
+     {
+      "name": "loans_3unit",
+      "type": "integer",
+      "description": "Loans on 3-unit properties."
+     },
+     {
+      "name": "loans_4unit",
+      "type": "integer",
+      "description": "Loans on 4-unit properties."
+     },
+     {
+      "name": "conventional_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=1."
+     },
+     {
+      "name": "fha_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=2."
+     },
+     {
+      "name": "va_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=3."
+     },
+     {
+      "name": "usda_loans",
+      "type": "integer",
+      "description": "HMDA loan_type=4 (RHS/FSA); rare on 2-4 units."
+     },
+     {
+      "name": "conventional_pct",
+      "type": "number",
+      "description": "Conventional share of total_loans, percent, 1 decimal. Computed before cell suppression, so it can be present where the count is blank.",
+      "unit": "percent"
+     },
+     {
+      "name": "fha_pct",
+      "type": "number",
+      "description": "FHA share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "va_pct",
+      "type": "number",
+      "description": "VA share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "usda_pct",
+      "type": "number",
+      "description": "USDA (RHS/FSA) share of total_loans, percent, 1 decimal. Computed before cell suppression.",
+      "unit": "percent"
+     },
+     {
+      "name": "median_borrower_income",
+      "type": "integer",
+      "description": "Median applicant income relied on in the credit decision, US dollars (HMDA reports thousands; multiplied by 1,000). Loans with no income reported are excluded; base in loans_with_income_reported. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "income_p25",
+      "type": "integer",
+      "description": "25th percentile applicant income, US dollars. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "income_p75",
+      "type": "integer",
+      "description": "75th percentile applicant income, US dollars. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "median_loan_amount",
+      "type": "integer",
+      "description": "Median loan amount, US dollars, computed from HMDA public-file loan amounts (disclosed as the midpoint of $10,000 bands), so approximate. Blank on three_year_total rows.",
+      "unit": "USD"
+     },
+     {
+      "name": "median_interest_rate",
+      "type": "number",
+      "description": "Median note rate, percent, among loans with a reported rate (base in loans_with_rate_reported). Partially exempt lenders do not report rates. Blank on three_year_total rows.",
+      "unit": "percent"
+     },
+     {
+      "name": "loans_with_income_reported",
+      "type": "integer",
+      "description": "Denominator behind the income medians."
+     },
+     {
+      "name": "loans_with_rate_reported",
+      "type": "integer",
+      "description": "Denominator behind median_interest_rate."
+     },
+     {
+      "name": "investor_loans",
+      "type": "integer",
+      "description": "Same filters with occupancy_type=3. Comparison only; not part of total_loans."
+     },
+     {
+      "name": "business_purpose_loans",
+      "type": "integer",
+      "description": "Loans flagged business or commercial purpose."
+     },
+     {
+      "name": "ltv_le80",
+      "type": "integer",
+      "description": "Loans with combined LTV 80% or less."
+     },
+     {
+      "name": "ltv_80_90",
+      "type": "integer",
+      "description": "Loans with combined LTV over 80 up to 90%."
+     },
+     {
+      "name": "ltv_90_95",
+      "type": "integer",
+      "description": "Loans with combined LTV over 90 up to 95%."
+     },
+     {
+      "name": "ltv_95_97",
+      "type": "integer",
+      "description": "Loans with combined LTV over 95 up to 97%."
+     },
+     {
+      "name": "ltv_gt97",
+      "type": "integer",
+      "description": "Loans with combined LTV over 97%."
+     },
+     {
+      "name": "ltv_na",
+      "type": "integer",
+      "description": "Loans with combined LTV not reported."
+     },
+     {
+      "name": "ltv_conv_le80",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV 80% or less."
+     },
+     {
+      "name": "ltv_conv_80_90",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 80 up to 90%."
+     },
+     {
+      "name": "ltv_conv_90_95",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 90 up to 95%."
+     },
+     {
+      "name": "ltv_conv_95_97",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 95 up to 97%."
+     },
+     {
+      "name": "ltv_conv_gt97",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV over 97%."
+     },
+     {
+      "name": "ltv_conv_na",
+      "type": "integer",
+      "description": "Conventional loans with combined LTV not reported."
+     },
+     {
+      "name": "race_white",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: white."
+     },
+     {
+      "name": "race_black_or_african_american",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: black or african american."
+     },
+     {
+      "name": "race_asian",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: asian."
+     },
+     {
+      "name": "race_american_indian_or_alaska_native",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: american indian or alaska native."
+     },
+     {
+      "name": "race_native_hawaiian_or_other_pacific_islander",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: native hawaiian or other pacific islander."
+     },
+     {
+      "name": "race_two_or_more_minority_races",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: two or more minority races."
+     },
+     {
+      "name": "race_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: joint."
+     },
+     {
+      "name": "race_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: not available."
+     },
+     {
+      "name": "race_free_form_text_only",
+      "type": "integer",
+      "description": "Loans by HMDA derived race: free form text only."
+     },
+     {
+      "name": "eth_hispanic_or_latino",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: hispanic or latino."
+     },
+     {
+      "name": "eth_not_hispanic_or_latino",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: not hispanic or latino."
+     },
+     {
+      "name": "eth_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: joint."
+     },
+     {
+      "name": "eth_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: not available."
+     },
+     {
+      "name": "eth_free_form_text_only",
+      "type": "integer",
+      "description": "Loans by HMDA derived ethnicity: free form text only."
+     },
+     {
+      "name": "sex_male",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: male."
+     },
+     {
+      "name": "sex_female",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: female."
+     },
+     {
+      "name": "sex_joint",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: joint."
+     },
+     {
+      "name": "sex_not_available",
+      "type": "integer",
+      "description": "Loans by HMDA derived sex: not available."
+     },
+     {
+      "name": "age_under25",
+      "type": "integer",
+      "description": "Loans by applicant age group: under25."
+     },
+     {
+      "name": "age_25_34",
+      "type": "integer",
+      "description": "Loans by applicant age group: 25-34."
+     },
+     {
+      "name": "age_35_44",
+      "type": "integer",
+      "description": "Loans by applicant age group: 35-44."
+     },
+     {
+      "name": "age_45_54",
+      "type": "integer",
+      "description": "Loans by applicant age group: 45-54."
+     },
+     {
+      "name": "age_55_64",
+      "type": "integer",
+      "description": "Loans by applicant age group: 55-64."
+     },
+     {
+      "name": "age_65_74",
+      "type": "integer",
+      "description": "Loans by applicant age group: 65-74."
+     },
+     {
+      "name": "age_over74",
+      "type": "integer",
+      "description": "Loans by applicant age group: over74."
+     },
+     {
+      "name": "age_not_applicable",
+      "type": "integer",
+      "description": "Loans by applicant age group: not-applicable (HMDA code 8888)."
+     }
+    ],
+    "primaryKey": [
+     "cbsa_code",
+     "year"
+    ],
+    "missingValues": [
+     ""
+    ]
+   }
+  },
+  {
+   "name": "atlas-2018-2025-json",
+   "path": "data/atlas-2018-2025.json",
+   "profile": "data-resource",
+   "title": "Full dataset with metadata (JSON)",
+   "description": "National and metro records plus filters, suppression rules, units, known issues and limitations. Null/suppressed fields are omitted rather than written as null.",
+   "format": "json",
+   "mediatype": "application/json",
+   "encoding": "utf-8"
+  },
+  {
+   "name": "data-dictionary",
+   "path": "data-dictionary.csv",
+   "profile": "tabular-data-resource",
+   "title": "Data dictionary",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "file",
+      "type": "string"
+     },
+     {
+      "name": "column",
+      "type": "string"
+     },
+     {
+      "name": "type",
+      "type": "string"
+     },
+     {
+      "name": "unit",
+      "type": "string"
+     },
+     {
+      "name": "description",
+      "type": "string"
+     }
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "VanToVault Duplex Buyers Atlas: Owner-Occupant 2-4 Unit Purchase Loans by Metro, 2018-2025"
+version: "1.0.1"
+date-released: "2026-09-27"
+doi: "10.5281/zenodo.23003737"
+url: "https://vantovault.com/library/duplex-buyers-atlas/"
+repository: "https://github.com/vantovault-stack/open-housing-data"
+license: CC-BY-4.0
+authors:
+  - name: Van to Vault
+    website: "https://vantovault.com"
+    email: stephan@vantovault.com
+abstract: >-
+  Owner-occupant purchase mortgages on 2-, 3- and 4-unit homes in the United States,
+  2018-2025, by year and by metropolitan statistical area or metropolitan division,
+  counted from the public HMDA loan-level data (FFIEC/CFPB). Cells of 1-9 loans are
+  suppressed; metro-years with fewer than 50 loans are reported as three-year totals.
+keywords:
+  - HMDA
+  - mortgage
+  - duplex
+  - small multifamily
+  - owner-occupant
+  - housing
+references:
+  - type: data
+    title: "Home Mortgage Disclosure Act (HMDA) public loan-level data, 2018-2025"
+    authors:
+      - name: "Federal Financial Institutions Examination Council"
+      - name: "Consumer Financial Protection Bureau"
+    url: "https://ffiec.cfpb.gov/data-browser/"

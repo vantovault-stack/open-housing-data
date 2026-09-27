@@ -1,0 +1,11 @@
+VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024)
+Copyright 2026 Van to Vault (vantovault.com)
+
+This compilation, its structure and its documentation are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+Full text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution: "VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024)", Van to Vault, https://doi.org/10.5281/zenodo.23003739
+
+The underlying American Community Survey estimates are published by the U.S. Census Bureau.
+The licence above covers this compilation; it does not restrict use of the Census source data.

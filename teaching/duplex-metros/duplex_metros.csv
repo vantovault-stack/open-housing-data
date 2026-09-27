@@ -1,0 +1,84 @@
+metro,state,cbsa,cbsa_name,census_region,total_housing_units,units_2_4,share_2_4_pct,owner_occ_rate_2_4_pct,oo_loans_2024,oo_loans_basis,oo_loans_per_1000_units_2_4,median_borrower_income_2024,fha_limit_2unit,foothold_pass,dpa_2_4
+Akron,OH,10420,"Akron, OH",Midwest,319249,23284,7.3,13.1,101,2024,4.3,79000,693050,no,yes
+Albany,NY,10580,"Albany-Schenectady-Troy, NY",Northeast,422120,81758,19.4,19.7,579,2024,7.1,85000,693050,yes,yes
+Albuquerque,NM,10740,"Albuquerque, NM",West,401720,22934,5.7,7.5,60,2024,2.6,93000,693050,no,no
+Allentown,PA,10900,"Allentown-Bethlehem-Easton, PA-NJ",Northeast,361874,29650,8.2,10.6,157,2024,5.3,90000,693050,no,yes
+Atlanta,GA,12060,"Atlanta-Sandy Springs-Roswell, GA",South,2497322,96725,3.9,11.4,209,2024,2.2,,920150,no,no
+Austin,TX,12420,"Austin-Round Rock-San Marcos, TX",South,1042843,52276,5.0,12.5,156,2024,3.0,158000,731700,no,yes
+Bakersfield,CA,12540,"Bakersfield-Delano, CA",West,306999,24727,8.1,4.2,99,2024,4.0,107000,693050,no,yes
+Baltimore,MD,12580,"Baltimore-Columbia-Towson, MD",South,1201675,51631,4.3,11.3,225,2024,4.4,114000,956950,no,yes
+Baton Rouge,LA,12940,"Baton Rouge, LA",South,384016,23372,6.1,5.7,56,2024,2.4,112000,693050,no,no
+Birmingham,AL,13820,"Birmingham, AL",South,526287,21022,4.0,7.4,21,2022-2024 average,1.0,,693050,no,no
+Boston,MA,14460,"Boston-Cambridge-Newton, MA-NH",Northeast,2059059,413851,20.1,34.0,1971,2024,4.8,,1232250,no,yes
+Bridgeport,CT,14860,"Bridgeport-Stamford-Danbury, CT",Northeast,377569,56431,14.9,27.7,315,2024,5.6,133000,1251400,no,yes
+Buffalo,NY,15380,"Buffalo-Cheektowaga, NY",Northeast,541660,115532,21.3,26.9,863,2024,7.5,71500,693050,yes,yes
+Cape Coral-Fort Myers,FL,15980,"Cape Coral-Fort Myers, FL",South,441194,32281,7.3,41.9,302,2024,9.4,118000,693050,no,yes
+Charleston,SC,16700,"Charleston-North Charleston, SC",South,378268,19955,5.3,13.7,67,2024,3.4,191500,883300,no,yes
+Charlotte,NC,16740,"Charlotte-Concord-Gastonia, NC-SC",South,1165208,39294,3.4,9.6,81,2024,2.1,111000,693050,no,yes
+Chicago,IL,16980,"Chicago-Naperville-Elgin, IL-IN",Midwest,3900420,528417,13.5,33.2,3407,2024,6.4,,693050,yes,yes
+Cincinnati,OH,17140,"Cincinnati, OH-KY-IN",Midwest,967188,79728,8.2,16.0,603,2024,7.6,110000,693050,no,yes
+Cleveland,OH,17410,"Cleveland, OH",Midwest,1018605,79956,7.8,20.7,496,2024,6.2,79000,693050,yes,yes
+Columbus,OH,18140,"Columbus, OH",Midwest,926466,82822,8.9,9.0,355,2024,4.3,126000,756700,no,yes
+Dallas,TX,19100,"Dallas-Fort Worth-Arlington, TX",South,3096731,146257,4.7,8.1,290,2024,2.0,,721400,no,yes
+Dayton,OH,19430,"Dayton-Kettering-Beavercreek, OH",Midwest,372460,29966,8.0,6.8,197,2024,6.6,96000,693050,no,yes
+Denver,CO,19740,"Denver-Aurora-Centennial, CO",West,1290063,50026,3.9,26.2,169,2024,3.4,174000,1104150,no,yes
+Detroit,MI,19820,"Detroit-Warren-Dearborn, MI",Midwest,1926157,99732,5.2,22.0,414,2024,4.2,,693050,no,yes
+El Paso,TX,21340,"El Paso, TX",South,324704,22980,7.1,6.5,50,2022-2024 average,2.2,,693050,no,yes
+Fort Wayne,IN,23060,"Fort Wayne, IN",Midwest,193389,11029,5.7,7.3,63,2024,5.7,106000,693050,no,no
+Fresno,CA,23420,"Fresno, CA",West,395909,34022,8.6,4.4,34,2022-2024 average,1.0,,693050,no,yes
+Grand Rapids,MI,24340,"Grand Rapids-Wyoming-Kentwood, MI",Midwest,467528,28847,6.2,16.3,143,2024,5.0,95500,693050,yes,yes
+Greensboro,NC,24660,"Greensboro-High Point, NC",South,344801,18366,5.3,10.0,13,2022-2024 average,0.7,,693050,no,yes
+Harrisburg,PA,25420,"Harrisburg-Carlisle, PA",Northeast,259155,18909,7.3,8.7,79,2024,4.2,70000,693050,no,yes
+Hartford,CT,25540,"Hartford-West Hartford-East Hartford, CT",Northeast,499522,73204,14.7,24.3,533,2024,7.3,99000,693050,no,yes
+Houston,TX,26420,"Houston-Pasadena-The Woodlands, TX",South,2906364,121236,4.2,7.3,420,2024,3.5,135000,693050,no,yes
+Indianapolis,IN,26900,"Indianapolis-Carmel-Greenwood, IN",Midwest,909926,57156,6.3,9.0,218,2024,3.8,93000,693050,no,no
+Jacksonville,FL,27260,"Jacksonville, FL",South,732419,44370,6.1,15.4,69,2024,1.6,135000,743450,no,yes
+Kansas City,MO,28140,"Kansas City, MO-KS",Midwest,960950,57521,6.0,7.9,211,2024,3.7,99000,693050,no,yes
+Knoxville,TN,28940,"Knoxville, TN",South,418905,17780,4.2,8.9,54,2024,3.0,106000,693050,no,yes
+Lakeland,FL,29460,"Lakeland-Winter Haven, FL",South,340748,19262,5.7,9.1,66,2024,3.4,103500,693050,no,yes
+Las Vegas,NV,29820,"Las Vegas-Henderson-North Las Vegas, NV",West,948995,70832,7.5,14.8,70,2024,1.0,139500,693050,no,yes
+Los Angeles,CA,31080,"Los Angeles-Long Beach-Anaheim, CA",West,4796635,410630,8.6,12.6,1418,2024,3.5,,1599375,no,yes
+Louisville,KY,31140,"Louisville/Jefferson County, KY-IN",South,602727,45791,7.6,10.0,127,2024,2.8,100000,693050,no,unconfirmed
+McAllen,TX,32580,"McAllen-Edinburg-Mission, TX",South,308556,31826,10.3,4.1,206,2024,6.5,135000,693050,no,yes
+Memphis,TN,32820,"Memphis, TN-MS-AR",South,580185,34353,5.9,5.3,35,2022-2024 average,1.0,,693050,yes,yes
+Miami,FL,33100,"Miami-Fort Lauderdale-West Palm Beach, FL",South,2680465,181786,6.8,28.9,486,2024,2.7,,853900,no,yes
+Milwaukee,WI,33340,"Milwaukee-Waukesha, WI",Midwest,701558,111919,16.0,22.4,991,2024,8.9,80000,693050,no,yes
+Minneapolis,MN,33460,"Minneapolis-St. Paul-Bloomington, MN-WI",Midwest,1551396,68347,4.4,26.6,674,2024,9.9,103000,706650,no,yes
+Nashville,TN,34980,"Nashville-Davidson--Murfreesboro--Franklin, TN",South,897206,42185,4.7,13.1,128,2024,3.0,129000,1317650,no,yes
+New Orleans,LA,35380,"New Orleans-Metairie, LA",South,465148,68295,14.7,16.9,527,2024,7.7,93000,693050,no,yes
+New York,NY,35620,"New York-Newark-Jersey City, NY-NJ",Northeast,8038666,1400004,17.4,32.8,7986,2024,5.7,,1599375,no,yes
+North Port-Sarasota,FL,35840,"North Port-Bradenton-Sarasota, FL",South,487726,24544,5.0,36.0,64,2024,2.6,114000,700750,no,yes
+Oklahoma City,OK,36420,"Oklahoma City, OK",South,622187,32418,5.2,3.9,109,2024,3.4,114500,693050,no,yes
+Omaha,NE,36540,"Omaha, NE-IA",Midwest,412110,13008,3.2,10.8,63,2024,4.8,91500,693050,no,yes
+Orlando,FL,36740,"Orlando-Kissimmee-Sanford, FL",South,1145360,57807,5.0,15.8,87,2024,1.5,114500,693050,no,yes
+Oxnard,CA,37100,"Oxnard-Thousand Oaks-Ventura, CA",West,295878,17610,6.0,17.2,30,2022-2024 average,1.7,,1325000,no,yes
+Philadelphia,PA,37980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Northeast,2624257,222217,8.5,13.0,995,2024 with some divisions as 2022-2024 average,4.5,,806750,no,yes
+Phoenix,AZ,38060,"Phoenix-Mesa-Chandler, AZ",West,2068985,93260,4.5,14.7,146,2024,1.6,133000,714000,no,unconfirmed
+Pittsburgh,PA,38300,"Pittsburgh, PA",Northeast,1174149,86665,7.4,11.7,357,2024,4.1,92000,693050,yes,yes
+Portland,OR,38900,"Portland-Vancouver-Hillsboro, OR-WA",West,1062495,71563,6.7,11.8,265,2024,3.7,144000,898050,no,yes
+Portland ME,ME,38860,"Portland-South Portland, ME",Northeast,287616,34253,11.9,25.2,229,2024,6.7,138000,787650,no,yes
+Providence,RI,39300,"Providence-Warwick, RI-MA",Northeast,730957,169001,23.1,28.7,1716,2024,10.2,120000,1008450,no,yes
+Raleigh,NC,39580,"Raleigh-Cary, NC",South,619032,21072,3.4,7.0,27,2022-2024 average,1.3,,693050,no,yes
+Richmond,VA,40060,"Richmond, VA",South,569714,32701,5.7,7.6,66,2024,2.0,147000,905400,no,yes
+Riverside-San Bernardino,CA,40140,"Riverside-San Bernardino-Ontario, CA",West,1613300,87498,5.4,8.9,173,2024,2.0,141000,883300,no,yes
+Rochester,NY,40380,"Rochester, NY",Northeast,481033,57956,12.0,13.5,233,2024,4.0,70000,693050,yes,yes
+Sacramento,CA,40900,"Sacramento-Roseville-Folsom, CA",West,954751,62506,6.5,8.7,204,2024,3.3,166500,979000,no,yes
+Salt Lake City,UT,41620,"Salt Lake City-Murray, UT",West,474627,28224,5.9,15.7,91,2024,3.2,151000,815600,no,yes
+San Antonio,TX,41700,"San Antonio-New Braunfels, TX",South,1057823,56357,5.3,6.5,194,2024,3.4,120500,714000,no,yes
+San Diego,CA,41740,"San Diego-Chula Vista-Carlsbad, CA",West,1250641,86951,7.0,17.6,275,2024,3.2,229000,1413350,no,yes
+San Francisco,CA,41860,"San Francisco-Oakland-Fremont, CA",West,1880374,198698,10.6,25.1,617,2024 with some divisions as 2022-2024 average,3.1,,1599375,no,yes
+San Jose,CA,41940,"San Jose-Sunnyvale-Santa Clara, CA",West,720159,49203,6.8,14.9,117,2024,2.4,302000,1599375,no,yes
+Scranton,PA,42540,"Scranton--Wilkes-Barre, PA",Northeast,264360,35856,13.6,15.2,336,2024,9.4,70000,693050,no,yes
+Seattle,WA,42660,"Seattle-Tacoma-Bellevue, WA",West,1704523,97135,5.7,18.9,324,2024,3.3,,1361800,no,yes
+Spokane,WA,44060,"Spokane-Spokane Valley, WA",West,253987,13226,5.2,9.4,86,2024,6.5,120000,693050,no,yes
+St. Louis,MO,41180,"St. Louis, MO-IL",Midwest,1273302,111164,8.7,14.1,423,2024,3.8,100000,693050,no,yes
+Syracuse,NY,45060,"Syracuse, NY",Northeast,297576,34839,11.7,17.8,157,2024,4.5,70000,693050,yes,yes
+Tampa,FL,45300,"Tampa-St. Petersburg-Clearwater, FL",South,1515178,82130,5.4,19.4,180,2024,2.2,,693050,no,yes
+Toledo,OH,45780,"Toledo, OH",Midwest,276386,20889,7.6,14.0,53,2022-2024 average,2.5,,693050,yes,yes
+Tucson,AZ,46060,"Tucson, AZ",West,479939,23702,4.9,10.5,93,2024,3.9,99000,693050,no,unconfirmed
+Tulsa,OK,46140,"Tulsa, OK",South,447008,20091,4.5,6.1,59,2024,2.9,116500,693050,no,yes
+Virginia Beach-Norfolk,VA,47260,"Virginia Beach-Chesapeake-Norfolk, VA-NC",South,763678,52303,6.8,10.9,151,2024,2.9,91000,970200,no,yes
+Washington DC,DC,47900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",South,2506631,88668,3.5,22.8,209,2024 with some divisions as 2022-2024 average,2.4,,1599375,no,yes
+Wichita,KS,48620,"Wichita, KS",Midwest,280193,19535,7.0,5.2,111,2024,5.7,94000,693050,no,no
+Worcester,MA,49340,"Worcester, MA",Northeast,355185,69528,19.6,24.7,616,2024,8.9,122000,697800,no,yes
+Youngstown,OH,49660,"Youngstown-Warren, OH",Midwest,202454,13602,6.7,17.7,66,2024,4.9,75000,693050,yes,yes

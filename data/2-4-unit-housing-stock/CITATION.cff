@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024)"
+version: "1.0.0"
+date-released: "2026-09-27"
+doi: "10.5281/zenodo.23003739"
+url: "https://vantovault.com/open-data/"
+repository: "https://github.com/vantovault-stack/open-housing-data"
+license: CC-BY-4.0
+authors:
+  - name: Van to Vault
+    website: "https://vantovault.com"
+    email: stephan@vantovault.com
+abstract: >-
+  Housing units in 2-, 3- and 4-unit buildings, their share of all housing units and
+  their owner-occupancy, for 83 US metropolitan areas and their principal cities, from
+  the Census Bureau American Community Survey 5-year estimates 2020-2024
+  (tables B25024 and B25032).
+keywords:
+  - housing stock
+  - duplex
+  - small multifamily
+  - American Community Survey
+  - owner-occupancy
+references:
+  - type: data
+    title: "American Community Survey 5-year estimates 2020-2024, tables B25024 and B25032"
+    authors:
+      - name: "U.S. Census Bureau"
+    url: "https://data.census.gov/"

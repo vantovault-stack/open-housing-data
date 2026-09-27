@@ -86,6 +86,29 @@ may sit in a neighbouring neighbourhood; zoning-district assignment was tested a
 
 ---
 
+### 4. Duplex Buyers Atlas — owner-occupant 2-4 unit purchase loans, 2018-2025
+
+[`data/duplex-buyers-atlas/`](data/duplex-buyers-atlas/) · DOI [10.5281/zenodo.23003736](https://doi.org/10.5281/zenodo.23003736)
+
+Every first-lien purchase mortgage on a two-, three- or four-unit home that the borrower said they would live in,
+counted from the public HMDA loan-level data for 2018 to 2025: nationally and for every metro area, by unit count,
+loan type, borrower income, loan size, rate, loan-to-value and borrower demographics. Count cells of 1-9 loans are
+blank; metro-years under 50 loans are published as three-year totals. Full filters, crosswalk and limitations are in
+the folder's README. Readable edition: https://vantovault.com/library/duplex-buyers-atlas/
+
+### 5. Small multifamily housing stock — 2-4 unit buildings in 83 metros (ACS 2020-2024)
+
+[`data/2-4-unit-housing-stock/`](data/2-4-unit-housing-stock/) · DOI [10.5281/zenodo.23003738](https://doi.org/10.5281/zenodo.23003738)
+
+How many housing units sit in two-, three- and four-unit buildings in each of the 83 Foothold metros, their share of
+all housing, and how many are owner-occupied, with the same counts for each principal city. From the Census Bureau's
+American Community Survey 5-year estimates, tables B25024 and B25032. Every row carries the API URL it came from.
+
+### Teaching table
+
+[`teaching/duplex-metros/`](teaching/duplex-metros/): one row per metro joining the housing stock, owner-occupant
+lending, FHA limits and the Foothold result, with a codebook and classroom questions. Public-source columns only.
+
 ## Licence
 
 All datasets here are released under **[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)**.
@@ -101,6 +124,12 @@ Use them commercially, modify them, build on them — just credit Van to Vault.
 
 > VanToVault, *Pittsburgh Short-Term Rental Census: Lawrenceville and Bloomfield (August 2026)*, 2026.
 > DOI [10.5281/zenodo.22258181](https://doi.org/10.5281/zenodo.22258181)
+
+> Van to Vault, *VanToVault Duplex Buyers Atlas: Owner-Occupant 2-4 Unit Purchase Loans by Metro, 2018-2025*, 2026.
+> DOI [10.5281/zenodo.23003736](https://doi.org/10.5281/zenodo.23003736)
+
+> Van to Vault, *VanToVault Small Multifamily Housing Stock: Housing Units in 2-4 Unit Buildings, 83 US Metros (ACS 2020-2024)*, 2026.
+> DOI [10.5281/zenodo.23003738](https://doi.org/10.5281/zenodo.23003738)
 
 A machine-readable `CITATION.cff` is included, so GitHub's "Cite this repository" button works.
 
