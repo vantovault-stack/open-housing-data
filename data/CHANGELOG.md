@@ -1,5 +1,25 @@
 # Changelog: VanToVault Down Payment Assistance Survey (83 metros)
 
+## v4.2, 4 October 2026
+Prompted by an independent audit delivered 3 October 2026 (83 findings on the site; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order.
+
+| | v4.1 (24 Sep 2026) | v4.2 (4 Oct 2026) |
+|---|---|---|
+| program_found | 73 | 72 |
+| none_found | 7 | 8 |
+| unconfirmed | 3 | 3 |
+| rows with a flat dollar maximum | 37 | 36 |
+| median flat maximum | $15,000 | $17,500 |
+
+What changed:
+- Baltimore: program_found -> none_found. The Maryland Mortgage Program Compliance Manual (section 2.10(F), updated 28 January 2026) lists among ineligible residences "any home a portion of which is to be rented"; max_assistance_usd 6000 -> null.
+- Denver: "up to 5%" -> "3% or 4% of the Note amount" as a 30-year deferred second (metroDPA US Bank guide, rev. 10 June 2026, p.6), with the guide's own income limit ($216,000 for FHA/USDA/VA and above-80%-AMI conventional, p.10) and property rule ("one-four units", p.13).
+- Salt Lake City (UHC Form 300, rev. 6 July 2026): FHA/VA allows 1-2 unit owner-occupied, HFA Advantage 2-4 units (700 score, 95% LTV); traditional DPA is a 30-year amortizing second at the first rate + 1 point (cap 8%), deferred DPA 3.5% simple interest.
+- Knoxville, Memphis, Nashville (THDA Originating Agents Guide): Great Choice Plus Payment option is a 30-year amortizing second at the first-mortgage rate, up to 5% / $15,000; $500,000 acquisition-cost cap; $6,000 / $10,000 forgivable no-payment options.
+- Milwaukee (WHEDA): Easy Close is a 10-year amortizing second at the first rate, 6% of the lesser of price or appraisal; conventional 2-4 unit needs 3% borrower funds and six months reserves.
+- Houston, McAllen (TSAHC Lender Guidelines 4.2): existing 2-4 unit homes need five years of residential use; non-bond conventional is Fannie-only, LTV under 95%, 3% own funds.
+- Baltimore and Denver city pages, six state pages and the DPA guide were corrected on the site the same day.
+
 ## v4.1, 24 September 2026
 Removes internal working notes from 9 rows of `program_or_finding`: a person's name attached to two research rulings (Atlanta, and eight GSFA California rows, which now read "(13 August 2026)"), and an agency staff member's email address in the Atlanta row. No status, amount, source URL or date changed.
 

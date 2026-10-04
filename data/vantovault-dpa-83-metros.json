@@ -1,696 +1,700 @@
 {
-  "meta": {
-    "dataset": "VanToVault Down Payment Assistance Survey - can you use DPA on a 2-4 unit home?",
-    "version": "v4.1, 24 September 2026",
-    "generated": "2026-09-24",
-    "generated_from": "VanToVault-Foothold-v7.xlsx / Inputs / Best usable DPA (2-4 unit), regenerated in full (no 300-character cut) with the 24 September 2026 corrections applied; rows dated 2026-09-24 are the corrected ones",
-    "counts": {
-      "program_found": 73,
-      "none_found": 7,
-      "unconfirmed": 3
-    },
-    "median_max_assistance_usd": {
-      "value": 15000,
-      "over_rows_with_a_dollar_figure": 37,
-      "note": "median of max_assistance_usd over every row where it is non-null (largest figure where a range is published); rows whose program publishes only a percentage of the price or loan are null and excluded"
-    },
-    "schema_note": "max_assistance_usd is an integer number of dollars, or null where the program is percentage-based or no dollar maximum is published; see program_or_finding for the stated terms. as_of is the month the row was last checked (YYYY-MM), or the full date (YYYY-MM-DD) for rows corrected on 2026-09-24. unconfirmed means eligibility is not stated and could not be confirmed - an unknown, not a no.",
-    "corrections": [
-      {
-        "date": "2026-09-08",
-        "change": "Phoenix and Tucson moved from none_found to unconfirmed (Arizona IDA Home Plus does not state 2-4 unit eligibility; lenders advertise duplexes). Albuquerque none_found re-sourced to the MFA FirstHome fact sheet. Counts 72/9/2 -> 72/7/4. Data edition unchanged; logged on vantovault.com/corrections/."
-      },
-      {
-        "date": "2026-09-24",
-        "change": "v4. Every program_or_finding note re-exported in full (18 rows had been cut at 300 characters). 40 rows corrected from the agencies' own documents read 23-24 September 2026: Ohio (7 metros) 3%/3.5% of price replacing a 2022 brochure's 2.5%/5% and two unsourced dollar caps; Bakersfield, Austin, Dallas, St. Louis, Houston, McAllen and Baltimore flat caps replaced by the published percentage or product amount; Knoxville unconfirmed -> program_found $15,000 (THDA written confirmation 14 Aug 2026), aligning the three Tennessee rows; Richmond and Virginia Beach-Norfolk notes now state both DHCD sources (email vs guideline); two-unit limits appended for NC, SC, WA, Pittsburgh, Chicago, Detroit, Missouri, Oklahoma City, Philadelphia and Utah; Salt Lake City $25,000 -> $27,500 (UHC Form 300); aligned with the corrected library page: Milwaukee, Washington DC, Tulsa and Spokane flat caps replaced by the published percentage, Jacksonville $10,000 -> $20,000 (Home Sweet Home, Duval County), Cape Coral and Omaha notes completed, TDHCA two-unit note on Austin, Dallas and San Antonio, Fort Wayne reason text from IHCDA's written answer. Counts 72/7/4 -> 73/7/3 (program_found/none_found/unconfirmed); median flat maximum $15,000 -> $15,000. See CHANGELOG-v4.md and vantovault.com/corrections/."
-      }
-    ],
-    "v4_1_note": "v4.1 removes internal working notes (an owner name and an agency staff email address) from 10 notes. No status, amount, source or date changed."
+ "meta": {
+  "dataset": "VanToVault Down Payment Assistance Survey - can you use DPA on a 2-4 unit home?",
+  "version": "v4.2, 4 October 2026",
+  "generated": "2026-10-04",
+  "generated_from": "VanToVault-Foothold-v7.xlsx / Inputs / Best usable DPA (2-4 unit), regenerated in full (no 300-character cut) with the 24 September 2026 corrections applied; rows dated 2026-09-24 are the corrected ones",
+  "counts": {
+   "program_found": 72,
+   "none_found": 8,
+   "unconfirmed": 3
   },
-  "metros": [
-    {
-      "metro": "Akron",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Albany",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
-      "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Albuquerque",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "Housing New Mexico (MFA) FirstHome/FirstDown: the FirstHome fact sheet (rev. 10/22/25) states the program 'can only be used to finance single-family residences. Properties cannot be used for income generation', and FirstDown carries the same property requirements. No 2-4 unit-eligible statewide program found. Re-sourced 2026-09-08 to the program's own fact sheet (previously a third-party aggregator).",
-      "source_url": "https://housingnm.org/uploads/documents/FirstHome_%28NON_FILLABLE%29_10.22.25.pdf",
-      "as_of": "2026-09"
-    },
-    {
-      "metro": "Allentown",
-      "status": "program_found",
-      "max_assistance_usd": 6000,
-      "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
-      "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Atlanta",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "Georgia Dream Homeownership Program. The program's published eligibility matrix excludes 2-4 unit properties. NOT confirmed with the agency: two attempts to reach DCA in August 2026 were undeliverable (both addresses rejected the mail). Treat as a document reading rather than an agency confirmation, and do not cite without checking.",
-      "source_url": "https://dca.georgia.gov/document/resources/georgia-dream-standard-matrix/download",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Austin",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home program matrix (published August 17, 2026): 'Available DPA: 2%-5% of the total loan amount funding permitting.' Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. Corrected 2026-09-24: the previous flat $15,000 appears nowhere in the matrix and contradicted the San Antonio row on the same statewide program, so it was replaced with the published percentage. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
-      "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Bakersfield",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount (GSFA Platinum; no flat dollar cap). GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Corrected 2026-09-24: the previous flat $19,000 is stated in no GSFA document and contradicted the eight other California rows on the same statewide program, so it was replaced with the published percentage.",
-      "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Baltimore",
-      "status": "program_found",
-      "max_assistance_usd": 6000,
-      "program_or_finding": "$6,000, or 3% to 6% of the first mortgage depending on the product. Maryland Mortgage Program (MMP/CDA) down payment assistance, per MMP's own page: the '1st Time Advantage 6000' and 'Flex 6000' products each provide $6,000, plus Partner Match funds of up to $2,500; other products in the same lines size the assistance at 3% to 6% of the first mortgage depending on the product (percentage tiers read on mmp.maryland.gov 2026-09-21). Corrected 2026-09-24: the previous flat $15,000 was 6% of Baltimore's $250,000 entry price, a figure MMP does not publish, and the guide it cited (CDAPROGRAMCODEGUIDE.pdf) has moved.",
-      "source_url": "https://mmp.maryland.gov/home-loans/down-payment-assistance",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Baton Rouge",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "Louisiana Housing Corporation. Confirmed 2026-08-13 by email from Daniel Duggan, Homeownership Business Development and Marketing Supervisor (\"We do not allow down payment assistance on two to four unit properties\"), and Cody Henderson, Single Family Manager (\"LHC does not allow multi-unit dwellings on our Down Payment Assistance Program\"). The exclusion covers the LHC assistance program generally, not only MRB Home and MRB Assisted. The CDBG Assisted Program closed 2025-12-01.",
-      "source_url": "https://www.lhc.la.gov/hubfs/Document%20Libraries/Homeownership/MRB/HOMEMRB%20Guidelines.pdf",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Birmingham",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "AHFA Step Up. Single-family only. Confirmed 2026-08-13 by email from Madison Adams, Operations Support Specialist, Alabama Housing Finance Authority: \"No, it can only be a Single-Family residence.\" Supersedes the earlier note that unit eligibility could not be confirmed.",
-      "source_url": "https://www.ahfa.com/programs/homeownership/available-programs/step-up",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Boston",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "MassHousing Down Payment Assistance",
-      "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Bridgeport",
-      "status": "program_found",
-      "max_assistance_usd": 25000,
-      "program_or_finding": "CHFA Time to Own (statewide)",
-      "source_url": "https://www.chfa.org/homebuyers-homeowners/homebuyers/time-to-own-down-payment-assistance-program-loan/",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Buffalo",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
-      "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Cape Coral-Fort Myers",
-      "status": "program_found",
-      "max_assistance_usd": 35000,
-      "program_or_finding": "5% of the loan, $10,000 to $35,000. Florida Hometown Heroes (statewide), Florida Housing: 'Borrowers can receive up to 5% of the total first mortgage loan amount (maximum of $35,000/minimum of $10,000) in funds towards down payment and closing cost assistance', as a 0% non-amortizing 30-year deferred second that is not forgivable. Only for full-time health care, school, first responder, public safety, court and child care workers and veterans employed by a Florida-based employer, and for servicemembers; if you qualify, it works in every Florida metro. Florida Housing's page says nothing about property or unit type; 2-4 unit eligibility rests on the bond guide cited as the source.",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-Bond-Guide-03-31-26.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Charleston",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 4% of the total first mortgage loan amount. Palmetto Home Advantage Program Guide (2026-02-02): 'Down Payment Assistance is available with a 0%, 3% or 4% of the total first mortgage loan amount (including UPMIP, Funding or Guarantee Fee)'. Forgivable second, 10-year, 0%; the guide says 'This is not a grant.' The previous $12,600 was our own estimate on a $315,000 median price - removed. FHA and conventional options both stop at two-unit properties (Palmetto Home Advantage: FHA on 'single family, doublewide manufactured and two-unit owner occupied properties'; conventional up to 97% LTV on one-unit and 95% on two-unit properties), so the assistance reaches duplexes and not triplexes or fourplexes.",
-      "source_url": "https://schousing.sc.gov/homebuyers/programs-homebuyers/palmetto-home-advantage",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Charlotte",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
-      "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Chicago",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "IHDAccess Repayable (Illinois Housing Development Authority): 10% of the purchase price, up to $10,000, repaid monthly over 10 years at 0% interest. Two-unit limit, in IHDA's words (All-Programs Matrix, March 2026): 'Single Family owner-occupied primary residence (1 - 2 units only, condo, townhouse, community land trust) on less than 5 acres, No Manufactured'. Not usable on a triplex or fourplex. Re-sourced 2026-09-24 to IHDA's own matrix (previously a third-party summary).",
-      "source_url": "https://www.ihdamortgage.org/_files/ugd/62f289_80338f7a87504432840a782ae5ce1aa2.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Cincinnati",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Cleveland",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous flat $10,000 appears in no OHFA document (it was an unrecorded conversion of the superseded 5% tier at a $200,000 price) and the guide it cited, Conventional-Guidelines-25.pdf, now returns 404; replaced with the published percentage.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Columbus",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous flat $14,000 appears in no OHFA document (it was an unrecorded conversion of the superseded 5% tier at a $280,000 price) and the guide it cited, Conventional-Guidelines-25.pdf, now returns 404; replaced with the published percentage.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Dallas",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home program matrix (published August 17, 2026): 'Available DPA: 2%-5% of the total loan amount funding permitting.' Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. Corrected 2026-09-24: the previous flat $15,000 appears nowhere in the matrix and contradicted the San Antonio row on the same statewide program, so it was replaced with the published percentage. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
-      "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Dayton",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Denver",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5% of the first mortgage note amount. metroDPA: assistance 'equal to a percentage of the note amount', varying by loan product up to 5%; 30-year deferred second at 0%, explicitly not a grant. A fuller tier table exists only on a lender marketing site and was NOT used.",
-      "source_url": "https://www.metro-dpa.com/",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Detroit",
-      "status": "program_found",
-      "max_assistance_usd": 25000,
-      "program_or_finding": "City of Detroit Down Payment Assistance Program: grants of up to $25,000 (City of Detroit Down Payment Eligibility Guidelines, revised 6/2024; ARPA-funded grants for buyers who have not held an interest in a property in the last three years, with the home kept as the principal residence for three years). Two-unit limit, in the city's words: 'You must purchase a 1-2-unit property in the City of Detroit as your primary residence and plan for it to remain as your primary residence for the next 3 years.' Not usable on a triplex or fourplex.",
-      "source_url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-06/Detroit%20DPA%20Applcation.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "El Paso",
-      "status": "program_found",
-      "max_assistance_usd": 5000,
-      "program_or_finding": "City of El Paso First-Time Homebuyer Program",
-      "source_url": "https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/FIRST-TIME-HOMEBUYER-ENGLISH-new.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Fort Wayne",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "IHCDA Next Home / First Step (Hoosier Homes also checked). A 1-4 unit purchase is allowed, but the other units may not be rented for the life of the loan, confirmed in writing by IHCDA, August 2026; so the assistance does not give an owner occupant a unit to rent out and is not counted as usable on a 2-4 unit home.",
-      "source_url": "https://www.in.gov/ihcda/files/Next-Home-FHA-PG-7.28.21.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Fresno",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Grand Rapids",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "MSHDA MI 10K DPA Loan (statewide)",
-      "source_url": "https://www.michigan.gov/mshda/pathway-to-housing/mi-10k-dpa-loan",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Greensboro",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
-      "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Harrisburg",
-      "status": "program_found",
-      "max_assistance_usd": 6000,
-      "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
-      "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Hartford",
-      "status": "program_found",
-      "max_assistance_usd": 25000,
-      "program_or_finding": "CHFA Time To Own (Down Payment Assistance)",
-      "source_url": "https://www.chfa.org/assets/1/6/Pages_from_Operations_Manual_sections_2_combined_Rev_4.2026_FINAL.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Houston",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5% of the loan amount. TSAHC Homeownership Programs (Home Sweet Texas Home Loan / Homes for Texas Heroes), per TSAHC's own page: 'If you qualify for TSAHC programs, you may be able to receive up to 5% of your loan amount to help pay for your down payment and/or closing costs through a participating lender.' No flat dollar cap is published. Corrected 2026-09-24: the previous $16,000 here and $10,000 in the McAllen row gave one statewide program two different caps from the same source, and neither figure appears on TSAHC's page, so both rows now carry the published percentage. Property-type eligibility was recorded in July 2026 from TSAHC's knowledge-base article 'What type of home can I buy with TSAHC's homeownership programs?' (kb.tsahc.org/39170/kb/article/102870) and was not re-read on 2026-09-24.",
-      "source_url": "https://www.tsahc.org/homebuyers-renters/loans-and-down-payment-assistance/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Indianapolis",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "None confirmed for 2-4 unit",
-      "source_url": "https://www.in.gov/ihcda/files/HOD-Universal-Program-Guide-Final.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Jacksonville",
-      "status": "program_found",
-      "max_assistance_usd": 20000,
-      "program_or_finding": "Home Sweet Home (Housing Finance Authority of Jacksonville, Duval County): up to $20,000 for first-time buyers, a 30-year 0% deferred second that is never forgiven and is repayable on sale, refinance, transfer or rental of the home within 30 years. Eligible property types include '2-3-4-unit properties that are at least 5 years old' (FHA, VA and USDA only; the Freddie Mac option is one unit), so a two-to-four-unit home has to be at least five years old (checked September 2026; the program page is published by the program's lender, Next Wave Mortgage). Florida Housing FL Assist (statewide second mortgage), $10,000, is the statewide fallback. Corrected 2026-09-24: the row previously carried the $10,000 statewide fallback only.",
-      "source_url": "https://www.homesweethomeprogram.com/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Kansas City",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "4% of the total mortgage amount. MHDC First Place Cash Assistance Loan: 'a 100% forgivable second loan equal to 4% of the total mortgage amount to help with down payment and closing costs'. Fully forgiven at year 10. No dollar cap found in MHDC's own documents. Two-unit limit: the First Place Loan Program operations manual (Revised 3/11/2026) lists eligible properties as 'Single-Family detached', 'Owner-Occupied one- or two-unit duplexes', semi-detached, condominiums, town homes and double-wide manufactured homes; no three- or four-unit type is listed, so the assistance is not usable on a triplex or fourplex.",
-      "source_url": "https://mhdc.com/media/k5epnlpt/first-place-manual-march-2026.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Knoxville",
-      "status": "program_found",
-      "max_assistance_usd": 15000,
-      "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in. Corrected 2026-09-24: moved from unconfirmed to program_found so the three Tennessee rows (Knoxville, Memphis, Nashville) carry the same finding for the same statewide program; the row had rested on the program page not stating unit eligibility.",
-      "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Lakeland",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Las Vegas",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "Nevada Home Is Possible HIP-DPA. Assistance is 3% or 5% of the LOAN AMOUNT, not a fixed dollar sum, so no dollar figure is published for this metro - the live page shows '5% of the loan'. The 5% tier carries a slightly higher interest rate than the 3% tier. Property type confirmed twice: NHD's own dated rate sheet lists HIP-DPA as 'Residential Units only. New or existing, one-four units detached or attached, condos, townhomes, and manufactured homes' (the base HIP first-time-buyer product is single-family only), and the Nevada Housing Division confirmed by email 2026-08-13: 'we have our HIP-DPA program which allows for a borrower to purchase a multi-unit property. However, we require that the borrower live in one of the units.' Structure: no-interest, no-payment, non-forgivable 30-year second mortgage. Reply came from hip@state.nv.us, not the hip@housing.nv.gov address written to. WARNING FOR ANY SCRIPT READING THIS COLUMN: the value 5 is a PERCENT, not dollars - check the unit column.",
-      "source_url": "https://www.homeispossiblenv.org/todays-rates",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Los Angeles",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Louisville",
-      "status": "unconfirmed",
-      "max_assistance_usd": null,
-      "program_or_finding": "KHC Down Payment Assistance, up to $12,500 - 2-4 unit eligibility NOT stated on program page.",
-      "source_url": "https://www.kyhousing.org/page/down-payment-assistance",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "McAllen",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5% of the loan amount. TSAHC Homeownership Programs (Home Sweet Texas Home Loan / Homes for Texas Heroes), statewide and covering the Rio Grande Valley, per TSAHC's own page: 'If you qualify for TSAHC programs, you may be able to receive up to 5% of your loan amount to help pay for your down payment and/or closing costs through a participating lender.' No flat dollar cap is published. Corrected 2026-09-24: the previous $10,000 here and $16,000 in the Houston row gave one statewide program two different caps from the same source, and neither figure appears on TSAHC's page, so both rows now carry the published percentage. Property-type eligibility was recorded in July 2026 from TSAHC's knowledge-base article 'What type of home can I buy with TSAHC's homeownership programs?' (kb.tsahc.org/39170/kb/article/102870) and was not re-read on 2026-09-24.",
-      "source_url": "https://www.tsahc.org/homebuyers-renters/loans-and-down-payment-assistance/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Memphis",
-      "status": "program_found",
-      "max_assistance_usd": 15000,
-      "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in.",
-      "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Miami",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Milwaukee",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 6% of the home's purchase price. WHEDA Easy Close Advantage DPA, per WHEDA's program page: 'Maximum loan amount is 6% of the purchase price when partnered with a WHEDA Conventional first mortgage loan' and the same with a WHEDA FHA first mortgage; minimum $1,000; a 10-year fixed-rate second at the first-mortgage rate. Unit limit by first mortgage: 2-4 units with a WHEDA conventional first mortgage (3% borrower funds, six months reserves and landlord education required); one or two units with a WHEDA FHA loan (Easy Close DPA eligibility matrix, May 19, 2021). Corrected 2026-09-24: the previous flat $14,000 appears in neither the matrix nor the program page, so it was replaced with the published percentage.",
-      "source_url": "https://www.wheda.com/globalassets/documents/mortgage-lending/easy-close-dpa/easy-close-dpa-eligibility-matrix.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Minneapolis",
-      "status": "program_found",
-      "max_assistance_usd": 20000,
-      "program_or_finding": "Minneapolis Homes: ACCESS Down Payment Assistance (City of Minneapolis)",
-      "source_url": "https://nwhomepartners.org/minneapolis-homes-access-down-payment-assistance/",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Nashville",
-      "status": "program_found",
-      "max_assistance_usd": 15000,
-      "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in.",
-      "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "New Orleans",
-      "status": "program_found",
-      "max_assistance_usd": 25000,
-      "program_or_finding": "Finance New Orleans (FANO) Green Mortgage Program. 'Up to $25,000 may be applied as either downpayment assistance, prepaids, closing cost assistance, or a combination of both.' 0% second; at or below 80% AMI it is a five-year deferred forgivable second and 'one hundred percent of the second mortgage is forgiven'; above that it is never forgiven. 2-4 UNIT ELIGIBILITY IS EXPLICIT: 'Qualifying buyers may apply downpayment assistance to purchase a property with up to four (4) housing units (attached or detached)'. Unit cap is set by the first mortgage product (Fannie Mae up to 4, FHA and VA 2, Freddie Mac 1). Purchase price limit: 'Total purchase price shall not exceed $400,000 for single family homes or $450,000 for homes with 2-4 units.' Program guide revision 03/20/26, read directly. CORRECTION 2026-08-13: the previous $13,500 could NOT be sourced to any FANO document, current or archived. The only arithmetic that reproduces it is 3% of the $450,000 2-4 unit price cap, using a '2-5% of first mortgage' figure that appears ONLY on FANO's FAQ and a page whose own URL contains the word BACKUP - it is absent from both dated program guides. Treated as stale, not as a source. WATCH: FANO's site says 'Finance New Orleans has temporarily paused new Green Mortgage Program applications and fund reservations while additional resources are being pursued.' The lender-facing guide does not carry that notice. Contact for confirmation: singlefamily@financenola.org",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FNO-Green-Mortgage-Program-Guide-03-20-26.pdf",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "New York",
-      "status": "program_found",
-      "max_assistance_usd": 100000,
-      "program_or_finding": "NYC HPD HomeFirst Down Payment Assistance Program",
-      "source_url": "https://www.nyc.gov/site/hpd/services-and-information/homefirst-down-payment-assistance-program.page",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "North Port-Sarasota",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Oklahoma City",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3.5% of the total loan amount. Oklahoma OHFA DREAM (ohfa.org, NOT Ohio's myohiohome.org): '3.50% Down Payment Assistance' ... 'DPA calculated on Total Loan Amount (Note Amount)'. Same figure for the government and the Freddie Mac conventional products. Guides revised September 2025. Two-unit limit, in the guide's words (Property Type and Eligibility): '1 - Unit & 2 - Unit Properties' and '2 - Unit Properties - FHA only; Must be one parcel and one legal description', with the borrower occupying one unit. Not usable on a triplex or fourplex.",
-      "source_url": "https://www.ohfa.org/wp-content/uploads/2025/LDREAMGOVT-Guide-2025-9152025-IFF-INCREASE.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Omaha",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5% of the home's purchase price. NIFA Homebuyer Assistance (HBA), a repayable second mortgage of up to 5% of the price, 10 years at 1%: 'The maximum amount for the second mortgage loan is 5% of the home's purchase price.' NOTE: percentage of PURCHASE PRICE. Also note NIFA 'Build Home' is a rate-lock product, NOT the DPA product - the earlier row name was wrong.",
-      "source_url": "https://www.nifa.org/homebuyers-renters/homebuyer-assistance",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Orlando",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
-      "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Oxnard",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Philadelphia",
-      "status": "program_found",
-      "max_assistance_usd": 10000,
-      "program_or_finding": "Philly First Home: a grant of up to $10,000 (or 6% of the home's purchase price, whichever is lower) for first-time buyers. Two-unit limit, in PHDC's words: 'The property must be a single-family home or duplex located in Philadelphia (no condominiums).' Not usable on a triplex or fourplex.",
-      "source_url": "https://phdcphila.org/philly-first-home/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Phoenix",
-      "status": "unconfirmed",
-      "max_assistance_usd": null,
-      "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
-      "source_url": "https://homeplusaz.com/frequently-asked-questions/",
-      "as_of": "2026-09"
-    },
-    {
-      "metro": "Pittsburgh",
-      "status": "program_found",
-      "max_assistance_usd": 7500,
-      "program_or_finding": "URA (Urban Redevelopment Authority of Pittsburgh) Down Payment and Closing Cost Assistance: up to $7,500 for first-time buyers below 80% of area median income (0% interest, 5-year deferred loan), up to $5,000 from 80% to 115% of AMI (0% interest, 10-year deferred loan). Two-unit limit, in URA's words: 'Each property may contain up to two connected dwelling units (i.e., duplex, townhouse), one of which must be owner-occupied.' Not usable on a triplex or fourplex.",
-      "source_url": "https://www.ura.org/pages/down-payment-and-closing-cost-assistance-program",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Portland",
-      "status": "program_found",
-      "max_assistance_usd": 15000,
-      "program_or_finding": "FHLBank Des Moines Home$tart (member-bank grant, covers Oregon)",
-      "source_url": "https://www.fhlbdm.com/webres/File/products-services/CID_DP-Program-Overview.pdf",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Portland ME",
-      "status": "program_found",
-      "max_assistance_usd": 5000,
-      "program_or_finding": "MaineHousing First Home Loan Program (down payment/closing cost assistance)",
-      "source_url": "https://downpaymentscout.com/states/maine/",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Providence",
-      "status": "program_found",
-      "max_assistance_usd": 15000,
-      "program_or_finding": "RIHousing $15K DPA",
-      "source_url": "https://www.rihousing.com/homebuyers/15k-dpa/",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Raleigh",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. ELIGIBILITY CORRECTED 2026-08-13: Raleigh was previously recorded as 'None found' on the convention that unstated property rules are unusable. The guide DOES state it, s6.1: FHA/USDA/VA eligible types include 'Duplexes (FHA only)', and conventional says 'Note: Duplexes and Manufactured homes NOT eligible under the conventional program.' Charlotte and Greensboro already sat on the same FHA product, so the zero was an internal inconsistency. 3-4 unit properties are not addressed either way. Read from the guide PDF directly. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
-      "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Richmond",
-      "status": "program_found",
-      "max_assistance_usd": 40000,
-      "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source.",
-      "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Riverside-San Bernardino",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Rochester",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL), paired with Achieving the Dream / Low Interest Rate mortgage",
-      "source_url": "https://hcr.ny.gov/achieving-dream-program-0",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Sacramento",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Salt Lake City",
-      "status": "program_found",
-      "max_assistance_usd": 27500,
-      "program_or_finding": "Utah Housing Corporation DPA Second: up to 6% of the first mortgage, capped at $27,500. UHC Form 300 (All Loan Program Eligibility matrix, Rev. 07/06/2026): 'Up to 6% of the first mortgage loan amount listed on the First Note (which may include FHA upfront MIP on FHA first mortgage). Not to exceed $27,500.' Unit limit depends on the first mortgage: the FHA/VA Mortgage column lists 'One-two unit owner-occupied' properties, and 2-to-4-unit properties appear only under the Freddie Mac HFA Advantage (conventional) column, 'in compliance with Freddie Mac guidelines', so an FHA or VA borrower is limited to a duplex. Corrected 2026-09-24: the previous $25,000 came from a third-party summary; re-sourced to Utah Housing's own matrix.",
-      "source_url": "https://utahhousingcorp.org/pdf/Form300.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "San Antonio",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home: 'Available assistance ranging from 2% - 5% of the total mortgage loan funding'. Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
-      "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "San Diego",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "San Francisco",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "San Jose",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
-      "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Scranton",
-      "status": "program_found",
-      "max_assistance_usd": 6000,
-      "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
-      "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Seattle",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3%, 4% or 5% of the first mortgage loan amount. WSHFC Home Advantage DPA (second mortgage), 0% interest: 'Offers 3%, 4%, or 5% of the first-mortgage loan amount in downpayment assistance'; payment-deferred, repayable on sale, refinance or payoff. No dollar cap stated. TWO-unit eligible; 3-4 unit NOT eligible, confirmed in writing by WSHFC, August 2026 (email 2026-08-13 from Christian Hayes, Senior Program Compliance Administrator, Washington State Housing Finance Commission: 'The Home Advantage program allows for a 1 or 2 unit duplex property. We cannot finance a 3, 4 or larger unit property. Borrower must occupy one of the units if purchasing a 2 unit duplex property.'). The Needs-Based loan (up to $10,000 at 1%) is the smaller option.",
-      "source_url": "https://heretohome.org/downpayment-assistance/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Spokane",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3%, 4% or 5% of the first mortgage loan amount. WSHFC Home Advantage DPA (second mortgage), 0% interest: 'Offers 3%, 4%, or 5% of the first-mortgage loan amount in downpayment assistance'; payment-deferred, repayable on sale, refinance or payoff. No dollar cap stated. TWO-unit eligible; 3-4 unit NOT eligible, confirmed in writing by WSHFC, August 2026 (email 2026-08-13 from Christian Hayes, Senior Program Compliance Administrator, Washington State Housing Finance Commission: 'The Home Advantage program allows for a 1 or 2 unit duplex property. We cannot finance a 3, 4 or larger unit property. Borrower must occupy one of the units if purchasing a 2 unit duplex property.'). The Needs-Based loan (up to $10,000 at 1%) is the smaller option. Corrected 2026-09-24: the row previously carried the smaller Needs-Based $10,000 product; the percentage product is the larger option, as recorded for Seattle.",
-      "source_url": "https://heretohome.org/downpayment-assistance/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "St. Louis",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "4% of the total mortgage amount. MHDC First Place Loan Program down payment assistance: 'a 100% forgivable second loan equal to 4% of the total mortgage amount to help with down payment and closing costs'. Fully forgiven at year 10. No dollar cap found in MHDC's own documents; the manual's FAQ says 'The MHDC DPA 2nd mortgage amount is exactly 4% of the first loan.' Corrected 2026-09-24: the previous flat $10,000 appears in neither the June 2025 nor the March 2026 manual and contradicted the Kansas City row on the same statewide program, so it was replaced with the published percentage. Two-unit limit: the First Place Loan Program operations manual (Revised 3/11/2026) lists eligible properties as 'Single-Family detached', 'Owner-Occupied one- or two-unit duplexes', semi-detached, condominiums, town homes and double-wide manufactured homes; no three- or four-unit type is listed, so the assistance is not usable on a triplex or fourplex.",
-      "source_url": "https://mhdc.com/media/k5epnlpt/first-place-manual-march-2026.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Syracuse",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL) Plus",
-      "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Tampa",
-      "status": "program_found",
-      "max_assistance_usd": 25000,
-      "program_or_finding": "Home Sweet Home Hillsborough Program (Florida Housing HFA partner DPA)",
-      "source_url": "https://www.homesweethomeprogram.com/",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Toledo",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Tucson",
-      "status": "unconfirmed",
-      "max_assistance_usd": null,
-      "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
-      "source_url": "https://homeplusaz.com/frequently-asked-questions/",
-      "as_of": "2026-09"
-    },
-    {
-      "metro": "Tulsa",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3.5% of the total loan amount. Oklahoma OHFA DREAM (government loan) Down Payment Assistance, the statewide program (ohfa.org, NOT Ohio's myohiohome.org): '3.50% Down Payment Assistance' ... 'DPA calculated on Total Loan Amount (Note Amount)' (product guide, revision September 2025). Two-unit limit, in the guide's words: '1 - Unit & 2 - Unit Properties' and '2 - Unit Properties - FHA only; Must be one parcel and one legal description', with the borrower occupying one unit; not usable on a triplex or fourplex. For a triplex or fourplex, the Housing Partners of Tulsa, Inc. Homeownership Program ($5,000, local nonprofit, city of Tulsa; fha.com/first-time-home-buyers-program/homeownership-program, a third-party summary) may apply if its unit rules can be confirmed. Corrected 2026-09-24: the row previously carried only the $5,000 local program; the statewide OHFA DREAM assistance is the larger, agency-documented option and now leads the row.",
-      "source_url": "https://www.ohfa.org/wp-content/uploads/2025/LDREAMGOVT-Guide-2025-9152025-IFF-INCREASE.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Virginia Beach-Norfolk",
-      "status": "program_found",
-      "max_assistance_usd": 40000,
-      "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source.",
-      "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Washington DC",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the price. DC Open Doors DPAL (DC Housing Finance Agency), sized to the full minimum down payment: 'If you qualify, you can obtain a DPAL for the full amount of your required minimum down payment' (program page); the lender manual (November 2025) sets it at '3% of the sales price for Conventional Loans, 3% of the loan amount for VA loans, and 3.50% of the sales price for FHA Loans', and lists '1-4 Units (must meet Servicer and Investor guidelines, as guidelines vary with each Loan type)' among eligible property types. Deferred 0% loan, due after 30 years or on sale, transfer, refinance or move-out. Corrected 2026-09-24: the previous flat $20,000 came from a third-party summary and appears in neither DCHFA source; re-sourced to DCHFA's own page.",
-      "source_url": "https://dchfa.org/homeownership/dc-open-doors/",
-      "as_of": "2026-09-24"
-    },
-    {
-      "metro": "Wichita",
-      "status": "none_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "KHRC First Time Homebuyer Program. Eligible property types confirmed 2026-08-13 by email from Marilyn Stanley, Kansas Housing Corporation: single-family on five acres or less; condominium, townhome, or one half of a duplex; manufactured home on a permanent foundation; modular home; new construction after certificate of occupancy. One half of a duplex is a single dwelling sold as its own parcel, so it does not give an owner occupant a second unit to rent out. A whole two to four unit building is not an eligible property type. This supersedes and withdraws the earlier reason given, which was the Wichita city-limits exclusion.",
-      "source_url": "https://kshousingcorp.org/wp-content/uploads/2026/03/FTHB-Fact-Sheet-3-19-26.pdf",
-      "as_of": "2026-08"
-    },
-    {
-      "metro": "Worcester",
-      "status": "program_found",
-      "max_assistance_usd": 30000,
-      "program_or_finding": "MassHousing Down Payment Assistance",
-      "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
-      "as_of": "2026-07"
-    },
-    {
-      "metro": "Youngstown",
-      "status": "program_found",
-      "max_assistance_usd": null,
-      "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
-      "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
-      "as_of": "2026-09-24"
-    }
-  ]
+  "median_max_assistance_usd": {
+   "value": 17500,
+   "over_rows_with_a_dollar_figure": 36,
+   "note": "median of max_assistance_usd over every row where it is non-null (largest figure where a range is published); rows whose program publishes only a percentage of the price or loan are null and excluded"
+  },
+  "schema_note": "max_assistance_usd is an integer number of dollars, or null where the program is percentage-based or no dollar maximum is published; see program_or_finding for the stated terms. as_of is the month the row was last checked (YYYY-MM), or the full date (YYYY-MM-DD) for rows corrected on 2026-09-24. unconfirmed means eligibility is not stated and could not be confirmed - an unknown, not a no.",
+  "corrections": [
+   {
+    "date": "2026-09-08",
+    "change": "Phoenix and Tucson moved from none_found to unconfirmed (Arizona IDA Home Plus does not state 2-4 unit eligibility; lenders advertise duplexes). Albuquerque none_found re-sourced to the MFA FirstHome fact sheet. Counts 72/9/2 -> 72/7/4. Data edition unchanged; logged on vantovault.com/corrections/."
+   },
+   {
+    "date": "2026-09-24",
+    "change": "v4. Every program_or_finding note re-exported in full (18 rows had been cut at 300 characters). 40 rows corrected from the agencies' own documents read 23-24 September 2026: Ohio (7 metros) 3%/3.5% of price replacing a 2022 brochure's 2.5%/5% and two unsourced dollar caps; Bakersfield, Austin, Dallas, St. Louis, Houston, McAllen and Baltimore flat caps replaced by the published percentage or product amount; Knoxville unconfirmed -> program_found $15,000 (THDA written confirmation 14 Aug 2026), aligning the three Tennessee rows; Richmond and Virginia Beach-Norfolk notes now state both DHCD sources (email vs guideline); two-unit limits appended for NC, SC, WA, Pittsburgh, Chicago, Detroit, Missouri, Oklahoma City, Philadelphia and Utah; Salt Lake City $25,000 -> $27,500 (UHC Form 300); aligned with the corrected library page: Milwaukee, Washington DC, Tulsa and Spokane flat caps replaced by the published percentage, Jacksonville $10,000 -> $20,000 (Home Sweet Home, Duval County), Cape Coral and Omaha notes completed, TDHCA two-unit note on Austin, Dallas and San Antonio, Fort Wayne reason text from IHCDA's written answer. Counts 72/7/4 -> 73/7/3 (program_found/none_found/unconfirmed); median flat maximum $15,000 -> $15,000. See CHANGELOG-v4.md and vantovault.com/corrections/."
+   },
+   {
+    "date": "2026-10-04",
+    "change": "v4.2. Baltimore program_found -> none_found: the Maryland Mortgage Program Compliance Manual (section 2.10(F)) excludes 'any home a portion of which is to be rented'; max_assistance_usd 6000 -> null. Denver 'up to 5%' -> '3% or 4% of the Note amount' with the program guide's own income limits. Salt Lake City, Knoxville, Memphis, Nashville, Milwaukee, Houston and McAllen notes extended with repayment terms and conditions from the agencies' documents (UHC Form 300; THDA Originating Agents Guide incl. the $500,000 acquisition cap; WHEDA 3% own funds + 6 months reserves on conventional 2-4 unit; TSAHC 5-year residential-use and conventional own-funds rules). Counts 73/7/3 -> 72/8/3; median flat maximum $15,000 over 37 -> $17,500 over 36. Prompted by an independent audit delivered 3 October 2026; see vantovault.com/corrections/."
+   }
+  ],
+  "v4_1_note": "v4.1 removes internal working notes (an owner name and an agency staff email address) from 10 notes. No status, amount, source or date changed."
+ },
+ "metros": [
+  {
+   "metro": "Akron",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Albany",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
+   "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Albuquerque",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "Housing New Mexico (MFA) FirstHome/FirstDown: the FirstHome fact sheet (rev. 10/22/25) states the program 'can only be used to finance single-family residences. Properties cannot be used for income generation', and FirstDown carries the same property requirements. No 2-4 unit-eligible statewide program found. Re-sourced 2026-09-08 to the program's own fact sheet (previously a third-party aggregator).",
+   "source_url": "https://housingnm.org/uploads/documents/FirstHome_%28NON_FILLABLE%29_10.22.25.pdf",
+   "as_of": "2026-09"
+  },
+  {
+   "metro": "Allentown",
+   "status": "program_found",
+   "max_assistance_usd": 6000,
+   "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
+   "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Atlanta",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "Georgia Dream Homeownership Program. The program's published eligibility matrix excludes 2-4 unit properties. NOT confirmed with the agency: two attempts to reach DCA in August 2026 were undeliverable (both addresses rejected the mail). Treat as a document reading rather than an agency confirmation, and do not cite without checking.",
+   "source_url": "https://dca.georgia.gov/document/resources/georgia-dream-standard-matrix/download",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Austin",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home program matrix (published August 17, 2026): 'Available DPA: 2%-5% of the total loan amount funding permitting.' Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. Corrected 2026-09-24: the previous flat $15,000 appears nowhere in the matrix and contradicted the San Antonio row on the same statewide program, so it was replaced with the published percentage. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
+   "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Bakersfield",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount (GSFA Platinum; no flat dollar cap). GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Corrected 2026-09-24: the previous flat $19,000 is stated in no GSFA document and contradicted the eight other California rows on the same statewide program, so it was replaced with the published percentage.",
+   "source_url": "https://www.gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Baltimore",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "None usable on a rented-unit house hack. Maryland Mortgage Program (MMP) Compliance Manual (updated January 28, 2026), section 2.10(F) 'Ineligible Residences', read as PDF page 32 on 2026-10-04: '3. Rental homes or any home a portion of which is to be rented. 4. Investment homes.' Section 2.10(E) limits eligible residences to single-unit homes, including one half of a duplex bought on its own. MMP's $6,000 (1st Time Advantage 6000 / Flex 6000) and 3% to 6% products therefore cannot be used on a two-to-four-unit home where another unit is rented. Corrected 2026-10-04: the previous row (program_found, $6,000, 'two-to-four-unit homes qualify, checked July 2026') rested on the consumer page, not the manual. Baltimore City and Baltimore County local programs have not been surveyed for 2-4 unit eligibility.",
+   "source_url": "https://mmp.maryland.gov/media/52",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Baton Rouge",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "Louisiana Housing Corporation. Confirmed 2026-08-13 by email from Daniel Duggan, Homeownership Business Development and Marketing Supervisor (\"We do not allow down payment assistance on two to four unit properties\"), and Cody Henderson, Single Family Manager (\"LHC does not allow multi-unit dwellings on our Down Payment Assistance Program\"). The exclusion covers the LHC assistance program generally, not only MRB Home and MRB Assisted. The CDBG Assisted Program closed 2025-12-01.",
+   "source_url": "https://www.lhc.la.gov/hubfs/Document%20Libraries/Homeownership/MRB/HOMEMRB%20Guidelines.pdf",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Birmingham",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "AHFA Step Up. Single-family only. Confirmed 2026-08-13 by email from Madison Adams, Operations Support Specialist, Alabama Housing Finance Authority: \"No, it can only be a Single-Family residence.\" Supersedes the earlier note that unit eligibility could not be confirmed.",
+   "source_url": "https://www.ahfa.com/programs/homeownership/available-programs/step-up",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Boston",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "MassHousing Down Payment Assistance",
+   "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Bridgeport",
+   "status": "program_found",
+   "max_assistance_usd": 25000,
+   "program_or_finding": "CHFA Time to Own (statewide)",
+   "source_url": "https://www.chfa.org/homebuyers-homeowners/homebuyers/time-to-own-down-payment-assistance-program-loan/",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Buffalo",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL/DPAL Plus)",
+   "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Cape Coral-Fort Myers",
+   "status": "program_found",
+   "max_assistance_usd": 35000,
+   "program_or_finding": "5% of the loan, $10,000 to $35,000. Florida Hometown Heroes (statewide), Florida Housing: 'Borrowers can receive up to 5% of the total first mortgage loan amount (maximum of $35,000/minimum of $10,000) in funds towards down payment and closing cost assistance', as a 0% non-amortizing 30-year deferred second that is not forgivable. Only for full-time health care, school, first responder, public safety, court and child care workers and veterans employed by a Florida-based employer, and for servicemembers; if you qualify, it works in every Florida metro. Florida Housing's page says nothing about property or unit type; 2-4 unit eligibility rests on the bond guide cited as the source.",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-Bond-Guide-03-31-26.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Charleston",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 4% of the total first mortgage loan amount. Palmetto Home Advantage Program Guide (2026-02-02): 'Down Payment Assistance is available with a 0%, 3% or 4% of the total first mortgage loan amount (including UPMIP, Funding or Guarantee Fee)'. Forgivable second, 10-year, 0%; the guide says 'This is not a grant.' The previous $12,600 was our own estimate on a $315,000 median price - removed. FHA and conventional options both stop at two-unit properties (Palmetto Home Advantage: FHA on 'single family, doublewide manufactured and two-unit owner occupied properties'; conventional up to 97% LTV on one-unit and 95% on two-unit properties), so the assistance reaches duplexes and not triplexes or fourplexes.",
+   "source_url": "https://schousing.sc.gov/homebuyers/programs-homebuyers/palmetto-home-advantage",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Charlotte",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
+   "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Chicago",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "IHDAccess Repayable (Illinois Housing Development Authority): 10% of the purchase price, up to $10,000, repaid monthly over 10 years at 0% interest. Two-unit limit, in IHDA's words (All-Programs Matrix, March 2026): 'Single Family owner-occupied primary residence (1 - 2 units only, condo, townhouse, community land trust) on less than 5 acres, No Manufactured'. Not usable on a triplex or fourplex. Re-sourced 2026-09-24 to IHDA's own matrix (previously a third-party summary).",
+   "source_url": "https://www.ihdamortgage.org/_files/ugd/62f289_80338f7a87504432840a782ae5ce1aa2.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Cincinnati",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Cleveland",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous flat $10,000 appears in no OHFA document (it was an unrecorded conversion of the superseded 5% tier at a $200,000 price) and the guide it cited, Conventional-Guidelines-25.pdf, now returns 404; replaced with the published percentage.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Columbus",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous flat $14,000 appears in no OHFA document (it was an unrecorded conversion of the superseded 5% tier at a $280,000 price) and the guide it cited, Conventional-Guidelines-25.pdf, now returns 404; replaced with the published percentage.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Dallas",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home program matrix (published August 17, 2026): 'Available DPA: 2%-5% of the total loan amount funding permitting.' Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. Corrected 2026-09-24: the previous flat $15,000 appears nowhere in the matrix and contradicted the San Antonio row on the same statewide program, so it was replaced with the published percentage. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
+   "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Dayton",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Denver",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 4% of the first-mortgage note amount. metroDPA Program Guide (US Bank edition, revised 06/10/26), read as PDF pages 6 and 10 on 2026-10-04: assistance 'may be 3% or 4% of the Note amount, in the form of a 30-year deferred second mortgage' (0%, not a grant; amounts subject to change at any time). Income limits effective 05/01/26: $216,000 for FHA, USDA and VA loans and for conventional loans above 80% AMI; $115,200 for conventional loans at or below 80% AMI. Corrected 2026-10-04: the previous 'up to 5%' came from the consumer site metro-dpa.com; the lender guide states 3% or 4%.",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/metroDPA-US-Bank-Guide-06-10-26b.pdf",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Detroit",
+   "status": "program_found",
+   "max_assistance_usd": 25000,
+   "program_or_finding": "City of Detroit Down Payment Assistance Program: grants of up to $25,000 (City of Detroit Down Payment Eligibility Guidelines, revised 6/2024; ARPA-funded grants for buyers who have not held an interest in a property in the last three years, with the home kept as the principal residence for three years). Two-unit limit, in the city's words: 'You must purchase a 1-2-unit property in the City of Detroit as your primary residence and plan for it to remain as your primary residence for the next 3 years.' Not usable on a triplex or fourplex.",
+   "source_url": "https://detroitmi.gov/sites/detroitmi.localhost/files/2024-06/Detroit%20DPA%20Applcation.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "El Paso",
+   "status": "program_found",
+   "max_assistance_usd": 5000,
+   "program_or_finding": "City of El Paso First-Time Homebuyer Program",
+   "source_url": "https://www.elpasotexas.gov/assets/Documents/CoEP/Community-Development/FIRST-TIME-HOMEBUYER-ENGLISH-new.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Fort Wayne",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "IHCDA Next Home / First Step (Hoosier Homes also checked). A 1-4 unit purchase is allowed, but the other units may not be rented for the life of the loan, confirmed in writing by IHCDA, August 2026; so the assistance does not give an owner occupant a unit to rent out and is not counted as usable on a 2-4 unit home.",
+   "source_url": "https://www.in.gov/ihcda/files/Next-Home-FHA-PG-7.28.21.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Fresno",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Grand Rapids",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "MSHDA MI 10K DPA Loan (statewide)",
+   "source_url": "https://www.michigan.gov/mshda/pathway-to-housing/mi-10k-dpa-loan",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Greensboro",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
+   "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Harrisburg",
+   "status": "program_found",
+   "max_assistance_usd": 6000,
+   "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
+   "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Hartford",
+   "status": "program_found",
+   "max_assistance_usd": 25000,
+   "program_or_finding": "CHFA Time To Own (Down Payment Assistance)",
+   "source_url": "https://www.chfa.org/assets/1/6/Pages_from_Operations_Manual_sections_2_combined_Rev_4.2026_FINAL.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Houston",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5% of the loan amount. TSAHC Homeownership Programs (Home Sweet Texas Home Loan / Homes for Texas Heroes), per TSAHC's own page: 'If you qualify for TSAHC programs, you may be able to receive up to 5% of your loan amount to help pay for your down payment and/or closing costs through a participating lender.' No flat dollar cap is published. Corrected 2026-09-24: the previous $16,000 here and $10,000 in the McAllen row gave one statewide program two different caps from the same source, and neither figure appears on TSAHC's page, so both rows now carry the published percentage. Property-type eligibility was recorded in July 2026 from TSAHC's knowledge-base article 'What type of home can I buy with TSAHC's homeownership programs?' (kb.tsahc.org/39170/kb/article/102870) and was not re-read on 2026-09-24. TSAHC Lender Guidelines 4.2 'Qualifying Residences and Mortgage Loans', read 2026-10-04: 'Existing 2, 3 or 4-unit property, provided that one of the units will be occupied by the borrower and the property has been occupied for residential purposes for at least 5 years'; conventional loans are '(Fannie Mae only with LTV < 95%; 3% borrower's own funds required)'.",
+   "source_url": "https://www.tsahc.org/homebuyers-renters/loans-and-down-payment-assistance/",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Indianapolis",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "None confirmed for 2-4 unit",
+   "source_url": "https://www.in.gov/ihcda/files/HOD-Universal-Program-Guide-Final.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Jacksonville",
+   "status": "program_found",
+   "max_assistance_usd": 20000,
+   "program_or_finding": "Home Sweet Home (Housing Finance Authority of Jacksonville, Duval County): up to $20,000 for first-time buyers, a 30-year 0% deferred second that is never forgiven and is repayable on sale, refinance, transfer or rental of the home within 30 years. Eligible property types include '2-3-4-unit properties that are at least 5 years old' (FHA, VA and USDA only; the Freddie Mac option is one unit), so a two-to-four-unit home has to be at least five years old (checked September 2026; the program page is published by the program's lender, Next Wave Mortgage). Florida Housing FL Assist (statewide second mortgage), $10,000, is the statewide fallback. Corrected 2026-09-24: the row previously carried the $10,000 statewide fallback only.",
+   "source_url": "https://www.homesweethomeprogram.com/",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Kansas City",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "4% of the total mortgage amount. MHDC First Place Cash Assistance Loan: 'a 100% forgivable second loan equal to 4% of the total mortgage amount to help with down payment and closing costs'. Fully forgiven at year 10. No dollar cap found in MHDC's own documents. Two-unit limit: the First Place Loan Program operations manual (Revised 3/11/2026) lists eligible properties as 'Single-Family detached', 'Owner-Occupied one- or two-unit duplexes', semi-detached, condominiums, town homes and double-wide manufactured homes; no three- or four-unit type is listed, so the assistance is not usable on a triplex or fourplex.",
+   "source_url": "https://mhdc.com/media/k5epnlpt/first-place-manual-march-2026.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Knoxville",
+   "status": "program_found",
+   "max_assistance_usd": 15000,
+   "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in. Corrected 2026-09-24: moved from unconfirmed to program_found so the three Tennessee rows (Knoxville, Memphis, Nashville) carry the same finding for the same statewide program; the row had rested on the program page not stating unit eligibility. Terms (Originating Agents Guide, PDF page 12, read 2026-10-04): the Payment option is a second loan 'at an interest rate the same as the first mortgage, monthly payments amortized over a 30-year term' for up to 5% of the sales price, maximum $15,000; the No-Payment options are $6,000 or $10,000 at 0%, forgiven over 10 years; 'Max Acquisition Cost $500,000'.",
+   "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Lakeland",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Las Vegas",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "Nevada Home Is Possible HIP-DPA. Assistance is 3% or 5% of the LOAN AMOUNT, not a fixed dollar sum, so no dollar figure is published for this metro - the live page shows '5% of the loan'. The 5% tier carries a slightly higher interest rate than the 3% tier. Property type confirmed twice: NHD's own dated rate sheet lists HIP-DPA as 'Residential Units only. New or existing, one-four units detached or attached, condos, townhomes, and manufactured homes' (the base HIP first-time-buyer product is single-family only), and the Nevada Housing Division confirmed by email 2026-08-13: 'we have our HIP-DPA program which allows for a borrower to purchase a multi-unit property. However, we require that the borrower live in one of the units.' Structure: no-interest, no-payment, non-forgivable 30-year second mortgage. Reply came from hip@state.nv.us, not the hip@housing.nv.gov address written to. WARNING FOR ANY SCRIPT READING THIS COLUMN: the value 5 is a PERCENT, not dollars - check the unit column.",
+   "source_url": "https://www.homeispossiblenv.org/todays-rates",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Los Angeles",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Louisville",
+   "status": "unconfirmed",
+   "max_assistance_usd": null,
+   "program_or_finding": "KHC Down Payment Assistance, up to $12,500 - 2-4 unit eligibility NOT stated on program page.",
+   "source_url": "https://www.kyhousing.org/page/down-payment-assistance",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "McAllen",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5% of the loan amount. TSAHC Homeownership Programs (Home Sweet Texas Home Loan / Homes for Texas Heroes), statewide and covering the Rio Grande Valley, per TSAHC's own page: 'If you qualify for TSAHC programs, you may be able to receive up to 5% of your loan amount to help pay for your down payment and/or closing costs through a participating lender.' No flat dollar cap is published. Corrected 2026-09-24: the previous $10,000 here and $16,000 in the Houston row gave one statewide program two different caps from the same source, and neither figure appears on TSAHC's page, so both rows now carry the published percentage. Property-type eligibility was recorded in July 2026 from TSAHC's knowledge-base article 'What type of home can I buy with TSAHC's homeownership programs?' (kb.tsahc.org/39170/kb/article/102870) and was not re-read on 2026-09-24. TSAHC Lender Guidelines 4.2 'Qualifying Residences and Mortgage Loans', read 2026-10-04: 'Existing 2, 3 or 4-unit property, provided that one of the units will be occupied by the borrower and the property has been occupied for residential purposes for at least 5 years'; conventional loans are '(Fannie Mae only with LTV < 95%; 3% borrower's own funds required)'.",
+   "source_url": "https://www.tsahc.org/homebuyers-renters/loans-and-down-payment-assistance/",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Memphis",
+   "status": "program_found",
+   "max_assistance_usd": 15000,
+   "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in. Terms (Originating Agents Guide, PDF page 12, read 2026-10-04): the Payment option is a second loan 'at an interest rate the same as the first mortgage, monthly payments amortized over a 30-year term' for up to 5% of the sales price, maximum $15,000; the No-Payment options are $6,000 or $10,000 at 0%, forgiven over 10 years; 'Max Acquisition Cost $500,000'.",
+   "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Miami",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Milwaukee",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 6% of the home's purchase price. WHEDA Easy Close Advantage DPA, per WHEDA's program page: 'Maximum loan amount is 6% of the purchase price when partnered with a WHEDA Conventional first mortgage loan' and the same with a WHEDA FHA first mortgage; minimum $1,000; a 10-year fixed-rate second at the first-mortgage rate. Unit limit by first mortgage: 2-4 units with a WHEDA conventional first mortgage (3% borrower funds, six months reserves and landlord education required); one or two units with a WHEDA FHA loan (Easy Close DPA eligibility matrix, May 19, 2021). Corrected 2026-09-24: the previous flat $14,000 appears in neither the matrix nor the program page, so it was replaced with the published percentage. WHEDA Available Programs page, read 2026-10-04: conventional first mortgage 'No requirement for Borrower funds on any property type except 2-4 unit which requires Borrower funds of 3% of purchase price and 6 months reserves'; Easy Close Advantage is a '10-year fixed rate second mortgage with monthly payment' and the 'Interest rate is same as first mortgage'; the lender matrix states the maximum as 6% of the lesser of purchase price or appraised value.",
+   "source_url": "https://www.wheda.com/homeownership-and-renters/home-buyers/available-programs",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "Minneapolis",
+   "status": "program_found",
+   "max_assistance_usd": 20000,
+   "program_or_finding": "Minneapolis Homes: ACCESS Down Payment Assistance (City of Minneapolis)",
+   "source_url": "https://nwhomepartners.org/minneapolis-homes-access-down-payment-assistance/",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Nashville",
+   "status": "program_found",
+   "max_assistance_usd": 15000,
+   "program_or_finding": "THDA Great Choice Home Loan with Great Choice Plus down payment assistance: 5% of the sales price, capped at $15,000 (Originating Agents Guide: 'the loan amount is up to 5% of the sales price (maximum loan amount of $15,000)'). The guide lists 'A 2-4-unit residence, one unit of which must be occupied by Applicant as his/her principal residence' among eligible properties, and THDA confirmed in writing (14 August 2026) that its down payment assistance can be used to buy a 1-4 unit home the buyer lives in. Terms (Originating Agents Guide, PDF page 12, read 2026-10-04): the Payment option is a second loan 'at an interest rate the same as the first mortgage, monthly payments amortized over a 30-year term' for up to 5% of the sales price, maximum $15,000; the No-Payment options are $6,000 or $10,000 at 0%, forgiven over 10 years; 'Max Acquisition Cost $500,000'.",
+   "source_url": "https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "New Orleans",
+   "status": "program_found",
+   "max_assistance_usd": 25000,
+   "program_or_finding": "Finance New Orleans (FANO) Green Mortgage Program. 'Up to $25,000 may be applied as either downpayment assistance, prepaids, closing cost assistance, or a combination of both.' 0% second; at or below 80% AMI it is a five-year deferred forgivable second and 'one hundred percent of the second mortgage is forgiven'; above that it is never forgiven. 2-4 UNIT ELIGIBILITY IS EXPLICIT: 'Qualifying buyers may apply downpayment assistance to purchase a property with up to four (4) housing units (attached or detached)'. Unit cap is set by the first mortgage product (Fannie Mae up to 4, FHA and VA 2, Freddie Mac 1). Purchase price limit: 'Total purchase price shall not exceed $400,000 for single family homes or $450,000 for homes with 2-4 units.' Program guide revision 03/20/26, read directly. CORRECTION 2026-08-13: the previous $13,500 could NOT be sourced to any FANO document, current or archived. The only arithmetic that reproduces it is 3% of the $450,000 2-4 unit price cap, using a '2-5% of first mortgage' figure that appears ONLY on FANO's FAQ and a page whose own URL contains the word BACKUP - it is absent from both dated program guides. Treated as stale, not as a source. WATCH: FANO's site says 'Finance New Orleans has temporarily paused new Green Mortgage Program applications and fund reservations while additional resources are being pursued.' The lender-facing guide does not carry that notice. Contact for confirmation: singlefamily@financenola.org",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FNO-Green-Mortgage-Program-Guide-03-20-26.pdf",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "New York",
+   "status": "program_found",
+   "max_assistance_usd": 100000,
+   "program_or_finding": "NYC HPD HomeFirst Down Payment Assistance Program",
+   "source_url": "https://www.nyc.gov/site/hpd/services-and-information/homefirst-down-payment-assistance-program.page",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "North Port-Sarasota",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Oklahoma City",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3.5% of the total loan amount. Oklahoma OHFA DREAM (ohfa.org, NOT Ohio's myohiohome.org): '3.50% Down Payment Assistance' ... 'DPA calculated on Total Loan Amount (Note Amount)'. Same figure for the government and the Freddie Mac conventional products. Guides revised September 2025. Two-unit limit, in the guide's words (Property Type and Eligibility): '1 - Unit & 2 - Unit Properties' and '2 - Unit Properties - FHA only; Must be one parcel and one legal description', with the borrower occupying one unit. Not usable on a triplex or fourplex.",
+   "source_url": "https://www.ohfa.org/wp-content/uploads/2025/LDREAMGOVT-Guide-2025-9152025-IFF-INCREASE.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Omaha",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5% of the home's purchase price. NIFA Homebuyer Assistance (HBA), a repayable second mortgage of up to 5% of the price, 10 years at 1%: 'The maximum amount for the second mortgage loan is 5% of the home's purchase price.' NOTE: percentage of PURCHASE PRICE. Also note NIFA 'Build Home' is a rate-lock product, NOT the DPA product - the earlier row name was wrong.",
+   "source_url": "https://www.nifa.org/homebuyers-renters/homebuyer-assistance",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Orlando",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "Florida Housing FL Assist (statewide second mortgage)",
+   "source_url": "https://www.ehousingplus.com/wp-content/uploads/FHFC-HTH-TBA-Guide-FNMA-Removed-08-01-25.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Oxnard",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Philadelphia",
+   "status": "program_found",
+   "max_assistance_usd": 10000,
+   "program_or_finding": "Philly First Home: a grant of up to $10,000 (or 6% of the home's purchase price, whichever is lower) for first-time buyers. Two-unit limit, in PHDC's words: 'The property must be a single-family home or duplex located in Philadelphia (no condominiums).' Not usable on a triplex or fourplex.",
+   "source_url": "https://phdcphila.org/philly-first-home/",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Phoenix",
+   "status": "unconfirmed",
+   "max_assistance_usd": null,
+   "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
+   "source_url": "https://homeplusaz.com/frequently-asked-questions/",
+   "as_of": "2026-09"
+  },
+  {
+   "metro": "Pittsburgh",
+   "status": "program_found",
+   "max_assistance_usd": 7500,
+   "program_or_finding": "URA (Urban Redevelopment Authority of Pittsburgh) Down Payment and Closing Cost Assistance: up to $7,500 for first-time buyers below 80% of area median income (0% interest, 5-year deferred loan), up to $5,000 from 80% to 115% of AMI (0% interest, 10-year deferred loan). Two-unit limit, in URA's words: 'Each property may contain up to two connected dwelling units (i.e., duplex, townhouse), one of which must be owner-occupied.' Not usable on a triplex or fourplex.",
+   "source_url": "https://www.ura.org/pages/down-payment-and-closing-cost-assistance-program",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Portland",
+   "status": "program_found",
+   "max_assistance_usd": 15000,
+   "program_or_finding": "FHLBank Des Moines Home$tart (member-bank grant, covers Oregon)",
+   "source_url": "https://www.fhlbdm.com/webres/File/products-services/CID_DP-Program-Overview.pdf",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Portland ME",
+   "status": "program_found",
+   "max_assistance_usd": 5000,
+   "program_or_finding": "MaineHousing First Home Loan Program (down payment/closing cost assistance)",
+   "source_url": "https://downpaymentscout.com/states/maine/",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Providence",
+   "status": "program_found",
+   "max_assistance_usd": 15000,
+   "program_or_finding": "RIHousing $15K DPA",
+   "source_url": "https://www.rihousing.com/homebuyers/15k-dpa/",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Raleigh",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 3% of the first mortgage total loan amount. NC Home Advantage Mortgage Program Guide (June 2026), s4.13: '3% calculated on total loan amount, not sales/appraised value'. 15-year deferred subordinate lien at 0%. ELIGIBILITY CORRECTED 2026-08-13: Raleigh was previously recorded as 'None found' on the convention that unstated property rules are unusable. The guide DOES state it, s6.1: FHA/USDA/VA eligible types include 'Duplexes (FHA only)', and conventional says 'Note: Duplexes and Manufactured homes NOT eligible under the conventional program.' Charlotte and Greensboro already sat on the same FHA product, so the zero was an internal inconsistency. 3-4 unit properties are not addressed either way. Read from the guide PDF directly. Duplexes on FHA loans only; no three- or four-unit type is listed (NC Home Advantage Mortgage Program Guide, July 2026, Eligible Property Types), so the assistance reaches duplexes and not triplexes or fourplexes.",
+   "source_url": "https://www.nchfa.com/sites/default/files/2026-07/NCHomeAdvantageMortgageProgramGuide.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Richmond",
+   "status": "program_found",
+   "max_assistance_usd": 40000,
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source.",
+   "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Riverside-San Bernardino",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Rochester",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL), paired with Achieving the Dream / Low Interest Rate mortgage",
+   "source_url": "https://hcr.ny.gov/achieving-dream-program-0",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Sacramento",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Salt Lake City",
+   "status": "program_found",
+   "max_assistance_usd": 27500,
+   "program_or_finding": "Utah Housing Corporation DPA Second: up to 6% of the first mortgage, capped at $27,500. UHC Form 300 (All Loan Program Eligibility matrix, Rev. 07/06/2026): 'Up to 6% of the first mortgage loan amount listed on the First Note (which may include FHA upfront MIP on FHA first mortgage). Not to exceed $27,500.' Unit limit depends on the first mortgage: the FHA/VA Mortgage column lists 'One-two unit owner-occupied' properties, and 2-to-4-unit properties appear only under the Freddie Mac HFA Advantage (conventional) column, 'in compliance with Freddie Mac guidelines', so an FHA or VA borrower is limited to a duplex; a triplex or fourplex needs the HFA Advantage loan, which requires '700 for 2-to-4-unit properties' as the minimum FICO and a '95% maximum LTV' for 2-to-4-unit properties (Form 300 pages 4-5, read 2026-10-04). The DPA Second is a loan: the Traditional option is a 30-year fixed second at '1% above the Utah Housing First Mortgage rate, not to exceed 8%, and not less than the first mortgage interest rate'; the Deferred option is up to 3.5% at '3.5% deferred simple interest' with 'No monthly payment required', due at maturity, sale or refinance (Form 300 page 2). Corrected 2026-09-24: the previous $25,000 came from a third-party summary; re-sourced to Utah Housing's own matrix.",
+   "source_url": "https://utahhousingcorp.org/pdf/Form300.pdf",
+   "as_of": "2026-10-04"
+  },
+  {
+   "metro": "San Antonio",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "2% to 5% of the total mortgage loan amount. TDHCA My First Texas Home: 'Available assistance ranging from 2% - 5% of the total mortgage loan funding'. Borrower chooses a 30-year deferred repayable second or a 3-year deferred forgivable second. TWO-unit eligible; 3-4 unit NOT eligible (the program matrix lists duplexes, one unit owner-occupied, and no triplex or fourplex).",
+   "source_url": "https://welcomehome.tdhca.texas.gov/uploads/My-First-Texas-Home-Program-Matrix-TMS.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "San Diego",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "San Francisco",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "San Jose",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "up to 5.5% of the first mortgage loan amount. GSFA Platinum states 'Financial Assistance (up to 5.5%)' of the First Mortgage loan amount, split into a second mortgage plus a gift component; GSFA publishes NO flat dollar cap on the assistance, only a maximum first mortgage loan limit of $832,750. Previous dollar figures on this row were DERIVED by an earlier pass and could not be reconstructed - replaced with the published percentage (13 August 2026).",
+   "source_url": "https://gsfahome.org/programs/dpa/platinum.shtml",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Scranton",
+   "status": "program_found",
+   "max_assistance_usd": 6000,
+   "program_or_finding": "PHFA Keystone Advantage Assistance Loan",
+   "source_url": "https://www.phfa.org/programs/assistance/keystone-advantage.aspx",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Seattle",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3%, 4% or 5% of the first mortgage loan amount. WSHFC Home Advantage DPA (second mortgage), 0% interest: 'Offers 3%, 4%, or 5% of the first-mortgage loan amount in downpayment assistance'; payment-deferred, repayable on sale, refinance or payoff. No dollar cap stated. TWO-unit eligible; 3-4 unit NOT eligible, confirmed in writing by WSHFC, August 2026 (email 2026-08-13 from Christian Hayes, Senior Program Compliance Administrator, Washington State Housing Finance Commission: 'The Home Advantage program allows for a 1 or 2 unit duplex property. We cannot finance a 3, 4 or larger unit property. Borrower must occupy one of the units if purchasing a 2 unit duplex property.'). The Needs-Based loan (up to $10,000 at 1%) is the smaller option.",
+   "source_url": "https://heretohome.org/downpayment-assistance/",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Spokane",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3%, 4% or 5% of the first mortgage loan amount. WSHFC Home Advantage DPA (second mortgage), 0% interest: 'Offers 3%, 4%, or 5% of the first-mortgage loan amount in downpayment assistance'; payment-deferred, repayable on sale, refinance or payoff. No dollar cap stated. TWO-unit eligible; 3-4 unit NOT eligible, confirmed in writing by WSHFC, August 2026 (email 2026-08-13 from Christian Hayes, Senior Program Compliance Administrator, Washington State Housing Finance Commission: 'The Home Advantage program allows for a 1 or 2 unit duplex property. We cannot finance a 3, 4 or larger unit property. Borrower must occupy one of the units if purchasing a 2 unit duplex property.'). The Needs-Based loan (up to $10,000 at 1%) is the smaller option. Corrected 2026-09-24: the row previously carried the smaller Needs-Based $10,000 product; the percentage product is the larger option, as recorded for Seattle.",
+   "source_url": "https://heretohome.org/downpayment-assistance/",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "St. Louis",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "4% of the total mortgage amount. MHDC First Place Loan Program down payment assistance: 'a 100% forgivable second loan equal to 4% of the total mortgage amount to help with down payment and closing costs'. Fully forgiven at year 10. No dollar cap found in MHDC's own documents; the manual's FAQ says 'The MHDC DPA 2nd mortgage amount is exactly 4% of the first loan.' Corrected 2026-09-24: the previous flat $10,000 appears in neither the June 2025 nor the March 2026 manual and contradicted the Kansas City row on the same statewide program, so it was replaced with the published percentage. Two-unit limit: the First Place Loan Program operations manual (Revised 3/11/2026) lists eligible properties as 'Single-Family detached', 'Owner-Occupied one- or two-unit duplexes', semi-detached, condominiums, town homes and double-wide manufactured homes; no three- or four-unit type is listed, so the assistance is not usable on a triplex or fourplex.",
+   "source_url": "https://mhdc.com/media/k5epnlpt/first-place-manual-march-2026.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Syracuse",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "SONYMA Down Payment Assistance Loan (DPAL) Plus",
+   "source_url": "https://hcr.ny.gov/dpal-plus-2026-term-sheet",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Tampa",
+   "status": "program_found",
+   "max_assistance_usd": 25000,
+   "program_or_finding": "Home Sweet Home Hillsborough Program (Florida Housing HFA partner DPA)",
+   "source_url": "https://www.homesweethomeprogram.com/",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Toledo",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Tucson",
+   "status": "unconfirmed",
+   "max_assistance_usd": null,
+   "program_or_finding": "Arizona IDA Home Plus (statewide, up to 5% of the loan as a forgivable second): the program's own FAQ lists single-family homes, townhomes, condos and manufactured homes and says 'please speak with your Lender regarding multi-unit properties'; participating lenders advertise duplex eligibility depending on the loan product. Eligibility for 2-4 units is not stated by the program, so this is recorded as unconfirmed, not as a no. Re-checked 2026-09-08 against the program FAQ (previously sourced to a third-party aggregator).",
+   "source_url": "https://homeplusaz.com/frequently-asked-questions/",
+   "as_of": "2026-09"
+  },
+  {
+   "metro": "Tulsa",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3.5% of the total loan amount. Oklahoma OHFA DREAM (government loan) Down Payment Assistance, the statewide program (ohfa.org, NOT Ohio's myohiohome.org): '3.50% Down Payment Assistance' ... 'DPA calculated on Total Loan Amount (Note Amount)' (product guide, revision September 2025). Two-unit limit, in the guide's words: '1 - Unit & 2 - Unit Properties' and '2 - Unit Properties - FHA only; Must be one parcel and one legal description', with the borrower occupying one unit; not usable on a triplex or fourplex. For a triplex or fourplex, the Housing Partners of Tulsa, Inc. Homeownership Program ($5,000, local nonprofit, city of Tulsa; fha.com/first-time-home-buyers-program/homeownership-program, a third-party summary) may apply if its unit rules can be confirmed. Corrected 2026-09-24: the row previously carried only the $5,000 local program; the statewide OHFA DREAM assistance is the larger, agency-documented option and now leads the row.",
+   "source_url": "https://www.ohfa.org/wp-content/uploads/2025/LDREAMGOVT-Guide-2025-9152025-IFF-INCREASE.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Virginia Beach-Norfolk",
+   "status": "program_found",
+   "max_assistance_usd": 40000,
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source.",
+   "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Washington DC",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the price. DC Open Doors DPAL (DC Housing Finance Agency), sized to the full minimum down payment: 'If you qualify, you can obtain a DPAL for the full amount of your required minimum down payment' (program page); the lender manual (November 2025) sets it at '3% of the sales price for Conventional Loans, 3% of the loan amount for VA loans, and 3.50% of the sales price for FHA Loans', and lists '1-4 Units (must meet Servicer and Investor guidelines, as guidelines vary with each Loan type)' among eligible property types. Deferred 0% loan, due after 30 years or on sale, transfer, refinance or move-out. Corrected 2026-09-24: the previous flat $20,000 came from a third-party summary and appears in neither DCHFA source; re-sourced to DCHFA's own page.",
+   "source_url": "https://dchfa.org/homeownership/dc-open-doors/",
+   "as_of": "2026-09-24"
+  },
+  {
+   "metro": "Wichita",
+   "status": "none_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "KHRC First Time Homebuyer Program. Eligible property types confirmed 2026-08-13 by email from Marilyn Stanley, Kansas Housing Corporation: single-family on five acres or less; condominium, townhome, or one half of a duplex; manufactured home on a permanent foundation; modular home; new construction after certificate of occupancy. One half of a duplex is a single dwelling sold as its own parcel, so it does not give an owner occupant a second unit to rent out. A whole two to four unit building is not an eligible property type. This supersedes and withdraws the earlier reason given, which was the Wichita city-limits exclusion.",
+   "source_url": "https://kshousingcorp.org/wp-content/uploads/2026/03/FTHB-Fact-Sheet-3-19-26.pdf",
+   "as_of": "2026-08"
+  },
+  {
+   "metro": "Worcester",
+   "status": "program_found",
+   "max_assistance_usd": 30000,
+   "program_or_finding": "MassHousing Down Payment Assistance",
+   "source_url": "https://www.masshousing.com/en/home-ownership/homebuyers/down-payment-assistance",
+   "as_of": "2026-07"
+  },
+  {
+   "metro": "Youngstown",
+   "status": "program_found",
+   "max_assistance_usd": null,
+   "program_or_finding": "3% or 3.5% of the home's purchase price. OHFA Down Payment Assistance ('Your Choice!'): 3% of the purchase price with an OHFA conventional loan, 3.5% with an OHFA government loan (FHA, VA, USDA). OHFA's homebuyer page (captured 2026-09-24): 'OHFA Down Payment Assistance allows homebuyers to choose 3% for conventional loans or 3.5% for government loans (FHA, VA, USDA) of the home's purchase price.' OHFA's lender program guidelines dated July 1, 2026 say the same: 'Sized at exactly 3% of the home purchase price, rounded down to the nearest dollar' (Conventional Program, p. 9, ohiohome.org/partners/documents/Conventional-Guidelines-July26.pdf) and 'Sized at exactly 3.5% of the home purchase price' (Government Program, p. 7, ohiohome.org/partners/documents/Government-Guidelines-July26.pdf). Forgiven after seven years; repaid in full if the home is sold or refinanced within seven years. No flat dollar cap is published. NOTE: percentage of PURCHASE PRICE, not loan amount. Corrected 2026-09-24: the previous '2.5% or 5%' was quoted from an OHFA brochure stamped 'Revised December 19, 2022' (ohiohome.org/partners/documents/DPA.pdf) that OHFA still hosts but has superseded.",
+   "source_url": "https://myohiohome.org/downpaymentassistance.aspx",
+   "as_of": "2026-09-24"
+  }
+ ]
 }
