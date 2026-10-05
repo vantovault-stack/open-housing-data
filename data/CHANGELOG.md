@@ -1,5 +1,35 @@
 # Changelog: VanToVault Down Payment Assistance Survey (83 metros)
 
+## v4.4, 5 October 2026
+Prompted by Audit 5.0 finding VTV-142 (5 October 2026; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order. This release also brings this mirror current with the site's v4.3 edition (below), which had not yet been pushed here.
+
+| | v4.3 (4 Oct 2026) | v4.4 (5 Oct 2026) |
+|---|---|---|
+| program_found | 70 | 69 |
+| none_found | 8 | 8 |
+| unconfirmed | 5 | 6 |
+| rows with a flat dollar maximum | 33 | 32 |
+| median flat maximum | $15,000 | $17,500 |
+
+What changed:
+- Grand Rapids: program_found ($10,000, MSHDA MI 10K DPA Loan, statewide) -> unconfirmed. MSHDA's MI 10K DPA and MI Home lender-requirement pages do not state two-to-four-unit eligibility, and participating-lender documentation describes single-family, condominium and manufactured homes only (read 5 October 2026); max_assistance_usd 10000 -> null. This aligns the Michigan state guide with the Lansing and Ann Arbor city pages, which already treated unit eligibility as unconfirmed.
+
+## v4.3, 4 October 2026
+Prompted by Audit 2.0 (4 October 2026; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order.
+
+| | v4.2 (4 Oct 2026) | v4.3 (4 Oct 2026) |
+|---|---|---|
+| program_found | 72 | 70 |
+| none_found | 8 | 8 |
+| unconfirmed | 3 | 5 |
+| rows with a flat dollar maximum | 36 | 33 |
+| median flat maximum | $17,500 | $15,000 |
+
+What changed:
+- El Paso: the City of El Paso First Time Homebuyers Program ($5,000) -> the statewide TDHCA My First Texas Home route (2-5% of the loan, two-unit eligible); the city sheet limits eligible property to one unit in a 2-4-unit building, so it does not cover the whole building; max_assistance_usd 5000 -> null (percentage-based).
+- Richmond, Virginia Beach-Norfolk: program_found -> unconfirmed. The Virginia DHCD DPA guideline (rev. October 2024) allows a unit in a duplex/triplex/fourplex only if it is individually deeded and the buyer owns no other units as rentals; an August 2026 email confirms a whole-duplex purchase but not renting the other unit (DHCD re-asked 4 October 2026); max_assistance_usd 40000 -> null.
+- Allentown, Harrisburg, Scranton: two-unit eligibility confirmed from PHFA's First Mortgage Programs Overview (March 2026) - Keystone Home Loan / Keystone Government allow one or two units (HFA Preferred one unit); 3-4 units not eligible.
+
 ## v4.2, 4 October 2026
 Prompted by an independent audit delivered 3 October 2026 (83 findings on the site; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order.
 
