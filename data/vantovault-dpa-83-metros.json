@@ -1,13 +1,13 @@
 {
  "meta": {
   "dataset": "VanToVault Down Payment Assistance Survey - can you use DPA on a 2-4 unit home?",
-  "version": "v4.4, 5 October 2026",
-  "generated": "2026-10-05",
+  "version": "v4.5, 6 October 2026",
+  "generated": "2026-10-06",
   "generated_from": "VanToVault-Foothold-v7.xlsx / Inputs / Best usable DPA (2-4 unit), regenerated in full (no 300-character cut) with the 24 September 2026 corrections applied; rows dated 2026-09-24 are the corrected ones",
   "counts": {
    "program_found": 69,
-   "none_found": 8,
-   "unconfirmed": 6
+   "none_found": 10,
+   "unconfirmed": 4
   },
   "median_max_assistance_usd": {
    "value": 17500,
@@ -35,6 +35,10 @@
    {
     "date": "2026-10-05",
     "change": "v4.4. Grand Rapids (MSHDA MI 10K DPA Loan, statewide) program_found $10,000 -> unconfirmed: MSHDA's MI 10K DPA and MI Home lender-requirements pages do not state 2-4 unit eligibility, and participating-lender documentation describes single-family, condominium and manufactured homes only (read 2026-10-05); this aligns the Michigan state guide with the Lansing and Ann Arbor city pages, which already treated unit eligibility as unconfirmed. max_assistance_usd 10000 -> null. Counts 70/8/5 -> 69/8/6; median flat maximum $15,000 over 33 -> $17,500 over 32. Prompted by Audit 5.0 finding VTV-142 (5 October 2026); see vantovault.com/corrections/."
+   },
+   {
+    "date": "2026-10-06",
+    "change": "v4.5. Richmond and Virginia Beach-Norfolk unconfirmed -> none_found: Virginia DHCD answered in writing on 5 October 2026 (Cheri L. Miles, Program Manager) that the DPA is available for one individually deeded unit and 'is not available if the homeowner is purchasing the entire building.' Counts 69/8/6 -> 69/10/4 (program_found/none_found/unconfirmed); median $17,500 over 32 rows unchanged. Logged on vantovault.com/corrections/."
    }
   ],
   "v4_1_note": "v4.1 removes internal working notes (an owner name and an agency staff email address) from 10 notes. No status, amount, source or date changed."
@@ -522,11 +526,11 @@
   },
   {
    "metro": "Richmond",
-   "status": "unconfirmed",
+   "status": "none_found",
    "max_assistance_usd": null,
-   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source. Reclassified 2026-10-04 from program_found to unconfirmed: by this survey's definition (an owner-occupied building whose other units are rented) the written guideline excludes the use, the August 2026 email does not address renting the other unit, and DHCD has been asked the question again; the row returns to program_found only on a written answer that says yes.",
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI, but not usable for buying a whole 2-4 unit building. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility): 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' Asked in writing whether a buyer may purchase a whole duplex, live in one unit and rent the other, DHCD answered (Cheri L. Miles, Program Manager, email of 5 October 2026): 'The revised guidelines of October 2024 are still in effect. The first-time homebuyer may purchase one of the units in a duplex, triplex or fourplex. The unit must be individually sold/ deeded. The down payment assistance would be available for the one unit. DPA is not available if the homeowner is purchasing the entire building.' An earlier DHCD email (17 August 2026) had said a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'; the October answer addresses the whole-building purchase directly and supersedes it for this survey. Reclassified 2026-10-06 from unconfirmed to none_found (documented exclusion).",
    "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
-   "as_of": "2026-10-04"
+   "as_of": "2026-10-06"
   },
   {
    "metro": "Riverside-San Bernardino",
@@ -666,11 +670,11 @@
   },
   {
    "metro": "Virginia Beach-Norfolk",
-   "status": "unconfirmed",
+   "status": "none_found",
    "max_assistance_usd": null,
-   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI. The two sources point different ways on 2-4 unit homes. DHCD confirmed in writing (Cheri L. Miles, Program Manager, 17 August 2026) that buyers 'may use DHCD's Down Payment Assistance (DPA) on a duplex, provided they will occupy one of the units', and that a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility) is stricter: 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' The email confirms a whole duplex but not renting the other unit, so check with DHCD before counting on it. Triplexes and fourplexes bought whole are not confirmed by either source. Reclassified 2026-10-04 from program_found to unconfirmed: by this survey's definition (an owner-occupied building whose other units are rented) the written guideline excludes the use, the August 2026 email does not address renting the other unit, and DHCD has been asked the question again; the row returns to program_found only on a written answer that says yes.",
+   "program_or_finding": "Virginia DHCD HOMEownership Down Payment Assistance Program (DPA): up to $40,000 (10% of the sales price, 15% in high-cost or economically depressed areas, plus up to $2,500 toward closing costs) for buyers at or below 80% AMI, but not usable for buying a whole 2-4 unit building. The written guideline (DHCD DPA Program Guidelines, Revised October 2024, Property Eligibility): 'Duplex, Triplex and Fourplex are permitted as long as the unit receiving HOME DPA assistance is individually sold and deeded, will be the primary residence of the homebuyer, and the homebuyer will not own any other units as rentals in that building.' Asked in writing whether a buyer may purchase a whole duplex, live in one unit and rent the other, DHCD answered (Cheri L. Miles, Program Manager, email of 5 October 2026): 'The revised guidelines of October 2024 are still in effect. The first-time homebuyer may purchase one of the units in a duplex, triplex or fourplex. The unit must be individually sold/ deeded. The down payment assistance would be available for the one unit. DPA is not available if the homeowner is purchasing the entire building.' An earlier DHCD email (17 August 2026) had said a buyer purchasing the entire duplex 'must reside in one of the units for the full affordability period'; the October answer addresses the whole-building purchase directly and supersedes it for this survey. Reclassified 2026-10-06 from unconfirmed to none_found (documented exclusion).",
    "source_url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/dpa/dpa-program-guidelines.pdf",
-   "as_of": "2026-10-04"
+   "as_of": "2026-10-06"
   },
   {
    "metro": "Washington DC",

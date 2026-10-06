@@ -1,5 +1,19 @@
 # Changelog: VanToVault Down Payment Assistance Survey (83 metros)
 
+## v4.5, 6 October 2026
+Prompted by a written answer from Virginia DHCD (5 October 2026; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order.
+
+| | v4.4 (5 Oct 2026) | v4.5 (6 Oct 2026) |
+|---|---|---|
+| program_found | 69 | 69 |
+| none_found | 8 | 10 |
+| unconfirmed | 6 | 4 |
+| rows with a flat dollar maximum | 32 | 32 |
+| median flat maximum | $17,500 | $17,500 |
+
+What changed:
+- Richmond and Virginia Beach-Norfolk: unconfirmed -> none_found. Asked whether a buyer may purchase a whole duplex, live in one unit and rent the other, DHCD answered in writing (Cheri L. Miles, Program Manager, 5 October 2026): "The first-time homebuyer may purchase one of the units in a duplex, triplex or fourplex. The unit must be individually sold/ deeded. The down payment assistance would be available for the one unit. DPA is not available if the homeowner is purchasing the entire building." as_of 2026-10-06.
+
 ## v4.4, 5 October 2026
 Prompted by Audit 5.0 finding VTV-142 (5 October 2026; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order. This release also brings this mirror current with the site's v4.3 edition (below), which had not yet been pushed here.
 
