@@ -1,7 +1,7 @@
 {
  "meta": {
   "dataset": "VanToVault Foothold Index - 2-4 unit house-hacking screen",
-  "description": "83 US metros screened across 23,424 two-to-four-unit listings for where an owner-occupant buyer can live in one unit and come out ahead of renting. 11,495 listings survived all seven tests; 11 metros clear the affordability bar.",
+  "description": "83 US metros screened across 23,424 two-to-four-unit listings for where an owner-occupant buyer can live in one unit and come out ahead of renting. 11,495 listings failed none of the seven tests (missing data passes, so a survivor was not necessarily measured on all seven); 11 metros clear the affordability bar.",
   "data_as_of": "2026-08-06",
   "mortgage_rate_pct": 6.66,
   "license": "CC BY 4.0 - use with attribution to Van to Vault (vantovault.com)",
