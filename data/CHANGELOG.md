@@ -1,5 +1,27 @@
 # Changelog: VanToVault Down Payment Assistance Survey (83 metros)
 
+## v4.6, 10 October 2026
+Adds the unit limit to every row so a tool can read it (Deal Math v8 does). Same 83 rows, same row order, the six existing columns unchanged; five columns appended: `units_max`, `units_max_fha`, `units_basis`, `units_read`, `units_source`.
+
+| | v4.5 (6 Oct 2026) | v4.6 (10 Oct 2026) |
+|---|---|---|
+| program_found | 69 | 69 |
+| none_found | 10 | 10 |
+| unconfirmed | 4 | 4 |
+| rows with a flat dollar maximum | 32 | 32 |
+| median flat maximum | $17,500 | $17,500 |
+| units_max = 4 (reaches a fourplex) | - | 44 |
+| units_max = 2 (duplex only) | - | 21 |
+| units_max = 1 (single-family only, or no unit to rent out) | - | 10 |
+| units_max null (the program does not say) | - | 8 |
+
+What changed:
+- `units_max` is the largest building, in units, on which an owner-occupant who rents the other units can use the assistance, read from the program's own document, page or written answer and quoted in `units_source` with the date in `units_read`. 29 documents or pages were re-read on 10 October 2026 (SONYMA, MassHousing, CHFA, RIHousing, NYC HomeFirst, Minneapolis ACCESS, FHLBank Des Moines, metroDPA, GSFA Platinum, Florida Housing's TBA lender guide, NIFA, MaineHousing, KHC); the rest carry the dated quotes already in `program_or_finding` or the agency emails of August 2026.
+- `units_max_fha` is the same figure except in Milwaukee (2 with a WHEDA FHA first, 4 conventional), New Orleans (2 on FHA or VA, 4 Fannie Mae) and Salt Lake City (2 on FHA or VA, 4 under Freddie Mac HFA Advantage), where the first mortgage sets the limit.
+- A program that admits one individually deeded unit of a plex (Virginia, Kansas) or a 1-4 unit that may not be rented (Indiana) is recorded as 1: it gives the buyer nothing to rent out.
+- Eight rows carry null: the four unconfirmed rows (Grand Rapids, Louisville, Phoenix, Tucson), and the four Florida metros served by FL Assist (Lakeland, Miami, North Port-Sarasota, Orlando), whose second mortgage's own term sheet (FHFC Master Term Sheet 12.11.24) states no property type; the 2-4 unit language exists only for the first mortgages it attaches to, and that indirect basis is not adopted. Null means the program does not say, which is an unknown, not a no.
+- No status, amount, note, source URL or as_of changed.
+
 ## v4.5, 6 October 2026
 Prompted by a written answer from Virginia DHCD (5 October 2026; see https://vantovault.com/corrections/). Same 83 rows, same columns and row order.
 
