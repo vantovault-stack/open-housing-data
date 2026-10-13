@@ -1,5 +1,29 @@
 # Changelog: VanToVault Down Payment Assistance Survey (83 metros)
 
+## v4.7, 13 October 2026
+Six corrections from an independent audit (Audit 6.0), each checked against the program's own page or document on 12 October 2026 and approved by the owner. Same 83 rows, same columns, same row order. Statuses and the median are unchanged; one amount, six source links and the unit limit of the four FL Assist rows change.
+
+| | v4.6 (10 Oct 2026) | v4.7 (13 Oct 2026) |
+|---|---|---|
+| program_found | 69 | 69 |
+| none_found | 10 | 10 |
+| unconfirmed | 4 | 4 |
+| rows with a flat dollar maximum | 32 | 32 |
+| median flat maximum | $17,500 | $17,500 |
+| units_max = 4 (reaches a fourplex) | 44 | 48 |
+| units_max = 2 (duplex only) | 21 | 21 |
+| units_max = 1 (single-family only, or no unit to rent out) | 10 | 10 |
+| units_max null (the program does not say) | 8 | 4 |
+
+What changed:
+- Portland ME: `max_assistance_usd` 5000 -> 14000. On a 2-4 unit building MaineHousing's Multi-Unit Advantage applies: "For two units Advantage is $8,000, three units is $11,000, and four units is $14,000." The field carries the largest published figure, as the schema note says; `program_or_finding` names all three amounts. `source_url` moves from a third-party summary (downpaymentscout.com) to MaineHousing's own page, https://www.mainehousing.org/homeloan; `as_of` 2026-07 -> 2026-10-12. The $5,000 and the $14,000 both sit below the 16th value, so the median stays $17,500 over 32.
+- Lakeland, Miami, North Port-Sarasota, Orlando (Florida Housing FL Assist): status program_found and $10,000 unchanged. `units_max` and `units_max_fha` null -> 4, `units_basis` unstated -> first_mortgage_doc, `units_read` 2026-10-12. FL Assist's own term sheet still states no property type, but Florida Housing says "Down payment assistance is only available when used with Florida Housing's first mortgage loan." (https://www.floridahousing.org/programs/homebuyer-overview-page), and that first mortgage's lender guide (HTH TBA Lender Guide 8.01.25, p.30, "2-4 UNIT PROPERTIES") says "Borrower(s), must occupy one of the units as their primary residence." This is the same reading already used for PHFA (Allentown, Harrisburg, Scranton) and CHFA (Bridgeport, Hartford). `source_url` of the four rows moves from the first-mortgage lender guide, which never states the FL Assist amount, to the Florida Housing page that does ("Offers up to $10,000 on FHA, VA, USDA and Conventional Loans.").
+- Knoxville, Memphis, Nashville (THDA): $15,000 unchanged; it is the cap for an existing home. The note adds THDA's new-construction Payment option: up to $25,000 at 0%, repaid over 15 years (Originating Agents Guide: "The Great Choice Plus Payment New Construction is at a zero percent interest rate, monthly payments amortized over a 15-year term, and the loan amount is up to $25,000.", https://dogvxws799i6n.cloudfront.net/wp-content/uploads/OA-Guide-Current.pdf, read 12 October 2026).
+- Allentown, Harrisburg, Scranton (PHFA Keystone Advantage, $6,000) and Pittsburgh (URA, $7,500): amounts unchanged. The note adds PHFA's K-FIT: 5% of the lesser of the price or appraised value, no dollar cap, forgiven over ten years, paired only with the Keystone Home Loan (one or two units), so it can be larger for a buyer who qualifies (https://www.phfa.org/programs/assistance.aspx).
+- Rochester: `source_url` https://hcr.ny.gov/achieving-dream-program-0 -> https://hcr.ny.gov/dpal-plus-2026-term-sheet, the SONYMA DPAL Plus 2026 term sheet that states the $30,000 and the 60% AMI limit (the Albany, Buffalo and Syracuse rows already cite it).
+- Nine GSFA Platinum rows (Bakersfield, Fresno, Los Angeles, Oxnard, Riverside-San Bernardino, Sacramento, San Diego, San Francisco, San Jose): amount stays "up to 5.5% of the loan". The note no longer says the assistance is "split into a second mortgage plus a gift component", which is not true of Standard, and now names the tiers: 5.5% is the Assist-to-Own tier for employees of GSFA member counties (3.5% deferred 0% second plus a gift of up to 2%, subject to market conditions); Standard is up to 5% as a 15-year amortizing second; Select up to 5% (3.5% second plus up to 1.5% gift) (https://www.gsfahome.org/programs/dpa/platinum.shtml).
+- Nothing else changed: every other field of all 83 rows is byte-identical to v4.6. The field-by-field change is in this commit's diff.
+
 ## v4.6, 10 October 2026
 Adds the unit limit to every row so a tool can read it (Deal Math v8 does). Same 83 rows, same row order, the six existing columns unchanged; five columns appended: `units_max`, `units_max_fha`, `units_basis`, `units_read`, `units_source`.
 
