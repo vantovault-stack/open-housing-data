@@ -66,7 +66,7 @@ building, in units, on which an owner-occupant who rents the other units can use
 read from the program's own document, page or written answer and quoted in `units_source` with the
 read date in `units_read`; `units_max_fha` repeats it except where the FHA first mortgage is tighter
 (Milwaukee, New Orleans, Salt Lake City); `units_basis` names the kind of source. A null `units_max`
-means the program does not say (eight rows), which is an unknown, not a no. Counts and history: [`data/CHANGELOG.md`](data/CHANGELOG.md).
+means the program does not say (four rows since v4.7), which is an unknown, not a no. Counts and history: [`data/CHANGELOG.md`](data/CHANGELOG.md).
 
 ### 3. Pittsburgh Short-Term Rental Census — Lawrenceville and Bloomfield (August 2026)
 
